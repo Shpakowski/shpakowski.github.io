@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>MyApp</title>
+      <base href="/">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }            
+            html {
+                height: 100%;
+            }
+            .body {
+                background: #9da2ab;
+                color: #fff;
+                height: 100%;
+                margin: 0;
+            }
+            .header,
+            .footer {
+                background: #3e3f40;
+            }
+            .main {
+                background: #d9dde0;
+                color: #3e3f40;
+            }
+            .main-app {
+                display: block;
+                height: 100%;
+            }
+            .header {
+                height: 10%
+            }
+            .main {
+                height: 85%;
+            }
+            .diet,
+            .today-activity,
+            .add-food {
+                width: 15%;
+            }
+            .calories-cale {
+                width: 20%;
+            }
+            .today-energy {
+                width: 35%;
+            }
+            .footer {
+                height: 5%;
+            }
+      </style>
+    </head>
+    <body class="body">
+        <main-app class="main-app">
+            <header class="header">
+                <header-menu class="header-menu">Мenu</header-menu>
+                <current-date class="current-date">
+                    <date>30th november 2018</date>
+                    <time>17:56</time>
+                </current-date>
+                <user class="user">VS</user>
+            </header>
+            <main class="main">
+                <calories-cale class="calories-cale"></calories-cale>
+                <today-energy class="today-energy"></today-energy>
+                <add-food class="add-food">
+                    <div>
+                        <div>search</div>
+                        <input type="text" name="search-food">
+                        <button>Add</button>
+                    </div>
+                </add-food>
+                <diet class="diet">
+                    <span>Diet</span>
+                    <div>-2</div>
+                    <div>-1</div>
+                    <div>0</div>
+                    <div>1</div>
+                    <div>2</div>
+                </diet>
+                <today-activity class="today-activity">
+                    <span>Today Activity</span>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </today-activity>
+            </main>
+            <footer class="footer">
+                <footer-menu class="footer-menu">Menu</footer-menu>
+                <copywrite class="copywrite">Vitali Shpakowski</copywrite>
+            </footer>
+        </main-app>
+    </body>
+</html>
