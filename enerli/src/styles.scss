@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "_reset-src.scss";
+@import "app/app.component.scss";
+@import "app/header/header.component.scss";
+@import "app/main/main.component.scss";
+@import "app/footer/footer.component.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+.body {
+    background: #9da2ab;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+}
