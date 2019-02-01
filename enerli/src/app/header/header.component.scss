@@ -2,4 +2,20 @@
 	background: #3e3f40;
     height: 10%;
     color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__profile-link {
+    	border-radius: 50%;
+    	background-color: #86deb1;
+    	font-weight: bold;
+    	width: 40px;
+	    height: 40px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    text-shadow: #171515 0 0 1px;
+    }
 }

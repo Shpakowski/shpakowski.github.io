@@ -1,0 +1,9 @@
+.current-date {
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+
+    &__time {
+    	align-self: center;
+    }
+}

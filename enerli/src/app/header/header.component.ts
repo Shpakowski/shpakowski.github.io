@@ -6,19 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public headerData = {
-    shortName: 'SV',
-    time:'17:56',
-    date: '30th november 2018'
-  };
+	public userInfo = {
+		shortName: 'VS',
+		fullName: 'Vitali Shpakowski'
+	};
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  alertMessage() {
-    alert('open user menu');
+  alertMessage(text) {
+    alert(text);
   }
 
 }

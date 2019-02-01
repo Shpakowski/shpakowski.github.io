@@ -1,6 +1,5 @@
-<div class="header-menu">Мenu</div>
-<div class="current-date">
-    <div>{{headerData.date}}</div>
-    <div>{{headerData.time}}</div>
-</div>
-<div class="user" (click)="alertMessage()">{{headerData.shortName}}</div>
+<div (click)="alertMessage('Show menu')">Мenu</div>
+<current-date></current-date>
+<div class="header__profile-link" (click)="alertMessage('Open profile info')">{{userInfo.shortName}}</div>
+<header-menu></header-menu>
+<profile-info [userInfo] = "userInfo"></profile-info>
