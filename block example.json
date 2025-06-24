@@ -1,0 +1,33 @@
+{
+  "blockId": "string",
+  "blockHeight": 123456,
+  "timestamp": 1717592329,
+  "executionTimeMs": 43,
+  "previousBlockHash": "string",
+  "postBlockHash": "string",
+  "proposer": "validator_public_key",
+  "validators": [
+    {
+      "publicKey": "string",
+      "signature": "string"
+    }
+  ],
+  "txs": [
+    {
+      "txId": "string",
+      "txHash": "string",
+      "origin": "User | Oracle | System | DAO",
+      "smartContractHashes": ["hash1", "hash2"],
+      "fee": "0.001",
+      "payload": { ... },
+      "reason": "optional string"
+    }
+  ],
+  "blockTag": {
+    "network": "testnet",
+    "purpose": "diploma-verification",
+    "custom": {
+      "key": "value"
+    }
+  }
+}
