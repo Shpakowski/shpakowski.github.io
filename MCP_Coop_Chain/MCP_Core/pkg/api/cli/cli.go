@@ -10,32 +10,34 @@ import (
 	"io/ioutil"
 	"os"
 	"os/signal"
+	"path/filepath"
+	"strconv"
 	"strings"
+	"sync"
 	"syscall"
 	"time"
+
 	"github.com/mcpcoop/chain/internal/logger"
+	"github.com/mcpcoop/chain/pkg/crypto"
 	"github.com/mcpcoop/chain/pkg/types"
-	"strconv"
-	"path/filepath"
-	"sync"
+
+	"errors"
 
 	"github.com/mcpcoop/chain/pkg/api/cli/commands"
 	"github.com/mcpcoop/chain/pkg/chain"
 	"github.com/mcpcoop/chain/pkg/wallet"
 )
 
-const stateFile = "node_state.json"
+const stateFile = "State/State.json"
 
 // nodeState - full persistent state
-// Includes: status, chain, mempool, wallets, balances
-//
+// Includes: chain, mempool, wallets, balances
 type nodeState struct {
-	Status      string                `json:"status"`
-	Chain       []types.Block         `json:"chain"`
-	Mempool     []types.Transaction   `json:"mempool"`
-	Wallets     []*wallet.Wallet      `json:"wallets"`
-	Balances    map[string]float64    `json:"balances"`
-	StartTime   string                `json:"start_time"`
+	Chain     []types.Block       `json:"chain"`
+	Mempool   []types.Transaction `json:"mempool"`
+	Wallets   []*wallet.Wallet    `json:"wallets"`
+	Balances  map[string]float64  `json:"balances"`
+	StartTime string              `json:"start_time"`
 }
 
 var (
@@ -61,7 +63,6 @@ func defaultState() *nodeState {
 		Transactions: nil,
 	}
 	return &nodeState{
-		Status:    "stopped",
 		Chain:     []types.Block{genesis},
 		Mempool:   []types.Transaction{},
 		Wallets:   []*wallet.Wallet{},
@@ -120,15 +121,12 @@ func startBlockTimer() {
 			select {
 			case <-ticker.C:
 				s := loadState()
-				fmt.Printf("[TIMER] %s | mempool: %d | status: %s | height: %d\n", time.Now().Format(time.RFC3339), len(s.Mempool), s.Status, len(s.Chain)-1)
-				if s.Status == "running" && len(s.Mempool) > 0 {
+				if len(s.Mempool) > 0 {
 					addBlock(s)
 					slog("Block created by timer", s)
 					saveState(s)
 					fmt.Printf("[TIMER] Block created! New height: %d\n", len(s.Chain)-1)
-				} else if s.Status != "running" {
-					fmt.Println("[TIMER] Node not running, block not created.")
-				} else if len(s.Mempool) == 0 {
+				} else {
 					fmt.Println("[TIMER] No transactions in mempool, block not created.")
 				}
 			case <-tickerStop:
@@ -166,7 +164,6 @@ func slog(msg string, s *nodeState) {
 		"height", len(s.Chain)-1,
 		"mempool", len(s.Mempool),
 		"wallets", len(s.Wallets),
-		"status", s.Status,
 	)
 }
 
@@ -192,7 +189,7 @@ func Execute() {
 	case "restart":
 		commands.Restart(c, args)
 	case "status":
-		commands.Status(c, args)
+		StatusCmd(args)
 	case "new-wallet":
 		commands.NewWallet(c, args)
 	case "send":
@@ -203,8 +200,19 @@ func Execute() {
 		os.Exit(1)
 	}
 
-	// Save chain state after every command
-	_ = chain.Save(c, stateFile)
+	// После выполнения команды — сохранить актуальное состояние:
+	ns := &nodeState{
+		Chain:     c.Blocks,
+		Mempool:   c.Mempool,
+		Wallets:   []*wallet.Wallet{},
+		Balances:  c.Balances,
+		StartTime: "", // если нужно, можно добавить
+	}
+	for _, w := range c.Wallets {
+		ww := &wallet.Wallet{Wallet: w}
+		ns.Wallets = append(ns.Wallets, ww)
+	}
+	saveState(ns)
 }
 
 func printUsage() {
@@ -218,14 +226,12 @@ func printUsage() {
 }
 
 func StartCmd(args []string) {
-	s := loadState()
-	if s.Status == "running" {
-		msg := "Node is already running"
-		logger.Logger.Info(msg)
-		fmt.Printf("[WARN] %s\n", msg)
-		return
+	var s *nodeState
+	if _, err := os.Stat(getStateFilePath()); err == nil {
+		s = loadState()
+	} else {
+		s = defaultState()
 	}
-	s.Status = "running"
 	s.StartTime = time.Now().Format(time.RFC3339)
 	saveState(s)
 	slog("Node started", s)
@@ -240,8 +246,6 @@ func StartCmd(args []string) {
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 	<-quit
 	fmt.Println("\n[INFO] Shutting down node...")
-	s.Status = "stopped"
-	saveState(s)
 	stopBlockTimer()
 	slog("Node stopped", s)
 	fmt.Println("[INFO] Node stopped")
@@ -249,39 +253,18 @@ func StartCmd(args []string) {
 
 func StopCmd(args []string) {
 	s := loadState()
-	if s.Status != "running" {
-		msg := "Node is already stopped"
-		logger.Logger.Info(msg)
-		fmt.Printf("[WARN] %s\n", msg)
-		return
-	}
-	s.Status = "stopped"
-	saveState(s)
 	stopBlockTimer()
 	slog("Node stopped", s)
 	fmt.Printf("[INFO] Node stopped\n")
 }
 
 func RestartCmd(args []string) {
-	s := loadState()
-	if s.Status != "running" {
-		msg := "Node is not running; cannot restart. Use 'start' instead."
-		logger.Logger.Info(msg)
-		fmt.Printf("[WARN] %s\n", msg)
-		return
-	}
 	StopCmd(args)
 	StartCmd(args)
 }
 
 func NewWalletCmd(args []string) {
 	s := loadState()
-	if s.Status != "running" {
-		err := "Node is not running. Start the node first."
-		logger.Logger.Error("Wallet creation failed", "error", err)
-		fmt.Printf("[ERROR] %s\n", err)
-		return
-	}
 	if len(args) == 0 || strings.TrimSpace(args[0]) == "" {
 		err := "Seed phrase required. Use --seed 'word1 word2 ... word12'"
 		logger.Logger.Error("Wallet creation failed", "error", err)
@@ -328,12 +311,6 @@ func NewWalletCmd(args []string) {
 
 func SendCmd(args []string) {
 	s := loadState()
-	if s.Status != "running" {
-		err := "Node is not running. Start the node first."
-		logger.Logger.Error("Send failed", "error", err)
-		fmt.Printf("[ERROR] %s\n", err)
-		return
-	}
 	if len(args) < 3 {
 		err := "Missing required flags: --from, --to, --amount"
 		logger.Logger.Error("Send failed", "error", err)
@@ -370,8 +347,8 @@ func SendCmd(args []string) {
 	s.Balances[to] = toBal
 
 	tx := types.Transaction{
-		From:   types.Address(from),
-		To:     types.Address(to),
+		From:      types.Address(from),
+		To:        types.Address(to),
 		Amount:    amount,
 		Timestamp: time.Now(),
 	}
@@ -406,7 +383,6 @@ func StatusCmd(args []string) {
 		timeToNextBlock = fmt.Sprintf("%ds", rem)
 	}
 	logger.Logger.Info("Status",
-		"status", s.Status,
 		"height", len(s.Chain)-1,
 		"mempool", len(s.Mempool),
 		"wallets", len(s.Wallets),
@@ -414,8 +390,8 @@ func StatusCmd(args []string) {
 		"uptime", uptime,
 		"next_block_in", timeToNextBlock,
 	)
-	fmt.Printf("Node status: %s\nBlock height: %d\nMempool txs: %d\nWallets: %d\nTime: %s\nUptime: %s\nNext block in: %s\n",
-		s.Status, len(s.Chain)-1, len(s.Mempool), len(s.Wallets), now.Format(time.RFC3339), uptime, timeToNextBlock)
+	fmt.Printf("Block height: %d\nMempool txs: %d\nWallets: %d\nTime: %s\nUptime: %s\nNext block in: %s\n",
+		len(s.Chain)-1, len(s.Mempool), len(s.Wallets), now.Format(time.RFC3339), uptime, timeToNextBlock)
 }
 
 func formatUptime(d time.Duration) string {
@@ -423,4 +399,67 @@ func formatUptime(d time.Duration) string {
 	m := int(d.Minutes()) % 60
 	s := int(d.Seconds()) % 60
 	return fmt.Sprintf("%02dh %02dm %02ds", h, m, s)
-} 
+}
+
+func LoadChainState() *types.Chain {
+	c := chain.NewChain()
+	_ = chain.Load(c, stateFile)
+	return c
+}
+
+// GenerateMerkleProof returns the Merkle proof for a transaction in a block
+func GenerateMerkleProof(c *types.Chain, blockIdx, txIdx int) ([]string, error) {
+	if blockIdx < 0 || blockIdx >= len(c.Blocks) {
+		return nil, errors.New("block index out of range")
+	}
+	txs := c.Blocks[blockIdx].Transactions
+	if txIdx < 0 || txIdx >= len(txs) {
+		return nil, errors.New("transaction index out of range")
+	}
+	var proof []string
+	hashes := make([][]byte, len(txs))
+	for i, tx := range txs {
+		hashes[i] = []byte(tx.Hash())
+	}
+	idx := txIdx
+	for len(hashes) > 1 {
+		var nextLevel [][]byte
+		for i := 0; i < len(hashes); i += 2 {
+			var left, right []byte
+			left = hashes[i]
+			if i+1 < len(hashes) {
+				right = hashes[i+1]
+			} else {
+				right = left
+			}
+			combined := append(left, right...)
+			h := types.Hash(fmt.Sprintf("%x", crypto.HashData(combined)))
+			nextLevel = append(nextLevel, []byte(h))
+			if i == idx || i+1 == idx {
+				if i == idx && i+1 < len(hashes) {
+					proof = append(proof, string(hashes[i+1]))
+					idx = i / 2
+				} else if i+1 == idx {
+					proof = append(proof, string(hashes[i]))
+					idx = i / 2
+				}
+			}
+		}
+		hashes = nextLevel
+	}
+	return proof, nil
+}
+
+// VerifyMerkleProof verifies a Merkle proof for a transaction
+func VerifyMerkleProof(c *types.Chain, blockIdx int, txHash string, proof []string) (bool, error) {
+	if blockIdx < 0 || blockIdx >= len(c.Blocks) {
+		return false, errors.New("block index out of range")
+	}
+	root := c.Blocks[blockIdx].MerkleRoot
+	h := []byte(txHash)
+	for _, p := range proof {
+		combined := append(h, []byte(p)...)
+		h = []byte(fmt.Sprintf("%x", crypto.HashData(combined)))
+	}
+	return string(h) == string(root), nil
+}

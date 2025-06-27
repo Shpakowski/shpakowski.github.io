@@ -2,6 +2,7 @@ package logic
 
 import (
 	"time"
+
 	"github.com/mcpcoop/chain/pkg/types"
 )
 
@@ -25,5 +26,6 @@ func NewChain() *types.Chain {
 		Blocks:   []types.Block{genesis},
 		Balances: map[string]float64{},
 		Mempool:  []types.Transaction{},
+		Wallets:  []types.Wallet{},
 	}
-} 
+}

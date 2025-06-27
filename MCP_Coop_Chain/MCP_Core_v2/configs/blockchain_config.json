@@ -1,0 +1,65 @@
+{
+  "logger": {
+    "level": "info",
+    "outputPaths": ["logs/mcp.log"]
+  },
+  "tokenName": "MCP Coin",
+  "tokenSymbol": "MCP",
+  "startEmission": 1111.0,
+  "genesisBlock": {
+    "index": 0,
+    "timestamp": 1718000000,
+    "hash": "genesisHash"
+  },
+  "chain": {
+    "blockTimeSeconds": 60,
+    "txPerBlock": 100,
+    "maxTxMempool": 10000,
+    "maxScMempool": 100,
+    "minContractDeploySeconds": 600,
+    "allowEmptyBlocks": false
+  },
+  "fees": {
+    "createOrgFee": 10.0,
+    "txFee": 0.001,
+    "priorityTxFee": 0.01,
+    "deployProtoAPIFee": 5.0,
+    "callProtoAPIMethodFee": 1.0
+  },
+  "consensus": {
+    "maxValidators": 1,
+    "votesRequired": 1
+  },
+  "validatorRating": {
+    "initialRating": 0,
+    "lowMin": 0,
+    "lowMax": 10,
+    "standardMin": 10,
+    "standardMax": 90,
+    "eliteMin": 90,
+    "eliteMax": 100
+  },
+  "staking": {
+    "requiredStake": 1000.0
+  },
+  "liquidity": {
+    "targetRate": 1.0,
+    "burnFeeThreshold": 1.0,
+    "profitRedistributionThreshold": 1.1
+  },
+  "protoAPI": {
+    "contractIDs": ["wallet", "transfer", "balance"],
+    "maxCallsPerBlock": 100,
+    "maxGasPerBlock": 1000000
+  },
+  "rest": {
+    "port": 8080,
+    "timeout": 15
+  },
+  "p2p": {
+    "maxPeers": 25,
+    "port": 26656,
+    "protocol": "tcp"
+  },
+  "storagePath": "data/chain_snapshot.json"
+} 

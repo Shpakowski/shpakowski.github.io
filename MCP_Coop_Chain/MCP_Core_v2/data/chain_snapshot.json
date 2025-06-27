@@ -1,0 +1,28 @@
+{
+  "blocks": [
+    {
+      "header": {
+        "blockId": "block-0-1750850854379374000",
+        "height": 0,
+        "timestamp": "2025-06-25T11:27:34.379374Z",
+        "previousHash": "",
+        "postStateHash": "",
+        "tag": "genesis",
+        "txRoot": ""
+      },
+      "proposer": "system",
+      "validatorSigs": null,
+      "transactions": [],
+      "contractCalls": []
+    }
+  ],
+  "mempool": [],
+  "organizations": null,
+  "wallets": null,
+  "state": {
+    "lastHash": "",
+    "postStateHash": ""
+  },
+  "contracts": null,
+  "timestamp": "2025-06-25T11:27:34.379493Z"
+}

@@ -4,15 +4,17 @@ package wallet
 
 import (
 	"crypto/ed25519"
-	"github.com/mcpcoop/chain/pkg/types"
+	"errors"
+
 	"github.com/mcpcoop/chain/pkg/crypto"
+	"github.com/mcpcoop/chain/pkg/types"
 )
 
 // Wallet wraps the shared types.Wallet and adds private key and metadata (not serialized)
 type Wallet struct {
 	types.Wallet
 	PrivKey ed25519.PrivateKey `json:"-"` // Never serialize private key
-	Meta    *Metadata           `json:"-"` // Optional metadata (tags, alias, etc)
+	Meta    *Metadata          `json:"-"` // Optional metadata (tags, alias, etc)
 }
 
 // NewRandomWallet creates a new wallet with a random keypair (see whitepaper 2.1)
@@ -51,4 +53,13 @@ func NewWalletFromSeed(seed string) (*Wallet, error) {
 		},
 		PrivKey: keypair.PrivateKey,
 	}, nil
-} 
+}
+
+func GetWalletByAddress(c *types.Chain, addr string) (*Wallet, error) {
+	for _, w := range c.Wallets {
+		if string(w.Address) == addr {
+			return &Wallet{Wallet: w}, nil
+		}
+	}
+	return nil, errors.New("wallet not found")
+}

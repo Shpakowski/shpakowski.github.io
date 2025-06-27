@@ -3,6 +3,7 @@ package commands
 import (
 	"fmt"
 	"strings"
+
 	"github.com/mcpcoop/chain/pkg/types"
 	"github.com/mcpcoop/chain/pkg/wallet"
 )
@@ -29,6 +30,7 @@ func NewWallet(c *types.Chain, args []string) {
 		return
 	}
 	c.Balances[string(w.Address)] = 100.0 // Give new wallet a mock balance
+	c.Wallets = append(c.Wallets, w.Wallet)
 	wallet.LogWalletEvent("Wallet created", "address", w.Address)
 	fmt.Printf("[INFO] New wallet created!\nAddress: %s\nInitial balance: 100.0\n", w.Address)
-} 
+}

@@ -6,10 +6,11 @@ import "time"
 // BlockHeader defines the minimal header fields for a block.
 // Used for block validation and chain linking.
 type BlockHeader struct {
-	Index     int       `json:"index"`
-	Timestamp time.Time `json:"timestamp"`
-	PrevHash  Hash      `json:"prev_hash"`
-	Hash      Hash      `json:"hash"`
+	Index      int       `json:"index"`
+	Timestamp  time.Time `json:"timestamp"`
+	PrevHash   Hash      `json:"prev_hash"`
+	Hash       Hash      `json:"hash"`
+	MerkleRoot Hash      `json:"merkle_root"`
 }
 
 // Block represents a full block in the blockchain.
@@ -17,4 +18,4 @@ type BlockHeader struct {
 type Block struct {
 	BlockHeader
 	Transactions []Transaction `json:"transactions"`
-} 
+}
