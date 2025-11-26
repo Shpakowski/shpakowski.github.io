@@ -342,6 +342,32 @@ ul {
     position: relative;
 }
 
+.skills__group--wide {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(155, 89, 182, 0.08) 100%);
+    border: 2px solid var(--color-primary);
+    border-left: 4px solid var(--color-primary);
+    padding: var(--spacing-md);
+}
+
+.skills__group--wide .skills__group-title {
+    font-size: 1rem;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skills__group--wide .skills__group-title::before {
+    content: '🤖';
+    font-size: 1.2rem;
+}
+
+.skills__group--wide:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+}
+
 .skills__group:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
@@ -370,6 +396,66 @@ ul {
     font-size: var(--font-size-small);
     line-height: 1.5;
     margin-bottom: 0;
+}
+
+.skills__models {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid rgba(52, 152, 219, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.skills__models-label {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-text);
+    opacity: 0.8;
+}
+
+.skills__model {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    transition: all var(--transition);
+    cursor: default;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.skills__model--claude {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+}
+
+.skills__model--claude:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.skills__model--chatgpt {
+    background: linear-gradient(135deg, #10A37F 0%, #0D8A6B 100%);
+}
+
+.skills__model--chatgpt:hover {
+    background: linear-gradient(135deg, #0E9672 0%, #0A7357 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 163, 127, 0.4);
+}
+
+.skills__model--gemini {
+    background: linear-gradient(135deg, #4285F4 0%, #1967D2 100%);
+}
+
+.skills__model--gemini:hover {
+    background: linear-gradient(135deg, #3478F6 0%, #185ABC 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
 }
 
 /* ==========================================================================
