@@ -439,7 +439,11 @@ ul {
 }
 
 .skills__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 0.6rem;
+    gap: var(--spacing-sm);
 }
 
 .skills__item:last-child {
@@ -447,35 +451,53 @@ ul {
 }
 
 .skills__name {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--color-text);
-    margin-bottom: 0.4rem;
+    flex-grow: 1;
 }
 
-.skills__level-progress {
+.skills__level {
     display: flex;
-    gap: 3px;
-    width: 100%;
-    height: 6px;
-    cursor: default;
+    gap: 4px;
+    align-items: center;
     position: relative;
 }
 
-.skills__level-progress::after {
+.skills__level-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-border);
+    transition: all 0.3s ease;
+}
+
+/* Цвета для разных уровней */
+.skills__level[data-level="beginner"] .skills__level-dot:nth-child(1) {
+    background: linear-gradient(135deg, #FFA726 0%, #FB8C00 100%);
+}
+
+.skills__level[data-level="intermediate"] .skills__level-dot:nth-child(1),
+.skills__level[data-level="intermediate"] .skills__level-dot:nth-child(2) {
+    background: linear-gradient(135deg, #42A5F5 0%, #1E88E5 100%);
+}
+
+.skills__level[data-level="advanced"] .skills__level-dot {
+    background: linear-gradient(135deg, #66BB6A 0%, #43A047 100%);
+}
+
+/* Tooltip */
+.skills__level::after {
     content: attr(title);
     position: absolute;
     bottom: calc(100% + 8px);
-    left: 50%;
-    transform: translateX(-50%) translateY(-5px);
+    right: 0;
+    transform: translateY(-5px);
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
     font-weight: 500;
     white-space: nowrap;
     opacity: 0;
@@ -485,54 +507,14 @@ ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.skills__level-progress::before {
-    content: '';
-    position: absolute;
-    bottom: calc(100% + 2px);
-    left: 50%;
-    transform: translateX(-50%) translateY(-5px);
-    border: 6px solid transparent;
-    border-top-color: rgba(0, 0, 0, 0.9);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.skills__level-progress:hover::after,
-.skills__level-progress:hover::before {
+.skills__level:hover::after {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 
-.skills__level-segment {
-    flex: 1;
-    height: 100%;
-    background: var(--color-border);
-    border-radius: 3px;
-    transition: all var(--transition);
-}
-
-/* Активные сегменты по уровням */
-.skills__level-progress[data-level="beginner"] .skills__level-segment:nth-child(1).skills__level-segment--active {
-    background: linear-gradient(135deg, #FFA726 0%, #FB8C00 100%);
-}
-
-.skills__level-progress[data-level="intermediate"] .skills__level-segment:nth-child(1),
-.skills__level-progress[data-level="intermediate"] .skills__level-segment:nth-child(2).skills__level-segment--active {
-    background: linear-gradient(135deg, #42A5F5 0%, #1E88E5 100%);
-}
-
-.skills__level-progress[data-level="advanced"] .skills__level-segment:nth-child(1),
-.skills__level-progress[data-level="advanced"] .skills__level-segment:nth-child(2),
-.skills__level-progress[data-level="advanced"] .skills__level-segment:nth-child(3).skills__level-segment--active {
-    background: linear-gradient(135deg, #66BB6A 0%, #43A047 100%);
-}
-
-/* Hover эффект */
-.skills__level-progress:hover .skills__level-segment--active {
-    transform: scaleY(1.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+/* Hover эффект на кружочки */
+.skills__level:hover .skills__level-dot {
+    transform: scale(1.15);
 }
 
 .skills__models {
