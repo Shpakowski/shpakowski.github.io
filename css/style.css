@@ -797,6 +797,10 @@ ul {
     .profile__link {
         text-align: center;
     }
+
+    .profile__status {
+        justify-content: center;
+    }
 }
 
 /* ==========================================================================
