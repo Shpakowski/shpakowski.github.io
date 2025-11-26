@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виталий Шпаковский - Ведущий Frontend-разработчик CV</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #333;
+            background: #fff;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 1cm;
+        }
+        
+        h1 {
+            font-size: 24pt;
+            font-weight: 600;
+            margin-bottom: 2pt;
+            color: #1a1a1a;
+        }
+        
+        h2 {
+            font-size: 13pt;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 12pt;
+            margin-bottom: 6pt;
+            padding-bottom: 2pt;
+            border-bottom: 1.5pt solid #3498db;
+        }
+        
+        h3 {
+            font-size: 11pt;
+            font-weight: 600;
+            margin-top: 8pt;
+            margin-bottom: 3pt;
+            color: #2c3e50;
+        }
+        
+        .subtitle {
+            font-size: 13pt;
+            color: #555;
+            margin-bottom: 8pt;
+        }
+        
+        .contact {
+            font-size: 10pt;
+            color: #666;
+            margin-bottom: 12pt;
+            line-height: 1.5;
+        }
+        
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 12pt;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3pt;
+            margin-bottom: 6pt;
+        }
+        
+        .skill-item {
+            font-size: 10pt;
+        }
+        
+        .skill-label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .experience-item {
+            margin-bottom: 12pt;
+            page-break-inside: avoid;
+        }
+        
+        .company-header {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 2pt;
+        }
+        
+        .role-header {
+            font-size: 10.5pt;
+            color: #555;
+            margin-bottom: 1pt;
+        }
+        
+        .period {
+            font-size: 9.5pt;
+            color: #777;
+            font-style: italic;
+            margin-bottom: 4pt;
+        }
+        
+        .project-header {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #34495e;
+            margin-top: 6pt;
+            margin-bottom: 3pt;
+        }
+        
+        .tech-stack {
+            font-size: 9.5pt;
+            color: #666;
+            margin-top: 3pt;
+            font-style: italic;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 12pt;
+        }
+        
+        li {
+            margin-bottom: 3pt;
+            position: relative;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+        
+        li:before {
+            content: "•";
+            position: absolute;
+            left: -12pt;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .achievements li {
+            font-size: 10pt;
+        }
+        
+        .education-item {
+            margin-bottom: 8pt;
+        }
+        
+        .courses-section {
+            margin-top: 8pt;
+        }
+        
+        .course-category {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 10pt;
+            margin-top: 4pt;
+            margin-bottom: 2pt;
+        }
+        
+        .course-list {
+            font-size: 9.5pt;
+            padding-left: 12pt;
+        }
+        
+        .course-list li {
+            margin-bottom: 2pt;
+        }
+        
+        .language-item {
+            margin-bottom: 6pt;
+        }
+        
+        .language-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .language-details {
+            font-size: 9.5pt;
+            color: #666;
+            padding-left: 12pt;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ВИТАЛИЙ ШПАКОВСКИЙ</h1>
+    <div class="subtitle">Ведущий Frontend-разработчик | Тимлид</div>
+    
+    <div class="contact">
+        Местоположение: Тбилиси, Грузия (UTC+4) | Формат работы: Удалённо, Гибрид<br>
+        Email: <a href="mailto:v.shpakowski@gmail.com">v.shpakowski@gmail.com</a> | 
+        Телефон: +995 995 11 31 09<br>
+        LinkedIn: <a href="https://linkedin.com/in/vitali-shpakowski-73256568">linkedin.com/in/vitali-shpakowski-73256568</a> | 
+        GitHub: <a href="https://github.com/Shpakowski">github.com/Shpakowski</a>
+    </div>
+    
+    <div class="section">
+        <h2>О СЕБЕ</h2>
+        <p>Ведущий Frontend-разработчик и технический тимлид с более чем 13-летним опытом создания масштабируемых веб-приложений в области финансовых технологий, электронной коммерции и AI-платформ. Специализируюсь на Angular 18, TypeScript, RxJS и современном JavaScript (ES6+). Придерживаюсь принципов SOLID и паттернов Clean Architecture при проектировании решений. Имею подтверждённый опыт руководства командами разработчиков из 2-5 человек, внедрения CI/CD-процессов и поставки корпоративных решений. Обладаю глубокой экспертизой в методологиях Agile/Scrum, практиках code review и техническом менторстве. Успешно проектировал микрофронтенд-системы, модернизировал legacy-приложения и устанавливал стандарты качества, повышающие продуктивность команды.</p>
+    </div>
+    
+    <div class="section">
+        <h2>ТЕХНИЧЕСКИЕ НАВЫКИ</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><span class="skill-label">Фреймворки:</span> Angular 18, React (базовый уровень), AngularJS (legacy)</div>
+            <div class="skill-item"><span class="skill-label">Языки программирования:</span> TypeScript, JavaScript (ES6+), HTML5, CSS3, SASS/SCSS</div>
+            <div class="skill-item"><span class="skill-label">Управление состоянием:</span> RxJS, NgRx, Redux</div>
+            <div class="skill-item"><span class="skill-label">UI-библиотеки:</span> BEM, Material Design, Bootstrap, jQuery</div>
+            <div class="skill-item"><span class="skill-label">Тестирование:</span> Jasmine, Karma, Jest, Unit Testing, Integration Testing, E2E Testing</div>
+            <div class="skill-item"><span class="skill-label">Инструменты сборки:</span> Webpack, npm, Vite, Grunt</div>
+            <div class="skill-item"><span class="skill-label">Контроль версий:</span> Git, GitHub, GitLab</div>
+            <div class="skill-item"><span class="skill-label">CI/CD:</span> Jenkins, GitHub Actions, SonarQube</div>
+            <div class="skill-item"><span class="skill-label">Backend:</span> Node.js, Express.js (базовый уровень)</div>
+            <div class="skill-item"><span class="skill-label">CMS:</span> Adobe AEM/CQ5</div>
+            <div class="skill-item"><span class="skill-label">Дизайн:</span> Photoshop, Figma (базовый уровень)</div>
+            <div class="skill-item"><span class="skill-label">Методологии:</span> Agile, Scrum, Kanban</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>ЛИЧНЫЕ КАЧЕСТВА</h2>
+        <p>Лидерство команды, Code Review, Техническое менторство, Планирование спринтов, Коммуникация со стейкхолдерами, Техническая проработка задач, Кросс-функциональное взаимодействие, Решение проблем, Принятие решений, Разрешение конфликтов</p>
+    </div>
+    
+    <div class="section">
+        <h2>ОПЫТ РАБОТЫ</h2>
+        
+        <div class="experience-item">
+            <div class="company-header">Epam Systems</div>
+            <div class="role-header">Ведущий Frontend-разработчик | Тимлид</div>
+            <div class="period">Декабрь 2013 - Декабрь 2024 (11 лет) | Минск, Беларусь / Тбилиси, Грузия</div>
+            
+            <div class="project-header">Проект: SAP Coveo AI Search Platform | Ведущий Frontend-разработчик | 2024</div>
+            <ul>
+                <li>Спроектировал и реализовал AI-поисковый интерфейс с использованием Angular, TypeScript и библиотеки CoveoUI для корпоративного поискового решения</li>
+                <li>Разработал управление состоянием в стиле Redux с подпиской на backend в реальном времени для динамических результатов поиска</li>
+                <li>Интегрировал систему GenAI-ответов с управлением feature flags</li>
+                <li>Проводил Scrum-церемонии включая планирование спринтов, груминг и ретроспективы для кросс-функциональной команды из 4 человек</li>
+                <li>Выполнял 50% обязанностей BA/PM включая оценку задач (Planning Poker), коммуникацию со стейкхолдерами и техническую документацию</li>
+                <li>Оптимизировал поисковые компоненты, сократив время поиска с 3с до менее чем 500мс</li>
+            </ul>
+            <div class="tech-stack">Технологии: Angular, TypeScript, RxJS, HTML5, CSS3, SASS, CoveoUI, Redux, WebSocket</div>
+            
+            <div class="project-header">Проект: Carrefour — E-commerce платформа | Тимлид, Ведущий Frontend-разработчик | 2022 - 2023</div>
+            <ul>
+                <li>Руководил командой из 2 UI-разработчиков, улучшая онлайн-магазин с 500K+ пользователей в месяц перед переходом на новую платформу</li>
+                <li>Разработал новые пользовательские функции включая улучшенную фильтрацию товаров и процесс оформления заказа, повысив конверсию</li>
+                <li>Внедрил CI/CD-конвейер с интеграцией Jenkins и SonarQube, снизив проблемы с качеством кода</li>
+                <li>Сотрудничал с бизнес-аналитиками по анализу требований, техническому грумингу и планированию спринтов</li>
+                <li>Частично выполнял обязанности проектного менеджера включая приоритезацию бэклога и коммуникацию со стейкхолдерами</li>
+            </ul>
+            <div class="tech-stack">Технологии: jQuery, JavaScript (ES6+), HTML5, CSS3, SASS, Jenkins, SonarQube, Git, Agile</div>
+            
+            <div class="project-header">Проект: Refinitiv — Финансовая платформа данных | Тимлид, Ведущий Frontend-разработчик | 2019 - 2022</div>
+            <ul>
+                <li>Возглавил разработку двух веб-приложений на Angular + TypeScript, заменяющих legacy C# desktop-решения, улучшив доступность и пользовательский опыт</li>
+                <li>Координировал работу команды из 3 разработчиков над full-stack разработкой с Express.js backend</li>
+                <li>Спроектировал frontend-слой на Angular, обеспечивающий бесшовную интеграцию с REST API и real-time потоками данных через WebSocket</li>
+                <li>Реализовал оптимизации производительности включая lazy loading и code splitting, сократив время начальной загрузки на 50% (с 5с до 2с)</li>
+                <li>Создал тестовый фреймворк с 75% покрытием кода используя Jasmine и Karma</li>
+            </ul>
+            <div class="tech-stack">Технологии: Angular, TypeScript, Express.js, RxJS, HTML5, CSS3, SASS, WebSocket, REST API, Git, Agile</div>
+            
+            <div class="project-header">Проект: MoneySuperMarket — Платформа агрегации финансовых услуг | Тимлид, Ведущий Frontend-разработчик | 2014 - 2018</div>
+            <ul>
+                <li>Руководил командой из 5 frontend-разработчиков, создавая платформу сравнения страхования, энергии и финансовых продуктов для 10M+ пользователей в месяц на AngularJS, TypeScript, Redux</li>
+                <li>Спроектировал микрофронтенд-систему с интеграцией Adobe CQ5 CMS, сократив время развёртывания на 40%</li>
+                <li>Внедрил методологию BEM и компонентную архитектуру, улучшив переиспользуемость кода для 50+ компонентов</li>
+                <li>Установил комплексный процесс code review и стандарты качества, снизив production-баги на 60%</li>
+                <li>Координировал работу с QA-инженерами автоматизации, бизнес-аналитиками и backend-командами в Agile/Scrum среде</li>
+                <li>Проводил планирование спринтов, технические груминги и ретроспективы, поддерживая 95% завершённость спринтов</li>
+                <li>Оптимизировал производительность приложения, сократив время начальной загрузки страницы с 6.5с до 3.8с (42% улучшение)</li>
+            </ul>
+            <div class="tech-stack">Технологии: Angular, RxJS, Redux, NgRx, BEM, HTML5, CSS3, SASS, Adobe CQ5, Jenkins, Git, Scrum</div>
+        </div>
+        
+        <div class="experience-item">
+            <div class="company-header">Startup Labs</div>
+            <div class="role-header">Frontend-разработчик</div>
+            <div class="period">Апрель 2013 - Декабрь 2013 (9 месяцев) | Минск, Беларусь</div>
+            <ul>
+                <li>Разрабатывал адаптивные промо-сайты для финансовых услуг используя jQuery, HTML5, CSS3 и WordPress</li>
+                <li>Реализовывал сложные формы с клиентской валидацией, повышая точность данных</li>
+                <li>Создавал mobile-first адаптивные макеты используя SASS preprocessor с кросс-браузерной совместимостью</li>
+            </ul>
+            <div class="tech-stack">Технологии: JavaScript, jQuery, HTML5, CSS3, SASS, WordPress, Git, Photoshop, Twig</div>
+        </div>
+        
+        <div class="experience-item">
+            <div class="company-header">Axamit Versa</div>
+            <div class="role-header">Frontend-разработчик</div>
+            <div class="period">Апрель 2012 - Март 2013 (1 год) | Минск, Беларусь</div>
+            <ul>
+                <li>Разрабатывал пользовательские функции для 3 клиентских сайтов используя платформу Adobe CQ5 (AEM)</li>
+                <li>Реализовывал адаптивные виджеты и интерактивные компоненты с jQuery</li>
+                <li>Создал библиотеку переиспользуемых компонентов, сокращающую время разработки типовых UI-паттернов</li>
+            </ul>
+            <div class="tech-stack">Технологии: JavaScript, jQuery, HTML5, CSS3, Adobe CQ5/AEM, Git</div>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <div class="section">
+        <h2>ОБРАЗОВАНИЕ</h2>
+        <div class="education-item">
+            <h3>Белорусский государственный университет информатики и радиоэлектроники</h3>
+            <div>Специальность: Системный инженер</div>
+            <div class="period">2006 - 2011 | Минск, Беларусь</div>
+        </div>
+        
+        <div class="courses-section">
+            <h3>ПРОФЕССИОНАЛЬНОЕ РАЗВИТИЕ (EPAM Systems)</h3>
+            
+            <div class="course-category">Angular и современный JavaScript:</div>
+            <ul class="course-list">
+                <li>AngularJS for UXD Developers – Getting Started</li>
+                <li>EPAM UI TechTalk: AngularJS Data</li>
+                <li>EPAM UI TechTalk: AngularJS Directives</li>
+                <li>EPAM UI TechTalk: AngularJS Modules</li>
+                <li>EPAM UI TechTalk: AngularJS Templates</li>
+                <li>EPAM UI TechTalk: AngularJS Testing</li>
+                <li>Introduction to ECMAScript 2015 (FCMP1.1)</li>
+                <li>Introduction to Webpack (FCMP1.3)</li>
+            </ul>
+            
+            <div class="course-category">Backend-разработка:</div>
+            <ul class="course-list">
+                <li>Introduction to Backend Development with Node.js and Express.js (FCMP1.6)</li>
+                <li>Mongo, Node.js and Express.js (FCMP1.12)</li>
+            </ul>
+            
+            <div class="course-category">Разработка ПО:</div>
+            <ul class="course-list">
+                <li>Software Development Processes</li>
+                <li>EPAM UI TechTalk: MGFN-HTML Project Retrospective</li>
+                <li>EPAM UI TechTalk: Places You Should Get to Know (Community) + Project</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>ЯЗЫКИ</h2>
+        <div class="language-item">
+            <span class="language-name">Русский:</span> Родной
+            <ul class="language-details">
+                <li>Полное профессиональное владение во всех бизнес-контекстах</li>
+                <li>Техническая документация, презентации, командное общение</li>
+            </ul>
+        </div>
+        <div class="language-item">
+            <span class="language-name">Английский:</span> Средний уровень (B1)
+            <ul class="language-details">
+                <li>Профессиональное рабочее владение</li>
+                <li>Ежедневные standup-встречи и технические обсуждения</li>
+                <li>Code review и техническая документация</li>
+                <li>Email и письменная коммуникация с международными командами</li>
+                <li>Постоянное совершенствование через практику и обучение</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>КЛЮЧЕВЫЕ ДОСТИЖЕНИЯ</h2>
+        <ul class="achievements">
+            <li>Успешно завершил 4 крупных корпоративных проекта в финтехе, e-commerce и AI-платформах</li>
+            <li>Установил стандарты качества кода и процессы review, повысив общую продуктивность команды</li>
+            <li>Создал и поддерживал высокопроизводительные команды со 100% уровнем удержания сотрудников</li>
+            <li>Обеспечил внедрение современных frontend-практик и CI/CD-процессов в нескольких проектах</li>
+            <li>Был ментором для 5 junior-разработчиков, поддерживая их карьерный рост до mid-level позиций</li>
+        </ul>
+    </div>
+</body>
+</html>
