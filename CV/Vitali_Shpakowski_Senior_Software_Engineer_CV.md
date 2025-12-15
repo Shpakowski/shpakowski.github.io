@@ -11,7 +11,7 @@ GitHub: github.com/Shpakowski
 PROFESSIONAL SUMMARY
 ================================================================================
 
-Senior Frontend Engineer and Technical Team Lead with 13+ years of experience building scalable web applications across fintech, e-commerce, and AI-powered platforms. Specialized in Angular 18, TypeScript, RxJS, and modern JavaScript (ES6+). Strong advocate of SOLID principles and Clean Architecture patterns. Proven track record leading engineering teams of 2-5 developers, implementing CI/CD pipelines, and delivering enterprise solutions. Strong expertise in Agile/Scrum methodologies, code review practices, and technical mentorship. Successfully architected micro-frontend systems, modernized legacy applications to current tech stack, and established quality standards that improved team productivity.
+Senior Frontend Engineer and Technical Team Lead with 13+ years of experience building scalable web applications across fintech, e-commerce, and AI-powered platforms. Specialized in Angular 18, TypeScript, RxJS, and modern JavaScript (ES6+). Strong advocate of SOLID principles and KISS patterns. Proven track record leading engineering teams of 2-5 developers, implementing CI/CD pipelines, and delivering enterprise solutions. Strong expertise in Agile/Scrum methodologies, code review practices, and technical mentorship. Successfully architected micro-frontend systems, modernized legacy applications to current tech stack, and established quality standards that improved team productivity.
 
 ================================================================================
 TECHNICAL SKILLS

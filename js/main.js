@@ -43,7 +43,7 @@ function switchLanguage(lang) {
             section.classList.add('resume--active');
         } else {
             section.classList.remove('resume--active');
-        }
+}
     });
     
     // Update language buttons
@@ -52,7 +52,7 @@ function switchLanguage(lang) {
             btn.classList.add('language-switcher__btn--active');
         } else {
             btn.classList.remove('language-switcher__btn--active');
-        }
+}
     });
     
     // Update HTML lang attribute
@@ -112,7 +112,7 @@ function applyTheme(theme) {
     // Update icon
     if (elements.themeIcon) {
         elements.themeIcon.textContent = theme === THEMES.DARK ? '☀️' : '🌙';
-    }
+        }
     
     // Save to localStorage
     try {
@@ -156,7 +156,7 @@ function initThemeSwitcher() {
             // Only apply system theme if user hasn't manually set one
             try {
                 if (!localStorage.getItem(STORAGE_KEYS.THEME)) {
-                    applyTheme(e.matches ? THEMES.DARK : THEMES.LIGHT);
+                applyTheme(e.matches ? THEMES.DARK : THEMES.LIGHT);
                 }
             } catch (err) {
                 console.warn('Failed to handle system theme change');

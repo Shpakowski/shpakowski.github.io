@@ -64,10 +64,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--spacing-sm);
 }
 
-h1 { font-size: 2.5rem; font-weight: 700; }
-h2 { font-size: 2rem; font-weight: 700; }
-h3 { font-size: 1.5rem; font-weight: 600; }
-h4 { font-size: 1.25rem; font-weight: 600; }
+h1 { font-size: 1.875rem; font-weight: 700; }
+h2 { font-size: 1.5rem; font-weight: 700; }
+h3 { font-size: 1.125rem; font-weight: 600; }
+h4 { font-size: 0.9375rem; font-weight: 600; }
 
 a {
     color: var(--color-primary);
@@ -236,7 +236,7 @@ ul {
 }
 
 .profile__title {
-    font-size: 1.125rem;
+    font-size: 0.84375rem;
     color: var(--color-primary);
     font-weight: 600;
     margin-bottom: var(--spacing-sm);
@@ -269,6 +269,20 @@ ul {
 .profile__contact-icon {
     font-size: 16px;
     flex-shrink: 0;
+}
+
+.profile__languages {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--color-text);
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-sm);
+    padding: 4px 0;
+}
+
+.profile__languages-text {
+    line-height: 1.4;
 }
 
 .profile__status {
@@ -361,6 +375,44 @@ ul {
     color: var(--color-text);
     line-height: 1.7;
     margin-bottom: 0;
+}
+
+/* Soft Skills */
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.soft-skills__tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: var(--font-size-small);
+    color: var(--color-text);
+    transition: all var(--transition);
+}
+
+.soft-skills__tag--lead {
+    background: rgba(52, 152, 219, 0.15);
+    border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.soft-skills__tag--process {
+    background: rgba(46, 204, 113, 0.15);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.soft-skills__tag--comm {
+    background: rgba(155, 89, 182, 0.15);
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.soft-skills__divider {
+    color: var(--color-text-light);
+    font-size: 10px;
+    margin: 0 4px;
 }
 
 /* ==========================================================================
@@ -738,9 +790,9 @@ ul {
         --spacing-lg: 24px;
     }
     
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
-    h3 { font-size: 1.25rem; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.3125rem; }
+    h3 { font-size: 0.9375rem; }
     
     .profile {
         grid-template-columns: 1fr;
@@ -759,6 +811,11 @@ ul {
     
     .profile__contacts {
         align-items: center;
+    }
+    
+    .profile__languages {
+        justify-content: center;
+        text-align: center;
     }
     
     .profile__links {
