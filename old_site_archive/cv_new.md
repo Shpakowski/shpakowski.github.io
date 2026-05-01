@@ -12,23 +12,24 @@ location: Minsk, Belarus, UTC +3, (Open to relocation)
 languages: Belarusian (Native), Russian (Native), English (B1+/B2)
 
 #Profile
-Technical leader with 15 years of experience in designing and launching high-scale systems. Specialized in AI-Driven Development (AIDD): managing the full product lifecycle via Antigravity / Cursor orchestration and custom agentic workflows based on Anthropic patterns.
+Technical leader with 15 years of experience in designing and launching high-scale systems. 
 Expert in microservices and micro-frontend architectures powered by Node.js, React, and Angular. Focused on delivering business value through rigorous architectural oversight, ensuring code integrity and security in AI-assisted environments. Extensive expertise in data management and deploying resilient cloud infrastructure with full CI/CD automation.
-Looking for a challenging role as an AI Engineering Lead or Solutions Architect where I can leverage my expertise to build next-gen AI-integrated products.
+Specialized in AI-Driven Development (AIDD): managing the full product lifecycle via Antigravity / Cursor orchestration and custom agentic workflows based on Anthropic patterns.
+Looking for a challenging role as an AI-Driven Tech Lead or Solutions Architect where I can leverage my expertise to build next-gen AI-integrated products.
 
 #Skills
-AI & LLM: AI-Driven Development (AIDD), AI Orchestration, Antigravity / Cursor, Anthropic patterns, Gemini CLI, AI-agents workflow optimization, AI-assisted Code Review & Final Solution Validation.
-Architecture & Leadership: Solutions Architecture (Microservices, Microfrontends), Technical Roadmap, Team Leadership (2-5 devs), Stakeholder Communication, Technical Grooming.
+AI & LLM: AI-Driven Development (AIDD), AI Orchestration, Prompt Engineering, RAG (Retrieval-Augmented Generation), Antigravity / Cursor, Anthropic patterns, Gemini CLI, AI-agents workflow optimization, AI-assisted Code Review & Final Solution Validation.
+Architecture & Leadership: System Design, Solutions Architecture (Microservices, Microfrontends), API Design, Technical Roadmap, Team Leadership (2-5 devs), Stakeholder Communication, Technical Grooming.
 Frontend: TypeScript, Angular + RxJS, Next.js & React (SSR/SSG), State Management (NgRx, Zustand, TanStack Query), Tailwind CSS, SASS/SCSS, Module Federation (Microfrontends), Web Vitals & Performance Optimization.
 Backend & Databases: Node.js, NestJS, Express.js, PostgreSQL, TypeORM, Firebase.
-Cloud & DevOps: Google Cloud Platform (GCP), Oracle Cloud, Docker, Nginx, GitHub Actions (CI/CD), SonarQube.
+Cloud & DevOps: Google Cloud Platform (GCP), Oracle Cloud, AWS, Kubernetes, Docker, Terraform, Nginx, GitHub Actions (CI/CD), SonarQube.
 Quality & Testing: Unit/Integration/E2E Testing (Jest, Jasmine, Karma), Architectural Supervision, Automated Quality Gates.
 
 #Work Experience
 ##AI-Driven Tech Lead
 ##MCP COOP DAO | June 2025 — Present
 Project Role: Co-founder | Solutions Architect
-Designed and engineered a scalable decentralized ecosystem, integrating a DAO platform, Blockchain protocols, and a network of Telegram Mini Apps. 
+Designed and engineered a scalable decentralized ecosystem — delivering 3 independent production applications — integrating a DAO platform, Blockchain protocols, Telegram Mini Apps, and a React Native mobile app.
 Accelerated full-stack development and drastically reduced Time-to-Market by integrating AI orchestration (Antigravity/Cursor, custom AI workflows) into the engineering pipeline.
 AI-First Engineering: Delivered 90%+ of the entire system logic using custom agentic workflows, achieving unprecedented development density and code consistency.
 Blockchain & Backend: Engineered the platform core in Go (Golang) for blockchain operations and a high-performance backend using NestJS + Prisma + PostgreSQL. Integrated Open API and Firebase for hybrid cloud logic.
