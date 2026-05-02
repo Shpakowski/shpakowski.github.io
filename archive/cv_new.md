@@ -108,6 +108,6 @@ EPAM Systems
 Advanced Software Engineering: Software Development Processes (SDLC), Backend Development (Node.js, Express.js, MongoDB)/UI Architecture Series: Enterprise-level Engineering Excellence (Angular stack core).
 
 #Education
-Bachelor of System Engineering
+Systems Engineer (Specialist Degree in Systems Engineering)
 Belarusian State University of Informatics and Radioelectronics (BSUIR)
 2006 – 2011 | Minsk, Belarus
