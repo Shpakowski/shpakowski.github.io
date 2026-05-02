@@ -1,15 +1,12 @@
-
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../ui/card';
+import { SectionBlock } from '../ui/section-block';
 
 export function ProfileSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="profile" className="mb-12 scroll-mt-12">
-      <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
-        {t('sections.profile')}
-      </h2>
+    <SectionBlock id="profile" title={t('sections.profile')}>
       <Card>
         <CardContent className="p-6">
           <div className="prose prose-sm md:prose-base dark:prose-invert max-w-none">
@@ -25,6 +22,6 @@ export function ProfileSection() {
           </div>
         </CardContent>
       </Card>
-    </section>
+    </SectionBlock>
   );
 }

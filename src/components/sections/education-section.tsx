@@ -1,6 +1,6 @@
-
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../ui/card';
+import { SectionBlock } from '../ui/section-block';
 
 export function EducationSection() {
   const { t } = useTranslation();
@@ -16,10 +16,7 @@ export function EducationSection() {
   return (
     <div className="space-y-12">
       {hasCerts && (
-        <section id="certifications" className="scroll-mt-12">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
-            {t('sections.certifications')}
-          </h2>
+        <SectionBlock id="certifications" title={t('sections.certifications')}>
           <Card>
             <CardContent className="p-6 space-y-6">
               {certs.map((item, index) => (
@@ -30,14 +27,11 @@ export function EducationSection() {
               ))}
             </CardContent>
           </Card>
-        </section>
+        </SectionBlock>
       )}
 
       {hasEdu && (
-        <section id="education" className="scroll-mt-12">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
-            {t('sections.education')}
-          </h2>
+        <SectionBlock id="education" title={t('sections.education')}>
           <Card>
             <CardContent className="p-6 space-y-6">
               {edu.map((item, index) => (
@@ -48,7 +42,7 @@ export function EducationSection() {
               ))}
             </CardContent>
           </Card>
-        </section>
+        </SectionBlock>
       )}
     </div>
   );

@@ -7,13 +7,15 @@ interface AppLayoutProps {
 
 export function AppLayout({ children }: AppLayoutProps) {
   return (
-    <div className="flex min-h-screen flex-col lg:flex-row bg-background text-foreground">
-      <Sidebar />
-      <main className="flex-1 overflow-x-hidden">
-        <div className="mx-auto max-w-4xl p-6 md:p-8 lg:p-12">
-          {children}
-        </div>
-      </main>
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+      <div className="mx-auto max-w-[1200px] flex flex-col lg:flex-row relative">
+        <Sidebar />
+        <main className="flex-1 overflow-x-hidden">
+          <div className="p-6 md:p-8 lg:p-10">
+            {children}
+          </div>
+        </main>
+      </div>
     </div>
   );
 }

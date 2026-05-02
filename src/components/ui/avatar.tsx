@@ -22,7 +22,7 @@ export function Avatar({ src, alt, fallback, className, ...props }: AvatarProps)
         <img
           src={src}
           alt={alt || 'Avatar'}
-          className="aspect-square h-full w-full object-cover"
+          className="aspect-square h-full w-full object-cover object-top"
           onError={() => setError(true)}
         />
       ) : (

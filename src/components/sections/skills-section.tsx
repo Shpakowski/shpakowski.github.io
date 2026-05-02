@@ -1,6 +1,6 @@
-
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../ui/card';
+import { SectionBlock } from '../ui/section-block';
 
 export function SkillsSection() {
   const { t } = useTranslation();
@@ -11,10 +11,7 @@ export function SkillsSection() {
   if (!Array.isArray(skills)) return null;
 
   return (
-    <section id="skills" className="mb-12 scroll-mt-12">
-      <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
-        {t('sections.skills')}
-      </h2>
+    <SectionBlock id="skills" title={t('sections.skills')}>
       <Card>
         <CardContent className="p-6 space-y-4">
           {skills.map((skillGroup, index) => (
@@ -29,6 +26,6 @@ export function SkillsSection() {
           ))}
         </CardContent>
       </Card>
-    </section>
+    </SectionBlock>
   );
 }

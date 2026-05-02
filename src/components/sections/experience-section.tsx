@@ -1,8 +1,7 @@
-
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../ui/card';
-
 import ReactMarkdown from 'react-markdown';
+import { SectionBlock } from '../ui/section-block';
 
 export function ExperienceSection() {
   const { t } = useTranslation();
@@ -12,11 +11,7 @@ export function ExperienceSection() {
   if (!Array.isArray(experiences)) return null;
 
   return (
-    <section id="experience" className="mb-12 scroll-mt-12">
-      <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">
-        {t('sections.experience')}
-      </h2>
-      
+    <SectionBlock id="experience" title={t('sections.experience')}>
       <div className="space-y-6">
         {experiences.map((job) => (
           <Card key={job.id} className="overflow-hidden">
@@ -126,6 +121,6 @@ export function ExperienceSection() {
           </Card>
         ))}
       </div>
-    </section>
+    </SectionBlock>
   );
 }

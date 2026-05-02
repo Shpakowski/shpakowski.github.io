@@ -9,8 +9,9 @@
       "linkedin": "linkedin.com/in/vitali-shpakowski-73256568",
       "github": "github.com/Shpakowski",
       "website": "shpakowski.github.io",
-      "location": "Minsk, Belarus, UTC+3 (Open to relocation)",
-      "languages": "Belarusian/Russian (Native), English (B1+/B2)"
+      "location_city": "Minsk, Belarus, UTC+3",
+      "relocation": "Open to relocation",
+      "languages": "Belarusian, Russian, English (B2)"
     },
     "description": "Technical leader with 15 years of experience in designing and launching high-scale systems.\n\nExpert in microservices and micro-frontend architectures powered by Node.js, React, and Angular. Focused on delivering business value through rigorous architectural oversight, ensuring code integrity and security in AI-assisted environments. Extensive expertise in data management and deploying resilient cloud infrastructure with full CI/CD automation.\n\nSpecialized in AI-Driven Development (AIDD): managing the full product lifecycle via Antigravity / Cursor orchestration and custom agentic workflows based on Anthropic patterns.",
     "target": "Looking for a challenging role as an AI-Driven Tech Lead or Solutions Architect where I can leverage my expertise to build next-gen AI-integrated products."
