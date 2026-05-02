@@ -1,0 +1,171 @@
+{
+  "profile": {
+    "fullName": "Виталий Шпаковский",
+    "headline": "AI-Driven Tech Lead | Senior Software Engineer",
+    "contact": {
+      "phone": "+375-29-881-37-12 | +995-595-113-109",
+      "email": "v.shpakowski@gmail.com",
+      "telegram": "@shpakich_bel",
+      "linkedin": "linkedin.com/in/vitali-shpakowski-73256568",
+      "github": "github.com/Shpakowski",
+      "website": "shpakowski.github.io",
+      "location": "Минск, Беларусь, UTC+3 (Готов к релокации)",
+      "languages": "Белорусский/Русский (Родной), Английский (B1+/B2)"
+    },
+    "description": "Технический лидер с 15-летним опытом проектирования и запуска высоконагруженных систем.\n\nЭксперт в микросервисной и микрофронтенд архитектуре на базе Node.js, React и Angular. Сфокусирован на доставке бизнес-ценности через строгий архитектурный контроль, обеспечивая целостность и безопасность кода в средах с ИИ. Обширный опыт управления данными и развертывания отказоустойчивой облачной инфраструктуры с полной автоматизацией CI/CD.\n\nСпециализируюсь на AI-Driven Development (AIDD): управление полным жизненным циклом продукта через оркестрацию Antigravity / Cursor и кастомные агентские процессы на базе паттернов Anthropic.",
+    "target": "Ищу сложную роль AI-Driven Tech Lead или Solutions Architect, где я смогу применить свой опыт для создания продуктов нового поколения с интеграцией ИИ."
+  },
+  "sections": {
+    "profile": "Профиль",
+    "skills": "Навыки",
+    "experience": "Опыт работы",
+    "certifications": "Сертификаты",
+    "education": "Образование"
+  },
+  "labels": {
+    "present": "По настоящее время",
+    "projectRole": "Роль на проекте",
+    "stack": "Стек"
+  },
+  "skills": [
+    {
+      "category": "ИИ и LLM",
+      "items": "AI-Driven Development (AIDD), Оркестрация ИИ, Промпт-инжиниринг, RAG (Retrieval-Augmented Generation), Antigravity / Cursor, паттерны Anthropic, Gemini CLI, Оптимизация рабочих процессов ИИ-агентов, Код-ревью и валидация решений с помощью ИИ."
+    },
+    {
+      "category": "Архитектура и Лидерство",
+      "items": "Проектирование систем, Архитектура решений (Микросервисы, Микрофронтенды), Проектирование API, Технические дорожные карты, Руководство командой (2-5 чел.), Коммуникация со стейкхолдерами, Технический груминг."
+    },
+    {
+      "category": "Frontend",
+      "items": "TypeScript, Angular + RxJS, Next.js и React (SSR/SSG), Управление состоянием (NgRx, Zustand, TanStack Query), Tailwind CSS, SASS/SCSS, Module Federation (Микрофронтенды), Web Vitals и оптимизация производительности."
+    },
+    {
+      "category": "Backend и Базы Данных",
+      "items": "Node.js, NestJS, Express.js, PostgreSQL, TypeORM, Firebase."
+    },
+    {
+      "category": "Cloud и DevOps",
+      "items": "Google Cloud Platform (GCP), Oracle Cloud, AWS, Kubernetes, Docker, Terraform, Nginx, GitHub Actions (CI/CD), SonarQube."
+    },
+    {
+      "category": "Качество и Тестирование",
+      "items": "Юнит/Интеграционное/E2E Тестирование (Jest, Jasmine, Karma), Архитектурный надзор, Автоматизированные Quality Gates."
+    }
+  ],
+  "experience": [
+    {
+      "id": "mcp-coop-dao",
+      "company": "MCP COOP DAO",
+      "title": "AI-Driven Tech Lead",
+      "dates": "Июнь 2025 — Наст. время",
+      "role": "Tech Lead и Full-Stack разработчик",
+      "description": "Спроектировал и разработал масштабируемую децентрализованную экосистему (3 независимых приложения в продакшене), интегрирующую DAO платформу, блокчейн протоколы, Telegram Mini Apps и мобильное приложение на React Native.\n\nРуководил высокоэффективной командой из 3 специалистов. Ускорил full-stack разработку и кардинально сократил Time-to-Market за счет интеграции оркестрации ИИ (Antigravity/Cursor, кастомные AI процессы) в процесс разработки.",
+      "achievements": [
+        "**AI-First Engineering:** Реализовал 90%+ всей логики системы используя кастомные процессы агентов, достигнув беспрецедентной плотности разработки и согласованности кода.",
+        "**Блокчейн и Backend:** Разработал ядро платформы на Go (Golang) для блокчейн операций и высокопроизводительный бэкенд на NestJS + Prisma + PostgreSQL. Интегрировал Open API и Firebase для гибридной облачной логики.",
+        "**Мультиплатформенная архитектура:** Спроектировал переиспользуемую микрофронтенд систему, которая обеспечивает работу независимых веб-приложений, Telegram Mini Apps (TMA SDK) и мобильных интерфейсов на React Native.",
+        "**Аутентификация и Безопасность:** Внедрил сложный слой идентификации (SSO, Role-based Access, JWT) с бесшовной интеграцией Telegram аккаунтов со стандартными веб-протоколами аутентификации.",
+        "**Мультиоблачный CI/CD:** Выстроил полные пайплайны доставки через GitHub Actions и Docker. Развернул отказоустойчивую инфраструктуру в гибридном облаке (GCP и Oracle Cloud) для обеспечения максимальной доступности."
+      ],
+      "stack": "Go, Next.js (Turbopack), NestJS, React Native, Telegram SDK, Prisma, PostgreSQL, Redis, Firebase, Cloudflare, Docker, GitHub Actions, GCP, Oracle Cloud."
+    },
+    {
+      "id": "epam",
+      "company": "EPAM Systems",
+      "title": "Senior Software Engineer",
+      "dates": "Декабрь 2013 — Декабрь 2024",
+      "location": "Минск, Беларусь (2013–2021) | Тбилиси, Грузия (2021–2024)",
+      "subProjects": [
+        {
+          "title": "SAP Coveo AI Search Platform",
+          "role": "Team Lead и Full-stack разработчик",
+          "description": "Руководил кросс-функциональной командой из 4 человек при разработке корпоративной ИИ-поисковой платформы. Спроектировал и внедрил BFF (Backend for Frontend) архитектуру как высокопроизводительный слой между UI и внешними ИИ-сервисами.",
+          "achievements": [
+            "**Отказоустойчивая ИИ-Оркестрация:** Разработал систему feature-flags с кастомным механизмом фоллбэка на бэкенде для бесшовного переключения между OpenSearch и Coveo AI.",
+            "**BFF и Кэширование:** Разработал middleware слой на NestJS, интегрировав кэширование Redis для оптимизации поисковых запросов и снижения задержек внешних API.",
+            "**Интеграция GenAI:** Внедрил систему генеративных ответов ИИ в поисковый интерфейс.",
+            "**Лидерство и Менеджмент:** Выполнял более 50% обязанностей BA/PM, включая управление стейкхолдерами, приоритизацию бэклога и составление технической документации."
+          ],
+          "stack": "Angular, NestJS, Redis, TypeScript, RxJS, CoveoUI, OpenSearch."
+        },
+        {
+          "title": "Программа лояльности US Bank (MVP)",
+          "role": "Full-stack разработчик (Ключевой)",
+          "description": "Разработал MVP платформы лояльности от начала до конца для интеграции с банковскими системами США через Open API.",
+          "achievements": [
+            "**Гибридная архитектура Next.js:** Внедрил SSR для критичных к SEO промо-страниц и клиентский дашборд на React для администраторов.",
+            "**Безопасность:** Разработал безопасный слой идентификации с использованием OAuth 2.0, OTP и JWT с ролевым доступом.",
+            "**Базы данных:** Спроектировал гибкую схему данных с Prisma ORM и PostgreSQL.",
+            "**DevOps:** Автоматизировал деплой через Docker и GitHub Actions."
+          ],
+          "stack": "Next.js, React, Node.js, Prisma, PostgreSQL, OAuth 2.0, Docker, GitHub Actions."
+        },
+        {
+          "title": "Carrefour — E-commerce Платформа",
+          "role": "Ключевой разработчик и Технический координатор",
+          "description": "Руководил разработкой критически важных фич для высоконагруженного e-commerce магазина (500K+ пользователей/мес).",
+          "achievements": [
+            "**Влияние на продукт:** Разработал фичи с высокой конверсией (продвинутая фильтрация, оптимизированный checkout), улучшив UX и метрики продаж.",
+            "**DevOps и Качество:** Настроил CI/CD пайплайн (Jenkins + SonarQube), значительно снизив проблемы с качеством кода.",
+            "**Управление:** Выступал связующим звеном между бизнес-аналитиками и командой разработчиков.",
+            "**Координация:** Координировал работу подкоманды из 2 разработчиков в рамках Agile/Scrum."
+          ],
+          "stack": "JavaScript (ES6+), jQuery, SASS, Jenkins, SonarQube, Git, Agile."
+        },
+        {
+          "title": "Refinitiv — Финансовая торговая платформа",
+          "role": "Ключевой разработчик",
+          "description": "Выпустил два веб-приложения на Angular, включая крупную миграцию legacy C# десктоп решения в веб. Координировал подкоманду из 3 человек.",
+          "achievements": [
+            "**Трансформация API:** Разработал слой трансформации на Express.js для соединения legacy SOAP-сервисов с современным REST API.",
+            "**Real-time Сервисы:** Спроектировал архитектуру фронтенда для потоковых данных через WebSocket.",
+            "**Производительность:** Сократил время начальной загрузки на 60% (с 5с до 2с) через lazy loading и code-splitting.",
+            "**Тестирование:** Поддерживал стандарты с 80%+ покрытием тестами (Jasmine/Karma)."
+          ],
+          "stack": "Angular, TypeScript, Express.js, RxJS, WebSockets, SOAP, REST API, Jasmine, Karma."
+        },
+        {
+          "title": "MoneySuperMarket — Агрегатор финансовых услуг",
+          "role": "Ключевой разработчик и Супервайзер",
+          "description": "Был ключевым разработчиком высоконагруженной платформы (10M+ пользователей/мес) и супервайзером UI подкоманды из 4 человек. Осуществил миграцию на Angular 2+.",
+          "achievements": [
+            "**Архитектура:** Спроектировал систему микрофронтендов и её интеграцию в Adobe CQ5 (AEM), сократив время деплоя на 40%.",
+            "**Производительность:** Оптимизировал время загрузки с 6.5с до 3.8с (улучшение 42%).",
+            "**Качество:** Разработал библиотеку из 50+ компонентов (BEM) и стандарты код-ревью, снизив баги на 60%.",
+            "**Управление командой:** Фасилитировал планирование спринтов и поддерживал delivery rate 95%."
+          ],
+          "stack": "Angular 2+, AngularJS, TypeScript, RxJS, Redux, NgRx, BEM, SASS, Adobe CQ5, Jenkins."
+        }
+      ]
+    },
+    {
+      "id": "startup-labs",
+      "company": "Startup Labs",
+      "title": "Middle Frontend Разработчик",
+      "dates": "Апрель 2013 — Декабрь 2013",
+      "description": "Разрабатывал высокопроизводительные адаптивные промо-сайты для финансовых сервисов. Внедрял сложные веб-формы с клиентской валидацией. Использовал SASS и mobile-first подход.",
+      "stack": "JavaScript (jQuery), HTML5/CSS3, SASS, WordPress, Twig, Git."
+    },
+    {
+      "id": "axamit-versa",
+      "company": "Axamit Versa",
+      "title": "Junior Frontend Разработчик",
+      "dates": "Апрель 2012 — Март 2013",
+      "description": "Разрабатывал адаптивные интерфейсы и UI компоненты для Adobe AEM (CQ5). Создал библиотеку переиспользуемых компонентов.",
+      "stack": "JavaScript (jQuery), Adobe AEM, HTML5/CSS3, Git."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "EPAM Systems",
+      "details": "Advanced Software Engineering: Software Development Processes (SDLC), Backend Development (Node.js, Express.js, MongoDB) / UI Architecture Series: Enterprise-level Engineering Excellence (Angular stack core)."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Инженер-системотехник",
+      "details": "Белорусский государственный университет информатики и радиоэлектроники (БГУИР) · 2006–2011 · Минск, Беларусь"
+    }
+  ]
+}
