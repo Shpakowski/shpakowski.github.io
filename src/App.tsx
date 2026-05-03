@@ -1,18 +1,23 @@
 import { AppLayout } from './components/layout/app-layout';
-import { ProfileSection } from './components/sections/profile-section';
+import { HeroSection } from './components/sections/hero-section';
 import { SkillsSection } from './components/sections/skills-section';
 import { ExperienceSection } from './components/sections/experience-section';
-import { EducationSection } from './components/sections/education-section';
+import { useTranslation } from 'react-i18next';
 import './config/i18n';
 
 function App() {
+  const { t } = useTranslation();
+
   return (
     <AppLayout>
       <div className="space-y-12">
-        <ProfileSection />
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-center mb-6">
+          {t('profile.headline')}
+        </h1>
+        
+        <HeroSection />
         <SkillsSection />
         <ExperienceSection />
-        <EducationSection />
       </div>
     </AppLayout>
   );

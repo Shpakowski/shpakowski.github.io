@@ -35,15 +35,15 @@
     },
     {
       "category": "Архитектура и Лидерство",
-      "items": "Проектирование систем, Архитектура решений (Микросервисы, Микрофронтенды), Проектирование API, Технические дорожные карты, Руководство командой (2-5 чел.), Коммуникация со стейкхолдерами, Технический груминг."
+      "items": "Проектирование систем, Архитектура решений (Микросервисы, Микрофронтенды), Проектирование API, Технические дорожные карты, Руководство командой (2-5 чел.), Коммуникация со стейкхолдерами, Технический груминг, Agile."
     },
     {
       "category": "Frontend",
-      "items": "TypeScript, Angular + RxJS, Next.js и React (SSR/SSG), Управление состоянием (NgRx, Zustand, TanStack Query), Tailwind CSS, SASS/SCSS, Module Federation (Микрофронтенды), Web Vitals и оптимизация производительности."
+      "items": "TypeScript, Angular + RxJS, Next.js и React (SSR/SSG), React Native, Управление состоянием (NgRx, Zustand, TanStack Query), HTML5/CSS3, Tailwind CSS, SASS/SCSS, BEM, Module Federation (Микрофронтенды), Web Vitals и оптимизация производительности, JavaScript (jQuery)."
     },
     {
       "category": "Backend и Базы Данных",
-      "items": "Node.js, NestJS, Express.js, PostgreSQL, TypeORM, Firebase."
+      "items": "Node.js, NestJS, Express.js, PostgreSQL, TypeORM, Firebase, OAuth 2.0, CoveoUI AI."
     },
     {
       "category": "Cloud и DevOps",
@@ -69,7 +69,7 @@
         "**Аутентификация и Безопасность:** Внедрил сложный слой идентификации (SSO, Role-based Access, JWT) с бесшовной интеграцией Telegram аккаунтов со стандартными веб-протоколами аутентификации.",
         "**Мультиоблачный CI/CD:** Выстроил полные пайплайны доставки через GitHub Actions и Docker. Развернул отказоустойчивую инфраструктуру в гибридном облаке (GCP и Oracle Cloud) для обеспечения максимальной доступности."
       ],
-      "stack": "Go, Next.js (Turbopack), NestJS, React Native, Telegram SDK, Prisma, PostgreSQL, Redis, Firebase, Cloudflare, Docker, GitHub Actions, GCP, Oracle Cloud."
+      "stack": "Next.js & React (SSR/SSG), NestJS, React Native, Telegram SDK, Prisma, PostgreSQL, Redis, Firebase, OAuth 2.0, Go, Cloudflare, Docker, GitHub Actions, GCP, Oracle Cloud."
     },
     {
       "id": "epam",
@@ -88,7 +88,7 @@
             "**Интеграция GenAI:** Внедрил систему генеративных ответов ИИ в поисковый интерфейс.",
             "**Лидерство и Менеджмент:** Выполнял более 50% обязанностей BA/PM, включая управление стейкхолдерами, приоритизацию бэклога и составление технической документации."
           ],
-          "stack": "Angular, NestJS, Redis, TypeScript, RxJS, CoveoUI, OpenSearch."
+          "stack": "Angular, NestJS, Redis, TypeScript, RxJS, CoveoUI AI, OpenSearch, OAuth 2.0."
         },
         {
           "title": "Программа лояльности US Bank (MVP)",
@@ -112,7 +112,7 @@
             "**Управление:** Выступал связующим звеном между бизнес-аналитиками и командой разработчиков.",
             "**Координация:** Координировал работу подкоманды из 2 разработчиков в рамках Agile/Scrum."
           ],
-          "stack": "JavaScript (ES6+), jQuery, SASS, Jenkins, SonarQube, Git, Agile."
+          "stack": "JavaScript (jQuery), SASS, Jenkins, SonarQube, Git, Agile."
         },
         {
           "title": "Refinitiv — Финансовая торговая платформа",
@@ -129,14 +129,14 @@
         {
           "title": "MoneySuperMarket — Агрегатор финансовых услуг",
           "role": "Ключевой разработчик и Супервайзер",
-          "description": "Был ключевым разработчиком высоконагруженной платформы (10M+ пользователей/мес) и супервайзером UI подкоманды из 4 человек. Осуществил миграцию на Angular 2+.",
+          "description": "Был ключевым разработчиком высоконагруженной платформы (10M+ пользователей/мес) и супервайзером UI подкоманды из 4 человек. Осуществил миграцию на Angular.",
           "achievements": [
             "**Архитектура:** Спроектировал систему микрофронтендов и её интеграцию в Adobe CQ5 (AEM), сократив время деплоя на 40%.",
             "**Производительность:** Оптимизировал время загрузки с 6.5с до 3.8с (улучшение 42%).",
             "**Качество:** Разработал библиотеку из 50+ компонентов (BEM) и стандарты код-ревью, снизив баги на 60%.",
             "**Управление командой:** Фасилитировал планирование спринтов и поддерживал delivery rate 95%."
           ],
-          "stack": "Angular 2+, AngularJS, TypeScript, RxJS, Redux, NgRx, BEM, SASS, Adobe CQ5, Jenkins."
+          "stack": "Angular, AngularJS, TypeScript, RxJS, Redux, NgRx, BEM, SASS, Adobe CQ5, Jenkins."
         }
       ]
     },

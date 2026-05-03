@@ -1,126 +1,313 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Card, CardContent } from '../ui/card';
-import ReactMarkdown from 'react-markdown';
-import { SectionBlock } from '../ui/section-block';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 
-export function ExperienceSection() {
+interface SubProject {
+  title: string;
+  role: string;
+  description: string;
+  achievements?: string[];
+  stack: string;
+}
+
+interface ExperienceEntry {
+  id: string;
+  company: string;
+  title: string;
+  dates: string;
+  location?: string;
+  role?: string;
+  description?: string;
+  achievements?: string[];
+  stack?: string;
+  subProjects?: SubProject[];
+}
+
+import { TAB_THEMES } from './skills-section';
+
+function StackPills({ stack }: { stack: string }) {
   const { t } = useTranslation();
+  const skillsList = t('skills', { returnObjects: true }) as { category: string; items: string }[];
   
-  const experiences = t('experience', { returnObjects: true }) as Array<any>;
+  const getThemeForSkill = (skillName: string) => {
+    const lowerSkill = skillName.toLowerCase();
+    
+    for (let i = 0; i < skillsList.length; i++) {
+      const categorySkills = skillsList[i].items.split(',').map(s => s.trim().toLowerCase().replace(/\.$/, ''));
+      
+      // Exact match
+      if (categorySkills.includes(lowerSkill)) return TAB_THEMES[i];
+      
+      // Partial match
+      for (const catSkill of categorySkills) {
+        if (catSkill.length > 2 && (catSkill.includes(lowerSkill) || lowerSkill.includes(catSkill))) {
+          return TAB_THEMES[i];
+        }
+      }
+    }
+    
+    // Fallback dictionary for known terms in experience but not explicitly in skills
+    const fallbackMap: Record<string, number> = {
+      'go': 2, 'redis': 2, 'typeorm': 2, 'stripe': 2, 'rabbitmq': 2,
+      'cloudflare': 3, 'gcp': 3, 'nx': 1, 'vite': 1, 'webpack': 1, 
+      'telegram sdk': 1, 'rxjs': 1
+    };
+    
+    if (fallbackMap[lowerSkill] !== undefined) {
+      return TAB_THEMES[fallbackMap[lowerSkill]];
+    }
 
-  if (!Array.isArray(experiences)) return null;
+    return null; // Fallback to default gray
+  };
+
+  const items = stack.split(',').map(s => s.trim().replace(/\.$/, '')).filter(Boolean);
+  
+  return (
+    <div className="flex flex-wrap gap-1.5 mt-3">
+      {items.map((item) => {
+        const theme = getThemeForSkill(item);
+        
+        if (theme) {
+          return (
+            <motion.span
+              key={item}
+              whileHover={{ scale: 1.05 }}
+              className={`
+                inline-flex items-center px-2.5 py-0.5 rounded-md text-[11px] font-medium
+                border transition-all duration-200 cursor-default
+                ${theme.pill} ${theme.text} ${theme.glow}
+              `}
+            >
+              {item}
+            </motion.span>
+          );
+        }
+        
+        return (
+          <span
+            key={item}
+            className="
+              inline-flex items-center px-2.5 py-0.5 rounded-md text-[11px] font-medium
+              bg-[var(--pill-bg)] text-[var(--muted)] border border-[var(--pill-border)]
+              transition-all duration-200 hover:shadow-sm cursor-default
+            "
+          >
+            {item}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
+function AchievementItem({ text }: { text: string }) {
+  // Parse **bold** markdown
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return (
+    <li className="text-sm text-[var(--muted)] leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-1.5 before:h-1.5 before:rounded-full before:bg-[var(--timeline-dot)]/40">
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <strong key={i} className="font-semibold text-[var(--foreground)]">{part}</strong>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </li>
+  );
+}
+
+function SubProjectCard({ project, index }: { project: SubProject; index: number }) {
+  const [open, setOpen] = useState(false);
 
   return (
-    <SectionBlock id="experience" title={t('sections.experience')}>
-      <div className="space-y-6">
-        {experiences.map((job) => (
-          <Card key={job.id} className="overflow-hidden">
-            <CardContent className="p-6 space-y-4">
-              <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1">
-                <h3 className="text-lg font-bold text-foreground">
-                  {job.title}
-                </h3>
-                <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                  {job.dates}
-                </span>
-              </div>
-              
-              <div>
-                <div className="text-base font-semibold text-primary mb-1">
-                  {job.company}
-                </div>
-                {job.location && (
-                  <div className="text-xs text-muted-foreground mb-2">
-                    {job.location}
-                  </div>
-                )}
-                {job.role && (
-                  <div className="text-sm font-medium text-foreground mb-3 border-l-2 border-primary/40 pl-3 py-0.5 bg-primary/5">
-                    {t('labels.projectRole')}: {job.role}
-                  </div>
-                )}
-              </div>
+    <motion.div
+      initial={{ opacity: 0, x: -8 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: index * 0.08, duration: 0.3 }}
+      className="
+        relative ml-5 pl-5
+        border-l-2 border-[var(--border)]
+      "
+    >
+      <div
+        onClick={() => setOpen(!open)}
+        className="
+          cursor-pointer py-3 group
+          flex items-start justify-between gap-3
+        "
+      >
+        <div className="min-w-0">
+          <h4 className="text-sm font-semibold text-[var(--foreground)] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            {project.title}
+          </h4>
+          <p className="text-xs text-[var(--muted)] mt-0.5">{project.role}</p>
+        </div>
+        <motion.div
+          animate={{ rotate: open ? 180 : 0 }}
+          transition={{ duration: 0.2 }}
+          className="mt-1 shrink-0"
+        >
+          <ChevronDown className="h-4 w-4 text-[var(--muted)]" />
+        </motion.div>
+      </div>
 
-              {job.description && (
-                <div className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground">
-                  {job.description.split('\n').map((paragraph: string, idx: number) => (
-                    paragraph.trim() ? <p key={idx}>{paragraph}</p> : null
-                  ))}
-                </div>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="overflow-hidden"
+          >
+            <p className="text-sm text-[var(--muted)] leading-relaxed mb-3">
+              {project.description}
+            </p>
+            {project.achievements && (
+              <ul className="space-y-2 mb-3">
+                {project.achievements.map((a, i) => (
+                  <AchievementItem key={i} text={a} />
+                ))}
+              </ul>
+            )}
+            <StackPills stack={project.stack} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
+
+function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index: number }) {
+  const [expanded, setExpanded] = useState(index === 0); // First one open by default
+  const { t } = useTranslation();
+
+  const hasSubProjects = entry.subProjects && entry.subProjects.length > 0;
+  const hasDetails = entry.description || (entry.achievements && entry.achievements.length > 0);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.1 + index * 0.1, duration: 0.4 }}
+      className="relative"
+    >
+      {/* Timeline dot */}
+      <div className="absolute left-0 top-[22px] w-3 h-3 rounded-full bg-[var(--card)] border-2 border-[var(--timeline-dot)] z-10" />
+      {/* Timeline line */}
+      {index < 3 && (
+        <div className="absolute left-[5px] top-[34px] bottom-0 w-0.5 bg-[var(--timeline-line)]" />
+      )}
+
+      <div className="ml-7">
+        {/* Company header */}
+        <div
+          onClick={() => setExpanded(!expanded)}
+          className="cursor-pointer flex items-start justify-between gap-3 py-2 group"
+        >
+          <div className="min-w-0">
+            <div className="flex items-baseline gap-2 flex-wrap">
+              <h3 className="text-base font-bold text-[var(--foreground)]">
+                {entry.company}
+              </h3>
+              <span className="text-xs font-mono text-[var(--muted)] whitespace-nowrap">
+                {entry.dates}
+              </span>
+            </div>
+            <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mt-0.5">
+              {entry.title}
+            </p>
+            {entry.location && (
+              <p className="text-xs text-[var(--muted)] mt-0.5">{entry.location}</p>
+            )}
+          </div>
+
+          {(hasSubProjects || hasDetails) && (
+            <motion.div
+              animate={{ rotate: expanded ? 180 : 0 }}
+              transition={{ duration: 0.2 }}
+              className="mt-2 shrink-0"
+            >
+              <ChevronDown className="h-4 w-4 text-[var(--muted)]" />
+            </motion.div>
+          )}
+        </div>
+
+        {/* Expanded content */}
+        <AnimatePresence>
+          {expanded && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="overflow-hidden"
+            >
+              {/* Role badge if present */}
+              {entry.role && (
+                <p className="text-xs text-[var(--muted)] mb-2">
+                  {t('labels.projectRole')}: {entry.role}
+                </p>
               )}
 
-              {job.achievements && (
-                <ul className="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground mt-3">
-                  {job.achievements.map((item: string, idx: number) => (
-                    <li key={idx}>
-                      <ReactMarkdown 
-                        components={{
-                          strong: ({node, ...props}) => <strong className="font-semibold text-foreground" {...props} />
-                        }}
-                      >
-                        {item}
-                      </ReactMarkdown>
-                    </li>
+              {/* Description */}
+              {entry.description && (
+                <p className="text-sm text-[var(--muted)] leading-relaxed mb-3">
+                  {entry.description}
+                </p>
+              )}
+
+              {/* Achievements */}
+              {entry.achievements && entry.achievements.length > 0 && (
+                <ul className="space-y-2 mb-3">
+                  {entry.achievements.map((a, i) => (
+                    <AchievementItem key={i} text={a} />
                   ))}
                 </ul>
               )}
 
-              {job.stack && (
-                <div className="mt-4 pt-3 border-t border-border/50">
-                  <span className="text-xs font-semibold text-foreground mr-2 uppercase tracking-wide">
-                    {t('labels.stack')}:
-                  </span>
-                  <span className="text-sm text-muted-foreground">
-                    {job.stack}
-                  </span>
-                </div>
-              )}
+              {/* Stack */}
+              {entry.stack && <StackPills stack={entry.stack} />}
 
-              {/* Sub Projects (if any) */}
-              {job.subProjects && job.subProjects.length > 0 && (
-                <div className="mt-6 space-y-6 pt-4 border-t border-border/50">
-                  {job.subProjects.map((sub: any, subIdx: number) => (
-                    <div key={subIdx} className="pl-4 border-l border-border/70 relative">
-                      <div className="absolute -left-1.5 top-2 h-3 w-3 rounded-full bg-border" />
-                      
-                      <h4 className="text-md font-bold text-foreground mb-1">
-                        {sub.title}
-                      </h4>
-                      <div className="text-sm font-medium text-foreground mb-2">
-                        {t('labels.projectRole')}: {sub.role}
-                      </div>
-                      
-                      <p className="text-sm text-muted-foreground mb-3">
-                        {sub.description}
-                      </p>
-                      
-                      {sub.achievements && (
-                        <ul className="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground mb-3">
-                          {sub.achievements.map((item: string, idx: number) => (
-                            <li key={idx}>
-                              <ReactMarkdown 
-                                components={{
-                                  strong: ({node, ...props}) => <strong className="font-semibold text-foreground" {...props} />
-                                }}
-                              >
-                                {item}
-                              </ReactMarkdown>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                      
-                      <div className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">{t('labels.stack')}:</strong> {sub.stack}
-                      </div>
-                    </div>
+              {/* Sub-projects (EPAM) */}
+              {hasSubProjects && (
+                <div className="mt-4 space-y-1">
+                  {entry.subProjects!.map((sp, i) => (
+                    <SubProjectCard key={sp.title} project={sp} index={i} />
                   ))}
                 </div>
               )}
-            </CardContent>
-          </Card>
+
+              <div className="h-4" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.div>
+  );
+}
+
+export function ExperienceSection() {
+  const { t } = useTranslation();
+  const experience = t('experience', { returnObjects: true }) as ExperienceEntry[];
+
+  return (
+    <section id="experience-section" className="py-2">
+      {/* Section label */}
+      <div className="flex items-center gap-3 mb-6">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--muted)]">
+          {t('sections.experience')}
+        </h2>
+        <div className="flex-1 h-px bg-[var(--border)]" />
+      </div>
+
+      {/* Timeline */}
+      <div className="relative space-y-6 pl-1">
+        {experience.map((entry, i) => (
+          <ExperienceCard key={entry.id} entry={entry} index={i} />
         ))}
       </div>
-    </SectionBlock>
+    </section>
   );
 }

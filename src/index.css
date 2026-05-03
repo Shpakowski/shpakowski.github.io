@@ -1,31 +1,77 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+/* Class-based dark mode (ThemeToggle adds .dark to <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-primary: #3b82f6;
   --color-primary-dark: #60a5fa;
+
+  /* Skill category accent colors */
+  --color-skill-ai: #8B5CF6;
+  --color-skill-lead: #F59E0B;
+  --color-skill-frontend: #3B82F6;
+  --color-skill-backend: #10B981;
+  --color-skill-devops: #F43F5E;
 }
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #08060d;
-    --muted: #6b6375;
-    --border: #e5e4e7;
+    --background: #FAFAFA;
+    --foreground: #111111;
+    --muted: #6b7280;
+    --border: #E5E7EB;
+    --card: #FFFFFF;
+    --card-hover: #F9FAFB;
+
+    /* Hero metric card backgrounds */
+    --metric-bg: #F3F4F6;
+    --metric-border: #E5E7EB;
+
+    /* Experience timeline */
+    --timeline-line: #D1D5DB;
+    --timeline-dot: #3B82F6;
+
+    /* Skill pill */
+    --pill-bg: #F3F4F6;
+    --pill-border: #E5E7EB;
+
+    /* CTA banner */
+    --cta-bg: #EFF6FF;
+    --cta-border: #BFDBFE;
+    --cta-text: #1E40AF;
   }
 
   .dark {
-    --background: #16171d;
-    --foreground: #f3f4f6;
-    --muted: #9ca3af;
-    --border: #2e303a;
+    --background: #0F0F12;
+    --foreground: #F3F4F6;
+    --muted: #9CA3AF;
+    --border: #1F2937;
+    --card: #18181F;
+    --card-hover: #1F1F28;
+
+    --metric-bg: #1A1A24;
+    --metric-border: #2A2A38;
+
+    --timeline-line: #374151;
+    --timeline-dot: #60A5FA;
+
+    --pill-bg: #1A1A24;
+    --pill-border: #2A2A38;
+
+    --cta-bg: #172554;
+    --cta-border: #1E3A5F;
+    --cta-text: #93C5FD;
   }
 
   body {
     @apply bg-[var(--background)] text-[var(--foreground)] antialiased transition-colors duration-300;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.011em;
   }
 
   code, pre, .font-mono {
-    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 }

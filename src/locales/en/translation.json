@@ -6,15 +6,39 @@
       "phone": "+375-29-881-37-12 | +995-595-113-109",
       "email": "v.shpakowski@gmail.com",
       "telegram": "@shpakich_bel",
-      "linkedin": "linkedin.com/in/vitali-shpakowski-73256568",
-      "github": "github.com/Shpakowski",
+      "linkedin": "vitali-shpakowski-73256568",
+      "github": "Shpakowski",
       "website": "shpakowski.github.io",
       "location_city": "Minsk, Belarus, UTC+3",
       "relocation": "Open to relocation",
       "languages": "Belarusian, Russian, English (B2)"
     },
-    "description": "Technical leader with 15 years of experience in designing and launching high-scale systems.\n\nExpert in microservices and micro-frontend architectures powered by Node.js, React, and Angular. Focused on delivering business value through rigorous architectural oversight, ensuring code integrity and security in AI-assisted environments. Extensive expertise in data management and deploying resilient cloud infrastructure with full CI/CD automation.\n\nSpecialized in AI-Driven Development (AIDD): managing the full product lifecycle via Antigravity / Cursor orchestration and custom agentic workflows based on Anthropic patterns.",
-    "target": "Looking for a challenging role as an AI-Driven Tech Lead or Solutions Architect where I can leverage my expertise to build next-gen AI-integrated products."
+    "description": "Technical leader with <strong class=\"font-semibold text-foreground\">15 years of experience</strong> in designing and launching <strong class=\"font-semibold text-foreground\">high-scale systems</strong>.\n\nExpert in <strong class=\"font-semibold text-foreground\">microservices and micro-frontend architectures</strong> powered by <strong class=\"font-semibold text-foreground\">React, Angular and Node.js</strong>. Focused on delivering business value through rigorous architectural oversight, ensuring code integrity and security in AI-assisted environments. Extensive expertise in data management and deploying resilient cloud infrastructure with <strong class=\"font-semibold text-foreground\">full CI/CD automation</strong>.\n\nSpecialized in <strong class=\"font-semibold text-foreground\">AI-Driven Development (AIDD)</strong>: managing the full product lifecycle via <strong class=\"font-semibold text-foreground\">Antigravity / Cursor orchestration</strong> and custom agentic workflows based on <strong class=\"font-semibold text-foreground\">Anthropic patterns</strong>.",
+    "summary": "Technical leader with <strong class=\"font-semibold text-[var(--foreground)]\">15 years of experience</strong> in designing <strong class=\"font-semibold text-[var(--foreground)]\">high-scale systems</strong>. Expert in <strong class=\"font-semibold text-[var(--foreground)]\">microservices, micro-frontends</strong>, and <strong class=\"font-semibold text-[var(--foreground)]\">AI-Driven Development</strong>.",
+    "highlights": [
+      {
+        "metric": "15+",
+        "title": "Years Experience",
+        "description": "Designing & launching high-scale enterprise systems."
+      },
+      {
+        "metric": "AIDD",
+        "title": "AI-Driven Dev",
+        "description": "Agentic workflows, Cursor & Antigravity orchestration."
+      },
+      {
+        "metric": "E2E",
+        "title": "Product Delivery",
+        "description": "End-to-end product delivery: frontend, backend, mobile & infra."
+      },
+      {
+        "metric": "CI/CD",
+        "title": "Cloud Ops",
+        "description": "Resilient infrastructure and full delivery automation."
+      }
+    ],
+    "target": "Looking for a challenging role as an AI-Driven Tech Lead or Solutions Architect where I can leverage my expertise to build next-gen AI-integrated products.",
+    "available": "OPEN TO HIRE"
   },
   "sections": {
     "profile": "Profile",
@@ -30,28 +54,24 @@
   },
   "skills": [
     {
-      "category": "AI & LLM",
-      "items": "AI-Driven Development (AIDD), AI Orchestration, Prompt Engineering, RAG (Retrieval-Augmented Generation), Antigravity / Cursor, Anthropic patterns, Gemini CLI, AI-agents workflow optimization, AI-assisted Code Review & Final Solution Validation."
-    },
-    {
-      "category": "Architecture & Leadership",
-      "items": "System Design, Solutions Architecture (Microservices, Microfrontends), API Design, Technical Roadmap, Team Leadership (2–5 devs), Stakeholder Communication, Technical Grooming."
+      "category": "AI-Driven Development",
+      "items": "Antigravity, Cursor, Prompt Engineering, Agentic Workflows & Orchestration, MCP, RAG, Anthropic Patterns, Gemini CLI, Automated Code Review & Validation."
     },
     {
       "category": "Frontend",
-      "items": "TypeScript, Angular + RxJS, Next.js & React (SSR/SSG), State Management (NgRx, Zustand, TanStack Query), Tailwind CSS, SASS/SCSS, Module Federation (Microfrontends), Web Vitals & Performance Optimization."
+      "items": "TypeScript, Angular + RxJS, Next.js & React (SSR/SSG), React Native, Zustand, NgRx, TanStack Query, HTML5/CSS3, Tailwind CSS, SASS/SCSS, BEM, Module Federation (Microfrontends), Web Vitals & Performance Optimization, Unit Testing, JavaScript (jQuery)"
     },
     {
-      "category": "Backend & Databases",
-      "items": "Node.js, NestJS, Express.js, PostgreSQL, TypeORM, Firebase."
+      "category": "Backend",
+      "items": "Node.js, NestJS, Express.js, PostgreSQL, Prisma ORM, MongoDB, Firebase, OAuth 2.0, CoveoUI AI, Unit Testing, Integration Testing."
     },
     {
-      "category": "Cloud & DevOps",
-      "items": "Google Cloud Platform (GCP), Oracle Cloud, AWS, Kubernetes, Docker, Terraform, Nginx, GitHub Actions (CI/CD), SonarQube."
+      "category": "DevOps",
+      "items": "Google Cloud Platform (GCP), Oracle Cloud, AWS, Terraform, Docker, Nginx, Kubernetes, GitHub Actions, SonarQube."
     },
     {
-      "category": "Quality & Testing",
-      "items": "Unit/Integration/E2E Testing (Jest, Jasmine, Karma), Architectural Supervision, Automated Quality Gates."
+      "category": "Tech Lead & Architecture",
+      "items": "System Design & Architecture Patterns, DDD, Event-Driven, CQRS, FSD, Hexagonal, DRY, SOLID, KISS, Microservices & Microfrontend Architecture, API Design & Contracts, Technical Roadmap & Decision Records (ADR), Team Leadership (2–5 devs), Code Review Culture, Stakeholder Communication, Technical Grooming, Agile."
     }
   ],
   "experience": [
@@ -69,7 +89,7 @@
         "**Identity & Security:** Implemented a complex identity layer (SSO, Role-based Access, JWT) featuring seamless integration between Telegram accounts and standard web authentication protocols.",
         "**Multi-cloud CI/CD:** Orchestrated full delivery pipelines using GitHub Actions and Docker containerization. Deployed a resilient infrastructure across a hybrid cloud environment (Google Cloud Platform and Oracle Cloud) for maximum availability."
       ],
-      "stack": "Go, Next.js (Turbopack), NestJS, React Native, Telegram SDK, Prisma, PostgreSQL, Redis, Firebase, Cloudflare, Docker, GitHub Actions, GCP, Oracle Cloud."
+      "stack": "Next.js & React (SSR/SSG), NestJS, React Native, Telegram SDK, Prisma, PostgreSQL, Redis, Firebase, OAuth 2.0, Go, Cloudflare, Docker, GitHub Actions, GCP, Oracle Cloud."
     },
     {
       "id": "epam",
@@ -88,7 +108,7 @@
             "**GenAI Integration:** Integrated a generative AI response system into the search interface, ensuring robust delivery of dynamic, AI-generated content.",
             "**Leadership & Management:** Performed over 50% of BA/PM duties, including stakeholder management, backlog prioritization, and comprehensive technical documentation."
           ],
-          "stack": "Angular, NestJS, Redis, TypeScript, RxJS, CoveoUI, OpenSearch."
+          "stack": "Angular, NestJS, Redis, TypeScript, RxJS, CoveoUI AI, OpenSearch, OAuth 2.0."
         },
         {
           "title": "US Bank Loyalty Program (MVP)",
@@ -112,7 +132,7 @@
             "**Stakeholder Management:** Acted as a technical bridge between business analysts and the dev team, managing backlog prioritization, technical grooming, and requirement analysis.",
             "**Team Coordination:** Coordinated and held full responsibility for a sub-team of 2 developers, ensuring rigorous code standards and consistent delivery within an Agile/Scrum framework."
           ],
-          "stack": "JavaScript (ES6+), jQuery, SASS, Jenkins, SonarQube, Git, Agile."
+          "stack": "JavaScript (jQuery), SASS, Jenkins, SonarQube, Git, Agile."
         },
         {
           "title": "Refinitiv — Financial Trading Platform",
@@ -129,14 +149,14 @@
         {
           "title": "MoneySuperMarket — Financial Services Aggregator",
           "role": "Key Developer & Supervisor",
-          "description": "Acted as a Key Developer for a high-traffic platform (10M+ users/mo) and Supervisor for a dedicated UI sub-team of 4. Engineered the core system using AngularJS and successfully orchestrated a strategic migration to Angular 2+ to enhance scalability.",
+          "description": "Acted as a Key Developer for a high-traffic platform (10M+ users/mo) and Supervisor for a dedicated UI sub-team of 4. Engineered the core system using AngularJS and successfully orchestrated a strategic migration to Angular to enhance scalability.",
           "achievements": [
             "**Architecture:** Designed a micro-frontend system and its seamless integration into the Adobe CQ5 (AEM) enterprise platform, reducing deployment time by 40%.",
             "**Performance:** Optimized initial load time from 6.5s to 3.8s (42% improvement) through advanced asset tuning and performance optimization.",
             "**Quality Control:** Developed a library of 50+ reusable components using BEM and established code review standards for the UI team, decreasing production bugs by 60%.",
             "**Team Supervision:** Facilitated technical grooming and sprint planning for the UI group, maintaining a 95% sprint delivery rate in an Agile/Scrum environment."
           ],
-          "stack": "Angular 2+, AngularJS, TypeScript, RxJS, Redux, NgRx, BEM, SASS, Adobe CQ5, Jenkins."
+          "stack": "Angular, AngularJS, TypeScript, RxJS, Redux, NgRx, BEM, SASS, Adobe CQ5, Jenkins."
         }
       ]
     },
