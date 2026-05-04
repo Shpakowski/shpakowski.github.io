@@ -28,32 +28,6 @@
     "projectRole": "Роль на проекте",
     "stack": "Стек"
   },
-  "skills": [
-    {
-      "category": "ИИ и LLM",
-      "items": "AI-Driven Development (AIDD), Оркестрация ИИ, Промпт-инжиниринг, RAG (Retrieval-Augmented Generation), Antigravity / Cursor, паттерны Anthropic, Gemini CLI, Оптимизация рабочих процессов ИИ-агентов, Код-ревью и валидация решений с помощью ИИ."
-    },
-    {
-      "category": "Архитектура и Лидерство",
-      "items": "Проектирование систем, Архитектура решений (Микросервисы, Микрофронтенды), Проектирование API, Технические дорожные карты, Руководство командой (2-5 чел.), Коммуникация со стейкхолдерами, Технический груминг, Agile."
-    },
-    {
-      "category": "Frontend",
-      "items": "TypeScript, Angular + RxJS, Next.js и React (SSR/SSG), React Native, Управление состоянием (NgRx, Zustand, TanStack Query), HTML5/CSS3, Tailwind CSS, SASS/SCSS, BEM, Module Federation (Микрофронтенды), Web Vitals и оптимизация производительности, JavaScript (jQuery)."
-    },
-    {
-      "category": "Backend и Базы Данных",
-      "items": "Node.js, NestJS, Express.js, PostgreSQL, TypeORM, Firebase, OAuth 2.0, CoveoUI AI."
-    },
-    {
-      "category": "Cloud и DevOps",
-      "items": "Google Cloud Platform (GCP), Oracle Cloud, AWS, Kubernetes, Docker, Terraform, Nginx, GitHub Actions (CI/CD), SonarQube."
-    },
-    {
-      "category": "Качество и Тестирование",
-      "items": "Юнит/Интеграционное/E2E Тестирование (Jest, Jasmine, Karma), Архитектурный надзор, Автоматизированные Quality Gates."
-    }
-  ],
   "experience": [
     {
       "id": "mcp-coop-dao",

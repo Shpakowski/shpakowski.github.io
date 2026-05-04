@@ -52,28 +52,6 @@
     "projectRole": "Project Role",
     "stack": "Stack"
   },
-  "skills": [
-    {
-      "category": "AI-Driven Development",
-      "items": "Antigravity, Cursor, Prompt Engineering, Agentic Workflows & Orchestration, MCP, RAG, Anthropic Patterns, Gemini CLI, Automated Code Review & Validation."
-    },
-    {
-      "category": "Frontend",
-      "items": "TypeScript, Angular + RxJS, Next.js & React (SSR/SSG), React Native, Zustand, NgRx, TanStack Query, HTML5/CSS3, Tailwind CSS, SASS/SCSS, BEM, Module Federation (Microfrontends), Web Vitals & Performance Optimization, Unit Testing, JavaScript (jQuery)"
-    },
-    {
-      "category": "Backend",
-      "items": "Node.js, NestJS, Express.js, PostgreSQL, Prisma ORM, MongoDB, Firebase, OAuth 2.0, CoveoUI AI, Unit Testing, Integration Testing."
-    },
-    {
-      "category": "DevOps",
-      "items": "Google Cloud Platform (GCP), Oracle Cloud, AWS, Terraform, Docker, Nginx, Kubernetes, GitHub Actions, SonarQube."
-    },
-    {
-      "category": "Tech Lead & Architecture",
-      "items": "System Design & Architecture Patterns, DDD, Event-Driven, CQRS, FSD, Hexagonal, DRY, SOLID, KISS, Microservices & Microfrontend Architecture, API Design & Contracts, Technical Roadmap & Decision Records (ADR), Team Leadership (2–5 devs), Code Review Culture, Stakeholder Communication, Technical Grooming, Agile."
-    }
-  ],
   "experience": [
     {
       "id": "mcp-coop-dao",

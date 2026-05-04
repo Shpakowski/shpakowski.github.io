@@ -24,25 +24,22 @@ interface ExperienceEntry {
   subProjects?: SubProject[];
 }
 
-import { TAB_THEMES } from './skills-section';
+import { SKILLS_CONFIG } from '../../config/skills.config';
 
 function StackPills({ stack }: { stack: string }) {
-  const { t } = useTranslation();
-  const skillsList = t('skills', { returnObjects: true }) as { category: string; items: string }[];
-  
   const getThemeForSkill = (skillName: string) => {
     const lowerSkill = skillName.toLowerCase();
     
-    for (let i = 0; i < skillsList.length; i++) {
-      const categorySkills = skillsList[i].items.split(',').map(s => s.trim().toLowerCase().replace(/\.$/, ''));
+    for (let i = 0; i < SKILLS_CONFIG.length; i++) {
+      const categorySkills = SKILLS_CONFIG[i].items.map(s => s.toLowerCase());
       
       // Exact match
-      if (categorySkills.includes(lowerSkill)) return TAB_THEMES[i];
+      if (categorySkills.includes(lowerSkill)) return SKILLS_CONFIG[i].theme;
       
       // Partial match
       for (const catSkill of categorySkills) {
         if (catSkill.length > 2 && (catSkill.includes(lowerSkill) || lowerSkill.includes(catSkill))) {
-          return TAB_THEMES[i];
+          return SKILLS_CONFIG[i].theme;
         }
       }
     }
@@ -55,7 +52,7 @@ function StackPills({ stack }: { stack: string }) {
     };
     
     if (fallbackMap[lowerSkill] !== undefined) {
-      return TAB_THEMES[fallbackMap[lowerSkill]];
+      return SKILLS_CONFIG[fallbackMap[lowerSkill]].theme;
     }
 
     return null; // Fallback to default gray
