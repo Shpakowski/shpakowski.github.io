@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
@@ -114,8 +114,17 @@ function AchievementItem({ text }: { text: string }) {
   );
 }
 
-function SubProjectCard({ project, index }: { project: SubProject; index: number }) {
+function SubProjectCard({ project, index, forceOpenSignal }: { project: SubProject; index: number; forceOpenSignal: number }) {
   const [open, setOpen] = useState(false);
+
+  const [prevSignal, setPrevSignal] = useState(forceOpenSignal);
+
+  if (forceOpenSignal !== prevSignal) {
+    setPrevSignal(forceOpenSignal);
+    if (forceOpenSignal > 0) {
+      setOpen(true);
+    }
+  }
 
   return (
     <motion.div
@@ -145,7 +154,7 @@ function SubProjectCard({ project, index }: { project: SubProject; index: number
           transition={{ duration: 0.2 }}
           className="mt-1 shrink-0"
         >
-          <ChevronDown className="h-4 w-4 text-[var(--muted)]" />
+          <ChevronDown className="h-6 w-6 text-[var(--timeline-dot)]" />
         </motion.div>
       </div>
 
@@ -177,30 +186,66 @@ function SubProjectCard({ project, index }: { project: SubProject; index: number
 }
 
 function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index: number }) {
-  const [expanded, setExpanded] = useState(index === 0); // First one open by default
+  const [expanded, setExpanded] = useState(false); // All closed by default
+  const [forceOpenSignal, setForceOpenSignal] = useState(0);
   const { t } = useTranslation();
 
   const hasSubProjects = entry.subProjects && entry.subProjects.length > 0;
   const hasDetails = entry.description || (entry.achievements && entry.achievements.length > 0);
 
+  useEffect(() => {
+    const handleOpenExperience = (e: Event) => {
+      const customEvent = e as CustomEvent<{ index: number, expandSubProjects?: boolean }>;
+      if (customEvent.detail.index === index) {
+        setExpanded(true);
+        if (customEvent.detail.expandSubProjects) {
+          setForceOpenSignal(prev => prev + 1);
+        }
+        // Wait for accordion animations to settle before scrolling
+        setTimeout(() => {
+          const el = document.getElementById(`experience-${index}`);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 320);
+      } else {
+        setExpanded(false);
+      }
+    };
+    window.addEventListener('open-experience', handleOpenExperience);
+    return () => window.removeEventListener('open-experience', handleOpenExperience);
+  }, [index]);
+
+  const handleToggle = () => {
+    if (!expanded) {
+      const event = new CustomEvent('open-experience', { detail: { index } });
+      window.dispatchEvent(event);
+    } else {
+      setExpanded(false);
+      const event = new CustomEvent('open-experience', { detail: { index: -1 } });
+      window.dispatchEvent(event);
+    }
+  };
+
   return (
     <motion.div
+      id={`experience-${index}`}
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 + index * 0.1, duration: 0.4 }}
-      className="relative"
+      className="relative scroll-mt-24"
     >
       {/* Timeline dot */}
-      <div className="absolute left-0 top-[22px] w-3 h-3 rounded-full bg-[var(--card)] border-2 border-[var(--timeline-dot)] z-10" />
+      <div className="absolute left-0 top-[15px] w-3 h-3 rounded-full bg-[var(--card)] border-2 border-[var(--timeline-dot)] z-10" />
       {/* Timeline line */}
       {index < 3 && (
-        <div className="absolute left-[5px] top-[34px] bottom-0 w-0.5 bg-[var(--timeline-line)]" />
+        <div className="absolute left-[5px] top-[27px] bottom-0 w-0.5 bg-[var(--timeline-line)]" />
       )}
 
       <div className="ml-7">
         {/* Company header */}
         <div
-          onClick={() => setExpanded(!expanded)}
+          onClick={handleToggle}
           className="cursor-pointer flex items-start justify-between gap-3 py-2 group"
         >
           <div className="min-w-0">
@@ -226,7 +271,7 @@ function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index: numbe
               transition={{ duration: 0.2 }}
               className="mt-2 shrink-0"
             >
-              <ChevronDown className="h-4 w-4 text-[var(--muted)]" />
+              <ChevronDown className="h-6 w-6 text-[var(--timeline-dot)]" />
             </motion.div>
           )}
         </div>
@@ -271,7 +316,7 @@ function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index: numbe
               {hasSubProjects && (
                 <div className="mt-4 space-y-1">
                   {entry.subProjects!.map((sp, i) => (
-                    <SubProjectCard key={sp.title} project={sp} index={i} />
+                    <SubProjectCard key={sp.title} project={sp} index={i} forceOpenSignal={forceOpenSignal} />
                   ))}
                 </div>
               )}
