@@ -18,7 +18,7 @@ export interface SkillCategoryConfig {
 export const SKILLS_CONFIG: SkillCategoryConfig[] = [
   {
     id: 'ai-driven',
-    name: 'AI-Driven',
+    name: 'AI-Driven Development',
     icon: BrainCircuit,
     theme: {
       bg: 'bg-rose-500/10 dark:bg-rose-500/15',

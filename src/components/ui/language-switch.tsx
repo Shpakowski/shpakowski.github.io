@@ -1,6 +1,6 @@
 
 import { useTranslation } from 'react-i18next';
-import { cn } from '../../utils/cn';
+import { cn } from '@/utils';
 
 export function LanguageSwitch() {
   const { i18n } = useTranslation();

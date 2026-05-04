@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { SKILLS_CONFIG } from '../../config/skills.config';
+import { SKILLS_CONFIG } from '@/config';
+import { SectionHeader } from '@/components/ui';
 
 export function SkillsSection() {
   const { t } = useTranslation();
@@ -13,17 +14,13 @@ export function SkillsSection() {
 
   return (
     <section id="skills-section" className="py-2">
-      {/* Section label */}
-      <div className="flex items-center gap-3 mb-6">
-        <h2 className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--muted)]">
-          {t('sections.skills')}
-        </h2>
-        <div className="flex-1 h-px bg-[var(--border)]" />
-      </div>
+      <SectionHeader title={t('sections.skills')} />
 
       {/* Tab bar — horizontal scrollable */}
+      {/* 🎓 React Trend: A11y (Accessibility). Для компонентов типа "вкладки" обязательно указываем 
+          role="tablist" и role="tab", чтобы скринридеры понимали навигационную структуру интерфейса. */}
       <div className="relative mb-6">
-        <div className="flex gap-1.5 overflow-x-auto scrollbar-none pb-1 -mx-1 px-1">
+        <div role="tablist" className="flex gap-1.5 overflow-x-auto scrollbar-none pb-1 -mx-1 px-1">
           {SKILLS_CONFIG.map((category, index) => {
             const isActive = index === activeTab;
             const Icon = category.icon;
@@ -32,6 +29,9 @@ export function SkillsSection() {
             return (
               <button
                 key={category.id}
+                role="tab"
+                aria-selected={isActive}
+                aria-controls={`panel-${category.id}`}
                 onClick={() => setActiveTab(index)}
                 className={`
                   relative flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium
@@ -61,6 +61,8 @@ export function SkillsSection() {
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}
+          id={`panel-${activeCategory.id}`}
+          role="tabpanel"
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}

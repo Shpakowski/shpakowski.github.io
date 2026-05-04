@@ -1,6 +1,6 @@
 import { Sidebar } from './sidebar';
-import { ThemeToggle } from '../ui/theme-toggle';
-import { LanguageSwitch } from '../ui/language-switch';
+import { ThemeToggle } from '@/components/ui';
+import { LanguageSwitch } from '@/components/ui';
 
 
 interface AppLayoutProps {
