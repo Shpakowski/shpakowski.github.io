@@ -112,7 +112,7 @@ export function Sidebar() {
                 <div
                   className={`shrink-0 h-[2px] transition-all duration-300 ease-out rounded-full ${isActive
                     ? 'w-6 bg-[var(--color-primary)]'
-                    : 'w-3 bg-[var(--muted)] group-hover:w-8 group-hover:bg-[var(--color-primary)]'
+                    : 'w-3 bg-[var(--muted)] group-hover:w-6 group-hover:bg-[var(--color-primary)]'
                     }`}
                 />
                 <span

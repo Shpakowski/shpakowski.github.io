@@ -115,7 +115,7 @@ function AchievementItem({ text }: { text: string }) {
 }
 
 function SubProjectCard({ project, index, forceOpenSignal }: { project: SubProject; index: number; forceOpenSignal: number }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(forceOpenSignal > 0);
 
   const [prevSignal, setPrevSignal] = useState(forceOpenSignal);
 
@@ -200,6 +200,8 @@ function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index: numbe
         setExpanded(true);
         if (customEvent.detail.expandSubProjects) {
           setForceOpenSignal(prev => prev + 1);
+        } else {
+          setForceOpenSignal(0);
         }
         // Wait for accordion animations to settle before scrolling
         setTimeout(() => {
@@ -210,6 +212,7 @@ function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index: numbe
         }, 320);
       } else {
         setExpanded(false);
+        setForceOpenSignal(0);
       }
     };
     window.addEventListener('open-experience', handleOpenExperience);
