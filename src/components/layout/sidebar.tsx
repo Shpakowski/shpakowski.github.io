@@ -21,11 +21,10 @@ export function Sidebar({}: SidebarProps) {
         <Avatar 
           src={avatarImage} 
           alt={t('profile.fullName')}
-          className="h-[200px] w-[200px] shadow-md ring-2 ring-primary/20"
+          className="h-[180px] w-[180px] shadow-md ring-2 ring-primary/20"
         />
         <div>
           <h1 className="text-2xl font-bold tracking-tight">{t('profile.fullName')}</h1>
-          <p className="text-sm text-muted-foreground mt-1 font-medium">{t('profile.headline')}</p>
         </div>
         
         {/* Languages moved higher */}
