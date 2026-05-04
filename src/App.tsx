@@ -11,7 +11,7 @@ function App() {
   return (
     <AppLayout>
       <div className="space-y-12">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-center mb-6">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-light tracking-tight text-center mb-6">
           {t('profile.headline')}
         </h1>
         
