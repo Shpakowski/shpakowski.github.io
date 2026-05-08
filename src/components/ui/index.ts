@@ -3,6 +3,7 @@ export * from './animated-metric';
 export * from './avatar';
 export * from './button';
 export * from './contact-item';
+export * from './hire-me-banner';
 export * from './icons';
 export * from './language-switch';
 export * from './section-header';

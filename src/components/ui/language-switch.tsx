@@ -30,7 +30,7 @@ export function LanguageSwitch() {
         )}
       >
         {currentLanguage === 'en' ? (
-          <img src="https://flagcdn.com/us.svg" alt="EN" className="h-full w-full object-cover" />
+          <img src="https://flagcdn.com/gb.svg" alt="EN" className="h-full w-full object-cover" />
         ) : (
           <img src="https://flagcdn.com/ru.svg" alt="RU" className="h-full w-full object-cover" />
         )}

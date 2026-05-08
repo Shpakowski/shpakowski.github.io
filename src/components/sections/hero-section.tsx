@@ -43,28 +43,11 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-sm leading-relaxed text-[var(--muted)] max-w-2xl mb-6"
+        className="text-sm leading-relaxed text-[var(--muted)] max-w-2xl"
         dangerouslySetInnerHTML={{ __html: t('profile.summary') }}
       />
 
-      {/* CTA Banner */}
-      <motion.div
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 0.4 }}
-        className="
-          flex items-center gap-3 p-4 rounded-xl
-          bg-[var(--cta-bg)] border border-[var(--cta-border)]
-        "
-      >
-        <span className="relative flex h-2.5 w-2.5 shrink-0">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
-        </span>
-        <p className="text-sm font-medium text-[var(--cta-text)]">
-          {t('profile.target')}
-        </p>
-      </motion.div>
+
     </section>
   );
 }
