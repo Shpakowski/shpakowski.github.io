@@ -43,9 +43,24 @@
   "sections": {
     "profile": "Profile",
     "skills": "Skills",
+    "projects": "My Projects",
     "experience": "Work Experience",
     "certifications": "Certifications",
     "education": "Education"
+  },
+  "projects": {
+    "mcpCoopDao": {
+      "name": "MCP COOP DAO",
+      "description": "A web platform for engineering cooperation on product development using the AIDD approach. It provides an environment for collective development and coordination within a single ecosystem."
+    },
+    "unbogi": {
+      "name": "UNBOGI",
+      "description": "A mobile application and Telegram Mini App for gift exchange via QR codes or promo codes. It enables fast transfer and usage of digital gifts and bonuses."
+    },
+    "taskManager": {
+      "name": "TASK MANAGER",
+      "description": "A compact micro-frontend for task management, functioning as a Telegram Mini App and integrated web module. It supports ToDo lists and Kanban boards, is configurable for teams, and works with a Telegram bot."
+    }
   },
   "labels": {
     "present": "Present",

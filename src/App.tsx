@@ -1,6 +1,7 @@
 import { AppLayout } from './components/layout/app-layout';
 import { HeroSection } from './components/sections/hero-section';
 import { SkillsSection } from './components/sections/skills-section';
+import { ProjectsSection } from './components/sections/projects-section';
 import { ExperienceSection } from './components/sections/experience-section';
 import { LayoutProvider } from './context/LayoutContext';
 import { useTranslation } from 'react-i18next';
@@ -22,6 +23,7 @@ function App() {
         
         <HeroSection />
         <SkillsSection />
+        <ProjectsSection />
         <ExperienceSection />
         </div>
       </AppLayout>
