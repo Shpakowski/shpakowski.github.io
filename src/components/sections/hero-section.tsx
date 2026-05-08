@@ -19,19 +19,19 @@ export function HeroSection() {
             transition={{ delay: 0.15 + i * 0.1, duration: 0.4 }}
             className="
               group relative p-5 rounded-xl
-              bg-[var(--card)] border border-[var(--border)]
+              bg-card border border-border
               hover:border-blue-400/40 dark:hover:border-blue-400/30
               hover:shadow-[0_2px_20px_rgba(59,130,246,0.08)]
               transition-all duration-300
             "
           >
-            <div className="text-3xl font-bold tracking-tight text-[var(--foreground)] mb-1">
+            <div className="text-3xl font-bold tracking-tight text-foreground mb-1">
               <AnimatedMetric value={h.metric} delay={0.3 + i * 0.15} />
             </div>
-            <div className="text-[12px] font-bold uppercase tracking-wider text-[var(--foreground)] opacity-90 mb-2 whitespace-nowrap">
+            <div className="text-[12px] font-bold uppercase tracking-wider text-foreground opacity-90 mb-2 whitespace-nowrap">
               {h.title}
             </div>
-            <div className="text-[13px] text-[var(--muted)] leading-relaxed group-hover:text-[var(--foreground)] transition-colors duration-300">
+            <div className="text-[13px] text-muted leading-relaxed group-hover:text-foreground transition-colors duration-300">
               {h.description}
             </div>
           </motion.div>
@@ -43,7 +43,7 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-sm leading-relaxed text-[var(--muted)] max-w-2xl"
+        className="text-sm leading-relaxed text-muted max-w-2xl"
         dangerouslySetInnerHTML={{ __html: t('profile.summary') }}
       />
 

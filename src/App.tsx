@@ -1,15 +1,15 @@
 import { AppLayout } from './components/layout/app-layout';
-import { HeroSection } from './components/sections/hero-section';
-import { SkillsSection } from './components/sections/skills-section';
-import { ProjectsSection } from './components/sections/projects-section';
-import { ExperienceSection } from './components/sections/experience-section';
+import React, { Suspense } from 'react';
+
+const HeroSection = React.lazy(() => import('./components/sections/hero-section').then(m => ({ default: m.HeroSection })));
+const SkillsSection = React.lazy(() => import('./components/sections/skills-section').then(m => ({ default: m.SkillsSection })));
+const ProjectsSection = React.lazy(() => import('./components/sections/projects-section').then(m => ({ default: m.ProjectsSection })));
+const ExperienceSection = React.lazy(() => import('./components/sections/experience-section').then(m => ({ default: m.ExperienceSection })));
 import { LayoutProvider } from './context/LayoutContext';
 import { useTranslation } from 'react-i18next';
 import './config/i18n';
 
-// 🎓 React Trend: Для больших проектов тяжелые компоненты секций рекомендуется загружать лениво 
-// через React.lazy() и <Suspense> (Code Splitting). Это радикально ускоряет загрузку первого экрана (FCP).
-// Для сайта-визитки прямой импорт допустим (KISS), но при масштабировании это стоит внедрить первым.
+// 🎓 React Trend: Реализовано Code Splitting для ускорения FCP (First Contentful Paint).
 function App() {
   const { t } = useTranslation();
 
@@ -21,10 +21,12 @@ function App() {
           {t('profile.headline')}
         </h1>
         
-        <HeroSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ExperienceSection />
+        <Suspense fallback={<div className="h-32 flex items-center justify-center text-muted">Загрузка...</div>}>
+          <HeroSection />
+          <SkillsSection />
+          <ProjectsSection />
+          <ExperienceSection />
+        </Suspense>
         </div>
       </AppLayout>
     </LayoutProvider>

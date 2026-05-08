@@ -14,6 +14,18 @@
   --color-skill-frontend: #3B82F6;
   --color-skill-backend: #10B981;
   --color-skill-devops: #F43F5E;
+
+  /* Semantic UI Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-timeline-line: var(--timeline-line);
+  --color-timeline-dot: var(--timeline-dot);
+  --color-pill-bg: var(--pill-bg);
+  --color-pill-border: var(--pill-border);
 }
 
 @layer base {
@@ -66,7 +78,7 @@
   }
 
   body {
-    @apply bg-[var(--background)] text-[var(--foreground)] antialiased transition-colors duration-300;
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
     font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     letter-spacing: -0.011em;
   }

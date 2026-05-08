@@ -23,7 +23,7 @@ export function ProjectsSection() {
             whileHover={{ y: -6, transition: { duration: 0.2, ease: "easeOut" } }}
             className={`
               group relative flex flex-col overflow-hidden rounded-xl cursor-pointer
-              bg-[var(--card)] border border-[var(--border)]
+              bg-card border border-border
               ${project.accent.border}
               transition-colors duration-200
             `}
@@ -54,12 +54,12 @@ export function ProjectsSection() {
             {/* Content */}
             <div className="flex flex-col items-center text-center px-6 pt-4 pb-6 gap-2">
               {/* Name — uppercase, IBM Plex Sans, thin/light, foreground */}
-              <h3 className="text-sm font-normal tracking-[0.12em] uppercase text-[var(--foreground)]">
+              <h3 className="text-sm font-normal tracking-[0.12em] uppercase text-foreground">
                 {t(project.nameKey)}
               </h3>
 
               {/* Description — tight, muted */}
-              <p className="text-sm text-left w-full leading-snug text-[var(--muted)]">
+              <p className="text-sm text-left w-full leading-snug text-muted">
                 {t(project.descriptionKey)}
               </p>
             </div>

@@ -30,7 +30,7 @@ export function StackPills({ stack }: { stack: string }) {
             key={item}
             className="
               inline-flex items-center px-2.5 py-0.5 rounded-md text-[11px] font-medium
-              bg-[var(--pill-bg)] text-[var(--muted)] border border-[var(--pill-border)]
+              bg-pill-bg text-muted border border-pill-border
               transition-all duration-200 hover:shadow-sm cursor-default
             "
           >

@@ -38,7 +38,7 @@ export function SkillsSection() {
                   whitespace-nowrap transition-all duration-200
                   ${isActive
                     ? `${category.theme.bg} ${category.theme.text} shadow-sm`
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                    : 'text-muted hover:text-foreground hover:bg-card'
                   }
                 `}
               >

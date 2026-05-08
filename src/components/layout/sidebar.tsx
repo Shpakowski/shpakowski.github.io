@@ -73,14 +73,14 @@ export function Sidebar() {
               >
                 <div
                   className={`shrink-0 h-[2px] transition-all duration-300 ease-out rounded-full ${isActive
-                    ? 'w-6 bg-[var(--color-primary)]'
-                    : 'w-3 bg-[var(--muted)] group-hover:w-6 group-hover:bg-[var(--color-primary)]'
+                    ? 'w-6 bg-primary'
+                    : 'w-3 bg-muted group-hover:w-6 group-hover:bg-primary'
                     }`}
                 />
                 <span
                   className={`text-sm font-medium transition-colors truncate ${isActive
-                    ? 'text-[var(--color-primary)]'
-                    : 'text-[var(--muted)] group-hover:text-[var(--color-primary)]'
+                    ? 'text-primary'
+                    : 'text-muted group-hover:text-primary'
                     }`}
                 >
                   {exp.company}

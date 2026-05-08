@@ -46,10 +46,10 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
       className="relative scroll-mt-24"
     >
       {/* Timeline dot */}
-      <div className="absolute left-0 top-[15px] w-3 h-3 rounded-full bg-[var(--card)] border-2 border-[var(--timeline-dot)] z-10" />
+      <div className="absolute left-0 top-[15px] w-3 h-3 rounded-full bg-card border-2 border-timeline-dot z-10" />
       {/* Timeline line */}
       {index < 3 && (
-        <div className="absolute left-[5px] top-[27px] bottom-0 w-0.5 bg-[var(--timeline-line)]" />
+        <div className="absolute left-[5px] top-[27px] bottom-0 w-0.5 bg-timeline-line" />
       )}
 
       <div className="ml-7">
@@ -64,10 +64,10 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
         >
           <div className="min-w-0">
             <div className="flex items-baseline gap-2 flex-wrap">
-              <h3 className="text-base font-bold text-[var(--foreground)]">
+              <h3 className="text-base font-bold text-foreground">
                 {entry.company}
               </h3>
-              <span className="text-xs font-mono text-[var(--muted)] whitespace-nowrap">
+              <span className="text-xs font-mono text-muted whitespace-nowrap">
                 {entry.dates}
               </span>
             </div>
@@ -75,7 +75,7 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
               {entry.title}
             </p>
             {entry.location && (
-              <p className="text-xs text-[var(--muted)] mt-0.5">{entry.location}</p>
+              <p className="text-xs text-muted mt-0.5">{entry.location}</p>
             )}
           </div>
 
@@ -85,7 +85,7 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
               transition={{ duration: 0.2 }}
               className="mt-2 shrink-0"
             >
-              <ChevronDown className="h-6 w-6 text-[var(--timeline-dot)]" />
+              <ChevronDown className="h-6 w-6 text-timeline-dot" />
             </motion.div>
           )}
         </button>
@@ -102,14 +102,14 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
             >
               {/* Role badge if present */}
               {entry.role && (
-                <p className="text-xs text-[var(--muted)] mb-2">
+                <p className="text-xs text-muted mb-2">
                   {t('labels.projectRole')}: {entry.role}
                 </p>
               )}
 
               {/* Description */}
               {entry.description && (
-                <p className="text-sm text-[var(--muted)] leading-relaxed mb-3">
+                <p className="text-sm text-muted leading-relaxed mb-3">
                   {entry.description}
                 </p>
               )}

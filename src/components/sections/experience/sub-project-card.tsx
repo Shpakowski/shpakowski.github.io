@@ -26,7 +26,7 @@ export function SubProjectCard({ project, index, forceOpenSignal }: { project: S
       transition={{ delay: index * 0.08, duration: 0.3 }}
       className="
         relative ml-5 pl-5
-        border-l-2 border-[var(--border)]
+        border-l-2 border-border
       "
     >
       {/* 🎓 React Trend: Интерактивные элементы должны быть button для A11y (Доступности). */}
@@ -40,17 +40,17 @@ export function SubProjectCard({ project, index, forceOpenSignal }: { project: S
         aria-expanded={open}
       >
         <div className="min-w-0">
-          <h4 className="text-sm font-semibold text-[var(--foreground)] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          <h4 className="text-sm font-semibold text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
             {project.title}
           </h4>
-          <p className="text-xs text-[var(--muted)] mt-0.5">{project.role}</p>
+          <p className="text-xs text-muted mt-0.5">{project.role}</p>
         </div>
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.2 }}
           className="mt-1 shrink-0"
         >
-          <ChevronDown className="h-6 w-6 text-[var(--timeline-dot)]" />
+          <ChevronDown className="h-6 w-6 text-timeline-dot" />
         </motion.div>
       </button>
 
@@ -63,7 +63,7 @@ export function SubProjectCard({ project, index, forceOpenSignal }: { project: S
             transition={{ duration: 0.25 }}
             className="overflow-hidden"
           >
-            <p className="text-sm text-[var(--muted)] leading-relaxed mb-3 mt-2">
+            <p className="text-sm text-muted leading-relaxed mb-3 mt-2">
               {project.description}
             </p>
             {project.achievements && (

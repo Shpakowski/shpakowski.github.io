@@ -13,7 +13,7 @@ export function SectionHeader({ title, className, ...props }: SectionHeaderProps
       <h2 className="text-sm font-semibold uppercase tracking-[0.15em] text-primary">
         {title}
       </h2>
-      <div className="flex-1 h-px bg-[var(--border)]" />
+      <div className="flex-1 h-px bg-border" />
     </div>
   );
 }
