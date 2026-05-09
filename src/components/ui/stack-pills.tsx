@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { getThemeForSkill } from '@/utils';
 
-export function StackPills({ stack }: { stack: string }) {
-  const items = stack.split(',').map(s => s.trim().replace(/\.$/, '').replace(/\s+/g, ' ')).filter(Boolean);
+export function StackPills({ stack }: { stack: string | string[] }) {
+  const items = Array.isArray(stack)
+    ? stack
+    : stack.split(',').map(s => s.trim().replace(/\.$/, '').replace(/\s+/g, ' ')).filter(Boolean);
   
   return (
     <div className="flex flex-wrap gap-1.5 mt-3">

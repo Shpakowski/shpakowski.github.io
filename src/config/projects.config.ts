@@ -11,6 +11,7 @@ export interface ProjectConfig {
     border: string;    // Tailwind border-color class on hover
   };
   href: string;
+  stack?: string[];
 }
 
 export const PROJECTS_CONFIG: ProjectConfig[] = [
@@ -25,6 +26,18 @@ export const PROJECTS_CONFIG: ProjectConfig[] = [
       border: 'hover:border-blue-400/40',
     },
     href: '',
+    stack: [
+      'TypeScript',
+      'Next.js & React (SSR/SSG)',
+      'Tailwind CSS',
+      'Zustand',
+      'NestJS',
+      'PostgreSQL',
+      'OAuth 2.0',
+      'DDD',
+      'Hexagonal Architecture',
+      'Google Cloud Platform (GCP)'
+    ],
   },
   {
     id: 'unbogi',
@@ -37,6 +50,15 @@ export const PROJECTS_CONFIG: ProjectConfig[] = [
       border: 'hover:border-violet-400/40',
     },
     href: '',
+    stack: [
+      'Prompt Engineering',
+      'Agent Orchestration',
+      'React Native',
+      'React',
+      'Zod',
+      'Firebase',
+      'Monorepo'
+    ],
   },
   {
     id: 'task-manager',
@@ -49,5 +71,19 @@ export const PROJECTS_CONFIG: ProjectConfig[] = [
       border: 'hover:border-emerald-400/40',
     },
     href: '',
+    stack: [
+      'React',
+      'Zustand',
+      'Module Federation',
+      'Zod',
+      'HeroUI',
+      'NestJS',
+      'PostgreSQL',
+      'Prisma ORM',
+      'Docker',
+      'Nginx',
+      'GitHub Actions',
+      'FSD'
+    ],
   },
 ];

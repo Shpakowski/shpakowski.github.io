@@ -51,7 +51,7 @@
   "projects": {
     "mcpCoopDao": {
       "name": "MCP COOP DAO",
-      "description": "A web platform for engineering cooperation on product development using the AIDD approach. It provides an environment for collective development and coordination within a single ecosystem."
+      "description": "A web platform for engineering cooperation on product development using the AIDD approach (AI-Driven Development)."
     },
     "unbogi": {
       "name": "UNBOGI",
@@ -59,7 +59,7 @@
     },
     "taskManager": {
       "name": "TASK MANAGER",
-      "description": "A compact micro-frontend for task management, functioning as a Telegram Mini App and integrated web module. It supports ToDo lists and Kanban boards, is configurable for teams, and works with a Telegram bot."
+      "description": "A configurable task manager for small teams and Startups, supporting integration into platforms and operation via Telegram Mini App."
     }
   },
   "labels": {

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { PROJECTS_CONFIG } from '@/config';
-import { SectionHeader } from '@/components/ui';
+import { SectionHeader, StackPills } from '@/components/ui';
 
 export function ProjectsSection() {
   const { t } = useTranslation();
@@ -62,6 +62,13 @@ export function ProjectsSection() {
               <p className="text-sm text-left w-full leading-snug text-muted">
                 {t(project.descriptionKey)}
               </p>
+
+              {/* Stack */}
+              {project.stack && project.stack.length > 0 && (
+                <div className="w-full mt-2 text-left">
+                  <StackPills stack={project.stack} />
+                </div>
+              )}
             </div>
           </motion.a>
         ))}
