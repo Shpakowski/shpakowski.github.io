@@ -12,7 +12,7 @@ export function Sidebar() {
   const { activeExperienceIndex, openExperience } = useLayout();
 
   return (
-    <aside className="flex flex-col gap-4 p-6 pt-0 md:p-8 md:pt-0 lg:sticky lg:top-0 lg:h-screen lg:w-80 xl:w-96 lg:overflow-y-auto bg-card/50">
+    <aside className="flex flex-col gap-4 p-6 md:p-8 lg:sticky lg:top-0 lg:h-screen lg:w-80 xl:w-96 lg:overflow-y-auto">
 
 
       <div className="flex flex-col items-center text-center gap-2">
