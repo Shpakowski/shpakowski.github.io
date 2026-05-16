@@ -4,12 +4,12 @@
 
 ---
 
-**Phone:** +375-29-881-37-12 (Belarus) | +995-595-113-109 (Georgia)  
+**Phone:** +995 595 113 109  
 **Email:** [v.shpakowski@gmail.com](mailto:v.shpakowski@gmail.com)  
 **Telegram:** [@shpakich_bel](https://t.me/shpakich_bel)  
 **Links:** [LinkedIn](https://www.linkedin.com/in/vitali-shpakowski-73256568) · [GitHub](https://github.com/Shpakowski) · [Website](https://shpakowski.github.io)  
-**Location:** Minsk, Belarus · UTC+3 · Open to relocation  
-**Languages:** Belarusian (Native) · Russian (Native) · English (B1+/B2)
+**Location:** Tbilisi, Georgia · UTC+4 · Open to relocation  
+**Languages:** English (B1+) · Russian (Native) · Belarusian (Native)
 
 ---
 
@@ -72,7 +72,7 @@ Led a cross-functional team of 4 in developing an enterprise AI-powered search p
 - **Resilient AI Orchestration:** Engineered a feature-flag system with a custom fallback mechanism on the backend, enabling seamless switching and high availability between OpenSearch and Coveo AI services.
 - **BFF & Caching:** Developed a NestJS middleware layer, integrating Redis caching to optimize search query performance and reduce external API latency.
 - **GenAI Integration:** Integrated a generative AI response system into the search interface, ensuring robust delivery of dynamic, AI-generated content.
-- **Leadership & Management:** Performed over 50% of BA/PM duties, including stakeholder management, backlog prioritization, and comprehensive technical documentation.
+- **Leadership & Management:** Performed over 50% of BA/PM duties, communication with stakeholder, backlog prioritization, and comprehensive technical documentation.
 
 `Angular` `NestJS` `Redis` `TypeScript` `RxJS` `CoveoUI` `OpenSearch`
 
@@ -97,7 +97,7 @@ Led the development of critical features for a high-traffic e-commerce store (50
 
 - **Product Impact:** Engineered high-conversion features, including advanced product filtering and an optimized checkout flow, directly improving user experience and sales metrics.
 - **DevOps & Quality:** Established a CI/CD pipeline integrated with Jenkins and SonarQube, significantly reducing code quality issues and automating delivery.
-- **Stakeholder Management:** Acted as a technical bridge between business analysts and the dev team, managing backlog prioritization, technical grooming, and requirement analysis.
+- **Communication with Stakeholder:** Acted as a technical bridge between business analysts and the dev team, managing backlog prioritization, technical grooming, and requirement analysis.
 - **Team Coordination:** Coordinated and held full responsibility for a sub-team of 2 developers, ensuring rigorous code standards and consistent delivery within an Agile/Scrum framework.
 
 `JavaScript (ES6+)` `jQuery` `SASS` `Jenkins` `SonarQube` `Git` `Agile`
