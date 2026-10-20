@@ -22,6 +22,10 @@ export function Avatar({ src, alt, fallback, className, ...props }: AvatarProps)
         <img
           src={src}
           alt={alt || 'Avatar'}
+          width={180}
+          height={180}
+          fetchPriority="high"
+          decoding="async"
           className="aspect-square h-full w-full object-cover object-top"
           onError={() => setError(true)}
         />

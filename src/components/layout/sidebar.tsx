@@ -53,9 +53,9 @@ export function Sidebar() {
       </div>
 
       <div className="mt-5">
-        <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3 pl-2">
+        <h2 className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3 pl-2">
           {t('sections.experience', 'Work Experience')}
-        </h3>
+        </h2>
         <div className="flex flex-col gap-1.5 ml-1">
           {experience.map((exp, idx) => {
             const isActive = activeExperienceIndex === idx;
