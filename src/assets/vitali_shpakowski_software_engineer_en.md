@@ -1,6 +1,6 @@
 # Vitali Shpakowski
 
-**AI-Driven Tech Lead | Senior Software Engineer**
+**Principal Software Engineer | Agentic AI Engineer**
 
 ---
 
@@ -9,18 +9,20 @@
 **Telegram:** [@shpakich_bel](https://t.me/shpakich_bel)  
 **Links:** [LinkedIn](https://www.linkedin.com/in/vitali-shpakowski-73256568) · [GitHub](https://github.com/Shpakowski) · [Website](https://shpakowski.github.io)  
 **Location:** Minsk, Belarus · UTC+3 · Ready to relocate  
-**Languages:** English (B1+) · Russian (Native) · Belarusian (Native)
+**Languages:** English (B1+) · Russian · Belarusian
 
 ---
 
 ## Profile
 
-Technical leader with 15 years of experience in designing and launching high-scale systems.
-Expert in microservices and micro-frontend architectures powered by Node.js, React, and Angular. Focused on delivering business value through rigorous architectural oversight, ensuring code integrity and security in AI-assisted environments. Extensive expertise in data management and deploying resilient cloud infrastructure with full CI/CD automation.
+Extensive experience delivering large-scale **BigTech and Enterprise systems** across FinTech, E-Commerce, and corporate AI, alongside launching independent tech products. I own **Full-Stack architecture and System Design** aligned with business requirements (**Monorepo, BFF, Micro-frontends, DDD, Hexagonal, Event-Driven**), integrating web applications, cross-platform mobile, and backend services into a unified platform.
 
-Specialized in AI-Driven Development (AIDD): managing the full product lifecycle via Antigravity / Cursor orchestration and custom agentic workflows based on Anthropic patterns.
+I provide **technical leadership** and business-to-engineering alignment: managing development teams, enforcing engineering standards, and scaling delivery workflows with **AI agents** to accelerate **Time-to-Market** while maintaining strict control over architecture and code security.
 
-> Looking for a challenging role as an **AI-Driven Tech Lead** or **Solutions Architect** where I can leverage my expertise to build next-gen AI-integrated products.
+- **14+ YEARS EXPERIENCE:** High-load system architecture and scalable enterprise platforms.
+- **AI AGENTIC SYSTEMS:** Agentic factories: Harness, Context & Graph Engineering.
+- **E2E WEB SAAS & MOBILE:** Commercial SaaS platforms and cross-platform mobile apps from scratch.
+- **CI/CD CLOUD & DEVOPS:** Automated release pipelines and resilient multi-cloud infrastructure.
 
 ---
 
@@ -28,33 +30,49 @@ Specialized in AI-Driven Development (AIDD): managing the full product lifecycle
 
 | Category | Technologies |
 |---|---|
-| **AI & LLM** | AI-Driven Development (AIDD), AI Orchestration, Prompt Engineering, RAG (Retrieval-Augmented Generation), Antigravity / Cursor, Anthropic patterns, Gemini CLI, AI-agents workflow optimization, AI-assisted Code Review & Final Solution Validation |
-| **Architecture & Leadership** | System Design, Solutions Architecture (Microservices, Microfrontends), API Design, Technical Roadmap, Team Leadership (2–5 devs), Stakeholder Communication, Technical Grooming |
-| **Frontend** | TypeScript, Angular + RxJS, Next.js & React (SSR/SSG), State Management (NgRx, Zustand, TanStack Query), Tailwind CSS, SASS/SCSS, Module Federation (Microfrontends), Web Vitals & Performance Optimization |
-| **Backend & Databases** | Node.js, NestJS, Express.js, PostgreSQL, TypeORM, Firebase |
-| **Cloud & DevOps** | Google Cloud Platform (GCP), Oracle Cloud, AWS, Kubernetes, Docker, Terraform, Nginx, GitHub Actions (CI/CD), SonarQube |
-| **Quality & Testing** | Unit / Integration / E2E Testing (Jest, Jasmine, Karma), Architectural Supervision, Automated Quality Gates |
+| **Agentic AI** | Harness Engineering (Skills, Rules, Hooks, MCP), Agentic Factories, Context & Memory Engineering, Graph Engineering & Multi-Agent Orchestration, Spec-Driven Development (AGENTS.md, SKILL.md, PRD), AI Guardrails, Evals & Code Review, Agentic Runtimes (Antigravity, Cursor, Claude Code, Gemini CLI) |
+| **Architecture** | System Design (Microservices, Micro-Frontends, BFF), Domain-Centric (DDD, Clean, Hexagonal), Event-Driven & CQRS, Monorepo & Feature-Sliced Design (FSD), API Design & Contracts, Design Principles (SOLID, DRY, KISS, YAGNI), Technical Roadmap & ADR, Team Leadership & Code Review, Stakeholder Alignment & Agile |
+| **Frontend** | ECMAScript (ES6+), TypeScript, React & Next.js (SSR/SSG), Angular 18+ (Signals), Zustand & React Query, Micro-Frontends (Module Federation), Tailwind CSS, HTML5 / CSS3 / SCSS, Web Vitals & Performance, Testing (Jest, Vitest, Playwright), Legacy Migration (jQuery) |
+| **Mobile** | Flutter, Dart, iOS & Android, Riverpod, Local-First Architecture, Offline Sync (SQLite), Telegram Mini Apps (TMA SDK), App Store & Google Play Release |
+| **Backend** | Node.js, NestJS & Express.js, PostgreSQL, Supabase & Firebase, Prisma ORM, Redis, MongoDB, REST API & WebSockets, Auth & Security (OAuth 2.0, JWT, SSO), Search Engines (OpenSearch, Coveo AI), Unit & Integration Testing |
+| **DevOps** | Docker, CI/CD (GitHub Actions, Jenkins), Google Cloud Platform (GCP), AWS & Oracle Cloud, Cloudflare, Firebase (Hosting, Analytics), Nginx, Terraform, SonarQube |
+
+---
+
+## My Projects
+
+- **[HOLDY](https://holdy-app.web.app/download):** Mobile service for turning promo codes, QR codes, and tickets into interactive digital gifts, featuring a themed postcard collection, scheduled delivery, and Apple Wallet & Google Wallet integration.
+- **BEERHANDSHAKE ([App Store](https://apps.apple.com/us/app/beerhandshake/id6772492609) · [Google Play](https://play.google.com/store/apps/details?id=org.mcpcoop.beer.handshake)):** Social mobile app for sports predictions and friendly wagers without real-money gambling, featuring private rooms, live match tracking, and an automated Splitwise-style debt balancing engine.
+- **ZNICHKA: PUZZLE GAME ([App Store](https://apps.apple.com/app/znichka-match-numbers-puzzle/id6793941409) · [Google Play](https://play.google.com/store/apps/details?id=org.mcpcoop.znichka)):** Logic puzzle game combining falling-block and number-merging mechanics: connecting identical numbers triggers chain reactions and cascading board clears.
 
 ---
 
 ## Work Experience
 
-### AI-Driven Tech Lead
+### Principal Software Engineer | Team Lead
 
-**MCP COOP DAO** · June 2025 — Present  
-*Project Role: Co-founder | Solutions Architect*
+**MCP COOP** · June 2025 — Present  
+*Project Role: Tech Lead & Full-Stack Developer*
 
-Designed and engineered a scalable decentralized ecosystem — delivering 3 independent production applications — integrating a DAO platform, Blockchain protocols, Telegram Mini Apps, and a Flutter mobile app.
+Designed and engineered a suite of production products: cross-platform mobile applications (iOS and Android), SaaS web platforms, and Telegram Mini Apps and bots with AI integration.
 
-Accelerated full-stack development and drastically reduced Time-to-Market by integrating AI orchestration (Antigravity/Cursor, custom AI workflows) into the engineering pipeline.
+Lead a high-performing engineering team while personally delivering critical development tasks. Accelerated the end-to-end product build and release cycle by designing Agentic Factories and tailoring custom AI Harness configurations to the needs of each project.
 
-- **AI-First Engineering:** Delivered 90%+ of the entire system logic using custom agentic workflows, achieving unprecedented development density and code consistency.
-- **Blockchain & Backend:** Engineered the platform core in Go (Golang) for blockchain operations and a high-performance backend using NestJS + Prisma + PostgreSQL. Integrated Open API and Firebase for hybrid cloud logic.
-- **Multi-Platform Architecture:** Designed a reusable micro-frontend system that powers independent web applications, Telegram Mini Apps (TMA SDK), and mobile interfaces built with Flutter.
-- **Identity & Security:** Implemented a complex identity layer (SSO, Role-based Access, JWT) featuring seamless integration between Telegram accounts and standard web authentication protocols.
-- **Multi-cloud CI/CD:** Orchestrated full delivery pipelines using GitHub Actions and Docker containerization. Deployed a resilient infrastructure across a hybrid cloud environment (Google Cloud Platform and Oracle Cloud) for maximum availability.
+- **Agentic AI:** Designed and assembled project-specific AI Harness configurations (rules, skills, prompts, hooks, MCP) and subagent pipelines iteratively refined by the team alongside the product. Established a Spec-Driven Development workflow spanning specifications, architecture, code generation, automated testing, and code review.
+- **Mobile Development (iOS & Android):** Architected from scratch and shipped cross-platform mobile apps to the App Store and Google Play, featuring a modular client core, reactive state management, complex custom UI and animations, local-first offline mode with background database sync, and in-app subscriptions and payments.
+- **SaaS, Telegram Mini Apps & AI Integration:** Architected and implemented scalable web platforms, Telegram Mini Apps, and bots featuring real-time state synchronization over WebSockets, resilient LLM/VLM integration and vector search pipelines, as well as billing, subscription management, and payment gateways.
+- **Authentication & Security:** Implemented a unified identity layer powered by Supabase Auth and Firebase Auth (OAuth 2.0, SSO, JWT, RBAC) with native mobile authentication (Apple / Google Sign-In), seamless Telegram login, and standard web protocols.
+- **Multi-Cloud CI/CD & Releases:** Built end-to-end delivery pipelines with GitHub Actions and Docker, covering resilient multi-cloud infrastructure deployment (GCP, Oracle Cloud, Cloudflare) as well as automated mobile build and release publishing to the App Store and Google Play.
 
-`Go` `Next.js (Turbopack)` `NestJS` `Flutter` `Telegram SDK` `Prisma` `PostgreSQL` `Redis` `Firebase` `Cloudflare` `Docker` `GitHub Actions` `GCP` `Oracle Cloud`
+`Agentic Factories` `Harness & Context Engineering` `Spec-Driven Development` `MCP` `System Design` `DDD & Clean Architecture` `TypeScript` `Flutter` `React & Next.js (SSR/SSG)` `Node.js` `NestJS` `PostgreSQL` `Prisma` `Redis` `Supabase` `Firebase` `WebSockets` `Telegram Mini Apps (TMA SDK)` `OAuth 2.0` `Docker` `GitHub Actions` `GCP` `Oracle Cloud` `Cloudflare` `ASO` `SEO`
+
+---
+
+### Planned Sabbatical & Strategic Shift to AI
+
+**Career Break / Sabbatical** · January 2025 — May 2025
+
+Planned career break for recovery and recharge after 11 years of continuous work in Enterprise. Rebuilding engineering workflows and shifting technological focus toward software development with AI agents and LLMs.
 
 ---
 
@@ -74,7 +92,7 @@ Led a cross-functional team of 4 in developing an enterprise AI-powered search p
 - **GenAI Integration:** Integrated a generative AI response system into the search interface, ensuring robust delivery of dynamic, AI-generated content.
 - **Leadership & Management:** Performed over 50% of BA/PM duties, communication with stakeholder, backlog prioritization, and comprehensive technical documentation.
 
-`Angular` `NestJS` `Redis` `TypeScript` `RxJS` `CoveoUI` `OpenSearch`
+`Angular` `NestJS` `Redis` `TypeScript` `RxJS` `CoveoUI AI` `OpenSearch` `OAuth 2.0`
 
 #### US Bank Loyalty Program (MVP)
 
@@ -100,7 +118,7 @@ Led the development of critical features for a high-traffic e-commerce store (50
 - **Communication with Stakeholder:** Acted as a technical bridge between business analysts and the dev team, managing backlog prioritization, technical grooming, and requirement analysis.
 - **Team Coordination:** Coordinated and held full responsibility for a sub-team of 2 developers, ensuring rigorous code standards and consistent delivery within an Agile/Scrum framework.
 
-`JavaScript (ES6+)` `jQuery` `SASS` `Jenkins` `SonarQube` `Git` `Agile`
+`JavaScript (jQuery)` `SASS` `Jenkins` `SonarQube` `Git` `Agile`
 
 #### Refinitiv — Financial Trading Platform
 
@@ -119,14 +137,14 @@ Delivered two Angular-based web applications, including a major migration of a l
 
 *Project Role: Key Developer & Supervisor*
 
-Acted as a Key Developer for a high-traffic platform (10M+ users/mo) and Supervisor for a dedicated UI sub-team of 4. Engineered the core system using AngularJS and successfully orchestrated a strategic migration to Angular 2+ to enhance scalability.
+Acted as a Key Developer for a high-traffic platform (10M+ users/mo) and Supervisor for a dedicated UI sub-team of 4. Engineered the core system using AngularJS and successfully orchestrated a strategic migration to Angular to enhance scalability.
 
 - **Architecture:** Designed a micro-frontend system and its seamless integration into the Adobe CQ5 (AEM) enterprise platform, reducing deployment time by 40%.
 - **Performance:** Optimized initial load time from 6.5s to 3.8s (42% improvement) through advanced asset tuning and performance optimization.
 - **Quality Control:** Developed a library of 50+ reusable components using BEM and established code review standards for the UI team, decreasing production bugs by 60%.
 - **Team Supervision:** Facilitated technical grooming and sprint planning for the UI group, maintaining a 95% sprint delivery rate in an Agile/Scrum environment.
 
-`Angular 2+` `AngularJS` `TypeScript` `RxJS` `Redux` `NgRx` `BEM` `SASS` `Adobe CQ5` `Jenkins`
+`Angular` `AngularJS` `TypeScript` `RxJS` `Redux` `NgRx` `BEM` `SASS` `Adobe CQ5` `Jenkins`
 
 ---
 
@@ -159,6 +177,6 @@ Advanced Software Engineering: Software Development Processes (SDLC), Backend De
 
 ## Education
 
-**Bachelor of System Engineering**  
+**Systems Engineer**  
 Belarusian State University of Informatics and Radioelectronics (BSUIR)  
 2006–2011 · Minsk, Belarus

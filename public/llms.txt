@@ -1,0 +1,88 @@
+# Vitali Shpakowski (Виталий Шпаковский) — Principal Software Engineer | Agentic AI Engineer
+
+> Personal portfolio and interactive CV of Vitali Shpakowski — Principal Software Engineer, Agentic AI Engineer, and Full-Stack & Mobile Architect with 14+ years of commercial experience across BigTech, Enterprise (FinTech, E-Commerce, Corporate AI), and independent SaaS & Mobile products.
+
+## Contact & Links
+
+- **Website:** https://shpakowski.github.io/
+- **Email:** mailto:v.shpakowski@gmail.com
+- **Phone:** +375298813712
+- **Telegram:** https://t.me/shpakich_bel (@shpakich_bel)
+- **LinkedIn:** https://www.linkedin.com/in/vitali-shpakowski-73256568
+- **GitHub:** https://github.com/Shpakowski
+- **Location:** Minsk, Belarus (UTC+3) — Ready to relocate
+- **Languages:** English (B1+), Russian (Native), Belarusian (Native)
+- **Status:** Open to Work / Open to Collaboration
+
+## Executive Summary
+
+Extensive experience delivering large-scale BigTech and Enterprise systems across FinTech, E-Commerce, and corporate AI, alongside launching independent tech products. Owns Full-Stack architecture and System Design aligned with business requirements (Monorepo, BFF, Micro-frontends, DDD, Hexagonal, Event-Driven), integrating web applications, cross-platform mobile (Flutter for iOS & Android), and backend services into a unified platform.
+
+Provides technical leadership and business-to-engineering alignment: managing development teams, enforcing engineering standards, and scaling delivery workflows with AI agents (Agentic Factories, Harness, Context & Graph Engineering, Spec-Driven Development) to accelerate Time-to-Market while maintaining strict control over architecture and code security.
+
+## Key Highlights
+
+- **14+ Years Experience:** High-load system architecture and scalable enterprise platforms.
+- **Agentic AI Systems:** Agentic factories — Harness, Context & Graph Engineering, Multi-Agent Orchestration, Spec-Driven Development.
+- **E2E Web SaaS & Mobile:** Commercial SaaS platforms and cross-platform mobile apps (iOS & Android) built and shipped from scratch.
+- **CI/CD, Cloud & DevOps:** Automated release pipelines and resilient multi-cloud infrastructure (GCP, AWS, Oracle Cloud, Cloudflare).
+
+## Core Technical Stack
+
+- **Agentic AI:** Harness Engineering (Skills, Rules, Hooks, MCP), Agentic Factories, Context & Memory Engineering, Graph Engineering & Multi-Agent Orchestration, Spec-Driven Development (AGENTS.md, SKILL.md, PRD), AI Guardrails, Evals & Code Review, Agentic Runtimes (Antigravity, Cursor, Claude Code, Gemini CLI).
+- **Architecture & Leadership:** System Design (Microservices, Micro-Frontends, BFF), Domain-Centric (DDD, Clean, Hexagonal), Event-Driven & CQRS, Monorepo & Feature-Sliced Design (FSD), API Design & Contracts, Design Principles (SOLID, DRY, KISS, YAGNI), Technical Roadmap & ADR, Team Leadership & Code Review, Stakeholder Alignment & Agile.
+- **Frontend:** ECMAScript (ES6+), TypeScript, React & Next.js (SSR/SSG), Angular 18+ (Signals), Zustand & React Query, Micro-Frontends (Module Federation), Tailwind CSS, HTML5 / CSS3 / SCSS, Web Vitals & Performance, Testing (Jest, Vitest, Playwright), Legacy Migration (jQuery).
+- **Mobile:** Flutter, Dart, iOS & Android, Riverpod, Local-First Architecture, Offline Sync (SQLite), Telegram Mini Apps (TMA SDK), App Store & Google Play Release.
+- **Backend:** Node.js, NestJS & Express.js, PostgreSQL, Supabase & Firebase, Prisma ORM, Redis, MongoDB, REST API & WebSockets, Auth & Security (OAuth 2.0, JWT, SSO), Search Engines (OpenSearch, Coveo AI), Unit & Integration Testing.
+- **DevOps & Cloud:** Docker, CI/CD (GitHub Actions, Jenkins), Google Cloud Platform (GCP), AWS & Oracle Cloud, Cloudflare, Firebase (Hosting, Analytics), Nginx, Terraform, SonarQube.
+
+## Production Products (My Projects)
+
+1. **HOLDY**
+   - **Summary:** Mobile service for turning promo codes, QR codes, and tickets into interactive digital gifts, featuring a themed postcard collection, scheduled delivery, and Apple Wallet & Google Wallet integration.
+   - **Link:** https://holdy-app.web.app/download
+
+2. **BEERHANDSHAKE**
+   - **Summary:** Social mobile app for sports predictions and friendly wagers without real-money gambling, featuring private rooms, live match tracking, and an automated Splitwise-style debt balancing engine.
+   - **App Store (iOS):** https://apps.apple.com/us/app/beerhandshake/id6772492609
+   - **Google Play (Android):** https://play.google.com/store/apps/details?id=org.mcpcoop.beer.handshake
+
+3. **ZNICHKA: PUZZLE GAME**
+   - **Summary:** Logic puzzle game combining falling-block and number-merging mechanics: connecting identical numbers triggers chain reactions and cascading board clears.
+   - **App Store (iOS):** https://apps.apple.com/app/znichka-match-numbers-puzzle/id6793941409
+   - **Google Play (Android):** https://play.google.com/store/apps/details?id=org.mcpcoop.znichka
+
+## Work Experience
+
+### MCP COOP — Principal Software Engineer | Team Lead (June 2025 — Present)
+- **Role:** Tech Lead & Full-Stack Developer
+- **Overview:** Designed and engineered a suite of production products: cross-platform mobile applications (iOS and Android), SaaS web platforms, and Telegram Mini Apps and bots with AI integration. Lead a high-performing engineering team while personally delivering critical development tasks. Accelerated end-to-end product build and release cycles by designing Agentic Factories and tailoring custom AI Harness configurations.
+- **Key Achievements:**
+  - **Agentic AI:** Designed project-specific AI Harness configurations (rules, skills, prompts, hooks, MCP) and subagent pipelines; established Spec-Driven Development workflows.
+  - **Mobile Development (iOS & Android):** Architected from scratch and shipped cross-platform mobile apps to the App Store and Google Play with modular client core, reactive state management, complex custom UI/animations, local-first offline mode with background sync, and in-app subscriptions.
+  - **SaaS, Telegram Mini Apps & AI Integration:** Built scalable web platforms, Telegram Mini Apps, and bots with real-time WebSocket sync, resilient LLM/VLM integration, vector search pipelines, billing, and payment gateways.
+  - **Authentication & Security:** Unified identity layer powered by Supabase Auth and Firebase Auth (OAuth 2.0, SSO, JWT, RBAC), native Apple/Google Sign-In, and seamless Telegram login.
+  - **Multi-Cloud CI/CD & Releases:** Built end-to-end delivery pipelines with GitHub Actions and Docker across GCP, Oracle Cloud, and Cloudflare, plus automated App Store and Google Play publishing.
+
+### Career Break / Sabbatical — Planned Sabbatical & Strategic Shift to AI (January 2025 — May 2025)
+- Planned career break for recovery and recharge after 11 years of continuous work in Enterprise. Rebuilding engineering workflows and shifting technological focus toward software development with AI agents and LLMs.
+
+### EPAM Systems — Senior Software Engineer (December 2013 — December 2024)
+- **Locations:** Minsk, Belarus (2013–2021) | Tbilisi, Georgia (2021–2024)
+- **Key Enterprise Projects:**
+  1. **SAP Coveo AI Search Platform** (*Team Lead & Full-stack Developer*): Led a team of 4 building an enterprise AI search platform with a NestJS + Redis BFF middleware layer, resilient feature-flag fallback between OpenSearch and Coveo AI, and GenAI answer integration. Stack: Angular, NestJS, Redis, TypeScript, RxJS, CoveoUI AI, OpenSearch, OAuth 2.0.
+  2. **US Bank Loyalty Program (MVP)** (*Full-stack Key Developer*): Engineered an end-to-end loyalty platform MVP integrated with US banking systems via Open API, hybrid Next.js SSR + React admin dashboard, OAuth 2.0 / OTP / JWT security, Prisma + PostgreSQL, Docker, and GitHub Actions.
+  3. **Carrefour — E-commerce Platform** (*Key Developer & Technical Coordinator*): Delivered high-conversion filtering and checkout features for a 500K+ MAU store, established Jenkins + SonarQube CI/CD, and coordinated a sub-team of 2 developers.
+  4. **Refinitiv — Financial Trading Platform** (*Key Developer*): Migrated a legacy C# desktop solution to Angular web apps, built an Express.js SOAP-to-REST transformation layer, handled high-frequency WebSocket streams, cut initial load time by 60% (5s to 2s), and maintained 80%+ test coverage.
+  5. **MoneySuperMarket — Financial Services Aggregator** (*Key Developer & Supervisor*): Key developer for a 10M+ MAU platform and supervisor for a UI sub-team of 4; migrated AngularJS to Angular, designed micro-frontends on Adobe CQ5 (AEM) reducing deployment time by 40%, improved load time by 42% (6.5s to 3.8s), and built a 50+ component library reducing production bugs by 60%.
+
+### Startup Labs — Middle Frontend Developer (April 2013 — December 2013)
+- Developed high-performance responsive promotional sites and complex validated web forms for financial services using JavaScript (jQuery), HTML5/CSS3, SASS, WordPress, Twig, Git.
+
+### Axamit Versa — Junior Frontend Developer (April 2012 — March 2013)
+- Developed responsive interfaces and reusable UI component libraries on Adobe AEM (CQ5) using JavaScript, HTML5/CSS3, Git.
+
+## Certifications & Education
+
+- **Certifications:** EPAM Systems — Advanced Software Engineering (SDLC, Backend Development: Node.js, Express.js, MongoDB) & UI Architecture Series: Enterprise-level Engineering Excellence (Angular stack core).
+- **Education:** Systems Engineer — Belarusian State University of Informatics and Radioelectronics (BSUIR), 2006–2011, Minsk, Belarus.
