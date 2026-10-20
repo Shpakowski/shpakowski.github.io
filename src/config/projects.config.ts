@@ -53,7 +53,7 @@ export const PROJECTS_CONFIG: ProjectConfig[] = [
     stack: [
       'Prompt Engineering',
       'Agent Orchestration',
-      'React Native',
+      'Flutter',
       'React',
       'Zod',
       'Firebase',

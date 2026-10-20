@@ -1,4 +1,4 @@
-import { BrainCircuit, Crown, Monitor, Server, Cloud } from 'lucide-react';
+import { BrainCircuit, Crown, Monitor, Server, Cloud, Smartphone } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export interface SkillCategoryConfig {
@@ -18,7 +18,7 @@ export interface SkillCategoryConfig {
 export const SKILLS_CONFIG: SkillCategoryConfig[] = [
   {
     id: 'ai-driven',
-    name: 'AI-Driven Development',
+    name: 'Agentic AI',
     icon: BrainCircuit,
     theme: {
       bg: 'bg-rose-500/10 dark:bg-rose-500/15',
@@ -28,15 +28,36 @@ export const SKILLS_CONFIG: SkillCategoryConfig[] = [
       border: 'border-rose-500',
     },
     items: [
-      'Antigravity',
-      'Cursor',
-      'Prompt Engineering',
-      'Agent Orchestration',
-      'MCP',
-      'RAG',
-      'Anthropic Patterns',
-      'Gemini CLI',
-      'Automated Code Review & Validation'
+      'Harness Engineering (Skills, Rules, Hooks, MCP)',
+      'Agentic Factories',
+      'Context & Memory Engineering',
+      'Graph Engineering & Multi-Agent Orchestration',
+      'Spec-Driven Development (AGENTS.md, SKILL.md, PRD)',
+      'AI Guardrails, Evals & Code Review',
+      'Agentic Runtimes (Antigravity, Cursor, Claude Code, Gemini CLI)'
+    ],
+  },
+  {
+    id: 'tech-lead',
+    name: 'Architecture',
+    icon: Crown,
+    theme: {
+      bg: 'bg-violet-500/10 dark:bg-violet-500/15',
+      text: 'text-violet-700 dark:text-violet-300',
+      pill: 'bg-violet-100 dark:bg-violet-900/40 border-violet-200 dark:border-violet-700/50',
+      glow: 'hover:shadow-[0_0_12px_rgba(139,92,246,0.15)]',
+      border: 'border-violet-500',
+    },
+    items: [
+      'System Design (Microservices, Micro-Frontends, BFF)',
+      'Domain-Centric (DDD, Clean, Hexagonal)',
+      'Event-Driven & CQRS',
+      'Monorepo & Feature-Sliced Design (FSD)',
+      'API Design & Contracts',
+      'Design Principles (SOLID, DRY, KISS, YAGNI)',
+      'Technical Roadmap & ADR',
+      'Team Leadership & Code Review',
+      'Stakeholder Alignment & Agile'
     ],
   },
   {
@@ -51,22 +72,39 @@ export const SKILLS_CONFIG: SkillCategoryConfig[] = [
       border: 'border-amber-500',
     },
     items: [
+      'ECMAScript (ES6+)',
       'TypeScript',
-      'Angular + RxJS',
-      'Next.js & React (SSR/SSG)',
-      'React Native',
-      'Zustand',
-      'Zod',
-      'NgRx',
-      'TanStack Query',
-      'HTML5/CSS3',
+      'React & Next.js (SSR/SSG)',
+      'Angular 18+ (Signals)',
+      'Zustand & React Query',
+      'Micro-Frontends (Module Federation)',
       'Tailwind CSS',
-      'SASS/SCSS',
-      'BEM',
-      'Module Federation',
-      'Web Vitals & Performance Optimization',
-      'Unit Testing',
-      'JavaScript (jQuery)'
+      'HTML5 / CSS3 / SCSS',
+      'Web Vitals & Performance',
+      'Testing (Jest, Vitest, Playwright)',
+      'Legacy Migration (jQuery)'
+    ],
+  },
+  {
+    id: 'mobile',
+    name: 'Mobile',
+    icon: Smartphone,
+    theme: {
+      bg: 'bg-cyan-500/10 dark:bg-cyan-500/15',
+      text: 'text-cyan-700 dark:text-cyan-300',
+      pill: 'bg-cyan-100 dark:bg-cyan-900/40 border-cyan-200 dark:border-cyan-700/50',
+      glow: 'hover:shadow-[0_0_12px_rgba(6,182,212,0.15)]',
+      border: 'border-cyan-500',
+    },
+    items: [
+      'Flutter',
+      'Dart',
+      'iOS & Android',
+      'Riverpod',
+      'Local-First Architecture',
+      'Offline Sync (SQLite)',
+      'Telegram Mini Apps (TMA SDK)',
+      'App Store & Google Play Release'
     ],
   },
   {
@@ -82,16 +120,16 @@ export const SKILLS_CONFIG: SkillCategoryConfig[] = [
     },
     items: [
       'Node.js',
-      'NestJS',
-      'Express.js',
+      'NestJS & Express.js',
       'PostgreSQL',
+      'Supabase & Firebase',
       'Prisma ORM',
+      'Redis',
       'MongoDB',
-      'Firebase',
-      'OAuth 2.0',
-      'CoveoUI AI',
-      'Unit Testing',
-      'Integration Testing'
+      'REST API & WebSockets',
+      'Auth & Security (OAuth 2.0, JWT, SSO)',
+      'Search Engines (OpenSearch, Coveo AI)',
+      'Unit & Integration Testing'
     ],
   },
   {
@@ -106,47 +144,15 @@ export const SKILLS_CONFIG: SkillCategoryConfig[] = [
       border: 'border-blue-500',
     },
     items: [
-      'Google Cloud Platform (GCP)',
-      'Oracle Cloud',
-      'AWS',
-      'Terraform',
       'Docker',
+      'CI/CD (GitHub Actions, Jenkins)',
+      'Google Cloud Platform (GCP)',
+      'AWS & Oracle Cloud',
+      'Cloudflare',
+      'Firebase (Hosting, Analytics)',
       'Nginx',
-      'Kubernetes',
-      'GitHub Actions',
+      'Terraform',
       'SonarQube'
-    ],
-  },
-  {
-    id: 'tech-lead',
-    name: 'Tech Lead',
-    icon: Crown,
-    theme: {
-      bg: 'bg-violet-500/10 dark:bg-violet-500/15',
-      text: 'text-violet-700 dark:text-violet-300',
-      pill: 'bg-violet-100 dark:bg-violet-900/40 border-violet-200 dark:border-violet-700/50',
-      glow: 'hover:shadow-[0_0_12px_rgba(139,92,246,0.15)]',
-      border: 'border-violet-500',
-    },
-    items: [
-      'System Design & Architecture Patterns',
-      'DDD',
-      'Event-Driven',
-      'CQRS',
-      'FSD',
-      'Hexagonal',
-      'DRY',
-      'SOLID',
-      'KISS',
-      'Microservices & Microfrontend Architecture',
-      'Monorepo',
-      'API Design & Contracts',
-      'Technical Roadmap & Decision Records (ADR)',
-      'Team Leadership (2–5 devs)',
-      'Code Review Culture',
-      'Stakeholder Communication',
-      'Technical Grooming',
-      'Agile'
     ],
   },
 ];
