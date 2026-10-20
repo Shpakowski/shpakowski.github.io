@@ -16,7 +16,7 @@ export function AppLayout({ children }: AppLayoutProps) {
         {/* Invisible spacer for absolute centering on larger screens */}
         <div className="flex-1 hidden sm:block"></div>
         
-        <div className="flex justify-center shrink-0">
+        <div className="hidden justify-center shrink-0">
           <HireMeBanner />
         </div>
         
