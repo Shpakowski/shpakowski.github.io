@@ -4,11 +4,11 @@
 
 ---
 
-**Phone:** +995 595 113 109  
+**Phone:** +375298813712  
 **Email:** [v.shpakowski@gmail.com](mailto:v.shpakowski@gmail.com)  
 **Telegram:** [@shpakich_bel](https://t.me/shpakich_bel)  
 **Links:** [LinkedIn](https://www.linkedin.com/in/vitali-shpakowski-73256568) · [GitHub](https://github.com/Shpakowski) · [Website](https://shpakowski.github.io)  
-**Location:** Tbilisi, Georgia · UTC+4 · Open to relocation  
+**Location:** Minsk, Belarus · UTC+3 · Ready to relocate  
 **Languages:** English (B1+) · Russian (Native) · Belarusian (Native)
 
 ---
@@ -44,17 +44,17 @@ Specialized in AI-Driven Development (AIDD): managing the full product lifecycle
 **MCP COOP DAO** · June 2025 — Present  
 *Project Role: Co-founder | Solutions Architect*
 
-Designed and engineered a scalable decentralized ecosystem — delivering 3 independent production applications — integrating a DAO platform, Blockchain protocols, Telegram Mini Apps, and a React Native mobile app.
+Designed and engineered a scalable decentralized ecosystem — delivering 3 independent production applications — integrating a DAO platform, Blockchain protocols, Telegram Mini Apps, and a Flutter mobile app.
 
 Accelerated full-stack development and drastically reduced Time-to-Market by integrating AI orchestration (Antigravity/Cursor, custom AI workflows) into the engineering pipeline.
 
 - **AI-First Engineering:** Delivered 90%+ of the entire system logic using custom agentic workflows, achieving unprecedented development density and code consistency.
 - **Blockchain & Backend:** Engineered the platform core in Go (Golang) for blockchain operations and a high-performance backend using NestJS + Prisma + PostgreSQL. Integrated Open API and Firebase for hybrid cloud logic.
-- **Multi-Platform Architecture:** Designed a reusable micro-frontend system that powers independent web applications, Telegram Mini Apps (TMA SDK), and mobile interfaces built with React Native.
+- **Multi-Platform Architecture:** Designed a reusable micro-frontend system that powers independent web applications, Telegram Mini Apps (TMA SDK), and mobile interfaces built with Flutter.
 - **Identity & Security:** Implemented a complex identity layer (SSO, Role-based Access, JWT) featuring seamless integration between Telegram accounts and standard web authentication protocols.
 - **Multi-cloud CI/CD:** Orchestrated full delivery pipelines using GitHub Actions and Docker containerization. Deployed a resilient infrastructure across a hybrid cloud environment (Google Cloud Platform and Oracle Cloud) for maximum availability.
 
-`Go` `Next.js (Turbopack)` `NestJS` `React Native` `Telegram SDK` `Prisma` `PostgreSQL` `Redis` `Firebase` `Cloudflare` `Docker` `GitHub Actions` `GCP` `Oracle Cloud`
+`Go` `Next.js (Turbopack)` `NestJS` `Flutter` `Telegram SDK` `Prisma` `PostgreSQL` `Redis` `Firebase` `Cloudflare` `Docker` `GitHub Actions` `GCP` `Oracle Cloud`
 
 ---
 

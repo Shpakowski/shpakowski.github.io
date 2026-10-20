@@ -17,6 +17,7 @@ export const getContactsConfig = (): ContactConfig[] => [
     id: 'phone',
     icon: Phone,
     text: profileConfig.contact.phone,
+    href: `tel:${profileConfig.contact.phone}`,
   },
   {
     id: 'email',

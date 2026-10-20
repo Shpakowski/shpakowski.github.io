@@ -1,40 +1,39 @@
 {
   "profile": {
     "fullName": "Vitali Shpakowski",
-    "headline": "AI-Driven Tech Lead | Senior Software Engineer",
+    "headline": "Principal Software Engineer | Agentic AI Engineer",
     "contact": {
-      "phone": "+995 595 113 109",
+      "phone": "+375298813712",
       "email": "v.shpakowski@gmail.com",
       "telegram": "@shpakich_bel",
       "linkedin": "vitali-shpakowski-73256568",
       "github": "Shpakowski",
       "website": "shpakowski.github.io",
-      "location_city": "Tbilisi, Georgia, UTC+4",
-      "relocation": "Open to relocation",
-      "languages": "English (B2), Russian, Belarusian"
+      "location_city": "Minsk, Belarus, UTC+3",
+      "relocation": "Ready to relocate",
+      "languages": "English (B1+), Russian, Belarusian"
     },
-    "description": "Technical leader with <strong class=\"font-semibold text-foreground\">15 years of experience</strong> in designing and launching <strong class=\"font-semibold text-foreground\">high-scale systems</strong>.\n\nExpert in <strong class=\"font-semibold text-foreground\">microservices and micro-frontend architectures</strong> powered by <strong class=\"font-semibold text-foreground\">React, Angular and Node.js</strong>. Focused on delivering business value through rigorous architectural oversight, ensuring code integrity and security in AI-assisted environments. Extensive expertise in data management and deploying resilient cloud infrastructure with <strong class=\"font-semibold text-foreground\">full CI/CD automation</strong>.\n\nSpecialized in <strong class=\"font-semibold text-foreground\">AI-Driven Development (AIDD)</strong>: managing the full product lifecycle via <strong class=\"font-semibold text-foreground\">Antigravity / Cursor orchestration</strong> and custom agentic workflows based on <strong class=\"font-semibold text-foreground\">Anthropic patterns</strong>.",
-    "summary": "Technical leader with <strong class=\"font-semibold text-foreground\">15 years of experience</strong> in designing <strong class=\"font-semibold text-foreground\">high-scale systems</strong>. Expert in <strong class=\"font-semibold text-foreground\">microservices, micro-frontends</strong>, and <strong class=\"font-semibold text-foreground\">AI-Driven Development</strong>.",
+    "summary": "Extensive experience delivering large-scale <strong class=\"font-semibold text-foreground\">BigTech and Enterprise systems</strong> across FinTech, E-Commerce, and corporate AI, alongside launching independent tech products. I own <strong class=\"font-semibold text-foreground\">Full-Stack architecture and System Design</strong> aligned with business requirements (<strong class=\"font-semibold text-foreground\">Monorepo, BFF, Micro-frontends, DDD, Hexagonal, Event-Driven</strong>), integrating web applications, cross-platform mobile, and backend services into a unified platform.\n\nI provide <strong class=\"font-semibold text-foreground\">technical leadership</strong> and business-to-engineering alignment: managing development teams, enforcing engineering standards, and scaling delivery workflows with <strong class=\"font-semibold text-foreground\">AI agents</strong> to accelerate <strong class=\"font-semibold text-foreground\">Time-to-Market</strong> while maintaining strict control over architecture and code security.",
     "highlights": [
       {
-        "metric": "15+",
-        "title": "Years Experience",
-        "description": "Designing & launching high-scale enterprise systems."
+        "metric": "14+",
+        "title": "YEARS EXPERIENCE",
+        "description": "High-load system architecture and scalable enterprise platforms."
       },
       {
-        "metric": "AIDD",
-        "title": "AI-Driven Dev",
-        "description": "Agentic workflows, Cursor & Antigravity orchestration."
+        "metric": "AI",
+        "title": "AGENTIC SYSTEMS",
+        "description": "Agentic factories: Harness, Context & Graph Engineering."
       },
       {
         "metric": "E2E",
-        "title": "Product Delivery",
-        "description": "End-to-end product delivery: frontend, backend, mobile & infra."
+        "title": "WEB SAAS & MOBILE",
+        "description": "Commercial SaaS platforms and cross-platform mobile apps from scratch."
       },
       {
         "metric": "CI/CD",
-        "title": "Cloud Ops",
-        "description": "Resilient infrastructure and full delivery automation."
+        "title": "CLOUD & DEVOPS",
+        "description": "Automated release pipelines and resilient multi-cloud infrastructure."
       }
     ],
     "target": "Looking for projects where I can apply my skills and open to collaboration",
@@ -69,20 +68,27 @@
   },
   "experience": [
     {
-      "id": "mcp-coop-dao",
-      "company": "MCP COOP DAO",
-      "title": "AI-Driven Tech Lead",
+      "id": "mcp-coop",
+      "company": "MCP COOP",
+      "title": "Principal Software Engineer | Team Lead",
       "dates": "June 2025 — Present",
       "role": "Tech Lead & Full-Stack Developer",
-      "description": "Designed and engineered a scalable decentralized ecosystem — delivering 3 independent production applications — integrating a DAO platform, Blockchain protocols, Telegram Mini Apps, and a React Native mobile app.\n\nLed a lean, high-performing team of 3 specialists. Accelerated full-stack development and drastically reduced Time-to-Market by integrating AI orchestration (Antigravity/Cursor, custom AI workflows) into the engineering pipeline.",
+      "description": "Designed and engineered a suite of production products: cross-platform mobile applications (iOS and Android), SaaS web platforms, and Telegram Mini Apps and bots with AI integration.\n\nLead a high-performing engineering team while personally delivering critical development tasks. Accelerated the end-to-end product build and release cycle by designing Agentic Factories and tailoring custom AI Harness configurations to the needs of each project.",
       "achievements": [
-        "**AI-First Engineering:** Delivered 90%+ of the entire system logic using custom agentic workflows, achieving unprecedented development density and code consistency.",
-        "**Blockchain & Backend:** Engineered the platform core in Go (Golang) for blockchain operations and a high-performance backend using NestJS + Prisma + PostgreSQL. Integrated Open API and Firebase for hybrid cloud logic.",
-        "**Multi-Platform Architecture:** Designed a reusable micro-frontend system that powers independent web applications, Telegram Mini Apps (TMA SDK), and mobile interfaces built with React Native.",
-        "**Identity & Security:** Implemented a complex identity layer (SSO, Role-based Access, JWT) featuring seamless integration between Telegram accounts and standard web authentication protocols.",
-        "**Multi-cloud CI/CD:** Orchestrated full delivery pipelines using GitHub Actions and Docker containerization. Deployed a resilient infrastructure across a hybrid cloud environment (Google Cloud Platform and Oracle Cloud) for maximum availability."
+        "**Agentic AI:** Designed and assembled project-specific AI Harness configurations (rules, skills, prompts, hooks, MCP) and subagent pipelines iteratively refined by the team alongside the product. Established a Spec-Driven Development workflow spanning specifications, architecture, code generation, automated testing, and code review.",
+        "**Mobile Development (iOS & Android):** Architected from scratch and shipped cross-platform mobile apps to the App Store and Google Play, featuring a modular client core, reactive state management, complex custom UI and animations, local-first offline mode with background database sync, and in-app subscriptions and payments.",
+        "**SaaS, Telegram Mini Apps & AI Integration:** Architected and implemented scalable web platforms, Telegram Mini Apps, and bots featuring real-time state synchronization over WebSockets, resilient LLM/VLM integration and vector search pipelines, as well as billing, subscription management, and payment gateways.",
+        "**Authentication & Security:** Implemented a unified identity layer powered by Supabase Auth and Firebase Auth (OAuth 2.0, SSO, JWT, RBAC) with native mobile authentication (Apple / Google Sign-In), seamless Telegram login, and standard web protocols.",
+        "**Multi-Cloud CI/CD & Releases:** Built end-to-end delivery pipelines with GitHub Actions and Docker, covering resilient multi-cloud infrastructure deployment (GCP, Oracle Cloud, Cloudflare) as well as automated mobile build and release publishing to the App Store and Google Play."
       ],
-      "stack": "Next.js & React (SSR/SSG), NestJS, React Native, Telegram SDK, Prisma, PostgreSQL, Redis, Firebase, OAuth 2.0, Go, Cloudflare, Docker, GitHub Actions, GCP, Oracle Cloud."
+      "stack": "Agentic Factories, Harness & Context Engineering, Spec-Driven Development, MCP, System Design, DDD & Clean Architecture, TypeScript, Flutter, React & Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL, Prisma, Redis, Supabase, Firebase, WebSockets, Telegram Mini Apps (TMA SDK), OAuth 2.0, Docker, GitHub Actions, GCP, Oracle Cloud, Cloudflare, ASO, SEO."
+    },
+    {
+      "id": "sabbatical",
+      "company": "Career Break / Sabbatical",
+      "title": "Planned Sabbatical & Strategic Shift to AI",
+      "dates": "January 2025 — May 2025",
+      "description": "Planned career break for recovery and recharge after 11 years of continuous work in Enterprise engineering. Strategic shift toward Artificial Intelligence: deep dive into autonomous AI agent architectures, LLM systems, Context & Harness Engineering, and reimagining modern software delivery workflows."
     },
     {
       "id": "epam",

@@ -1,19 +1,41 @@
 {
   "profile": {
     "fullName": "Виталий Шпаковский",
-    "headline": "AI-Driven Tech Lead | Senior Software Engineer",
+    "headline": "Principal Software Engineer | Agentic AI Engineer",
     "contact": {
-      "phone": "+995 595 113 109",
+      "phone": "+375298813712",
       "email": "v.shpakowski@gmail.com",
       "telegram": "@shpakich_bel",
       "linkedin": "linkedin.com/in/vitali-shpakowski-73256568",
       "github": "github.com/Shpakowski",
       "website": "shpakowski.github.io",
-      "location_city": "Тбилиси, Грузия, UTC+4",
+      "location_city": "Минск, Беларусь, UTC+3",
       "relocation": "Готов к релокации",
-      "languages": "Английский (B2), Русский, Белорусский"
+      "languages": "Английский (B1+), Русский, Белорусский"
     },
-    "description": "Технический лидер с 15-летним опытом проектирования и запуска высоконагруженных систем.\n\nЭксперт в микросервисной и микрофронтенд архитектуре на базе Node.js, React и Angular. Сфокусирован на доставке бизнес-ценности через строгий архитектурный контроль, обеспечивая целостность и безопасность кода в средах с ИИ. Обширный опыт управления данными и развертывания отказоустойчивой облачной инфраструктуры с полной автоматизацией CI/CD.\n\nСпециализируюсь на AI-Driven Development (AIDD): управление полным жизненным циклом продукта через оркестрацию Antigravity / Cursor и кастомные агентские процессы на базе паттернов Anthropic.",
+    "summary": "Опыт реализации масштабных <strong class=\"font-semibold text-foreground\">BigTech и Enterprise-систем</strong> в сферах FinTech, E-Commerce и корпоративного ИИ, а также запуска собственных продуктов. Отвечаю за <strong class=\"font-semibold text-foreground\">Full-Stack архитектуру и System Design</strong> под бизнес-требования проекта (<strong class=\"font-semibold text-foreground\">Monorepo, BFF, Micro-frontends, DDD, Hexagonal, Event-Driven</strong>), объединяя веб-приложения, кроссплатформенный мобайл и серверную логику в единый контур.\n\nОбеспечиваю <strong class=\"font-semibold text-foreground\">техническое лидерство</strong> и синхронизацию разработки с бизнесом: управляю инженерными командами, внедряю стандарты качества и масштабирую процессы через <strong class=\"font-semibold text-foreground\">ИИ-агентов</strong>, сокращая <strong class=\"font-semibold text-foreground\">Time-to-Market</strong> при строгом контроле архитектуры и безопасности кода.",
+    "highlights": [
+      {
+        "metric": "14+",
+        "title": "ЛЕТ ОПЫТА",
+        "description": "Архитектура высоконагруженных систем и Enterprise-платформ."
+      },
+      {
+        "metric": "AI",
+        "title": "AGENTIC SYSTEMS",
+        "description": "Агентные фабрики: Harness, Context и Graph Engineering."
+      },
+      {
+        "metric": "E2E",
+        "title": "WEB SAAS & MOBILE",
+        "description": "Запуск SaaS-платформ и мобильных приложений с нуля."
+      },
+      {
+        "metric": "CI/CD",
+        "title": "CLOUD & DEVOPS",
+        "description": "Автоматизация релизов и отказоустойчивая мультиоблачная архитектура."
+      }
+    ],
     "target": "Ищу проекты, где смогу применить свои навыки и открыт к сотрудничеству",
     "available": "ОТКРЫТ К РАБОТЕ"
   },
@@ -46,20 +68,27 @@
   },
   "experience": [
     {
-      "id": "mcp-coop-dao",
-      "company": "MCP COOP DAO",
-      "title": "AI-Driven Tech Lead",
+      "id": "mcp-coop",
+      "company": "MCP COOP",
+      "title": "Principal Software Engineer | Team Lead",
       "dates": "Июнь 2025 — Наст. время",
       "role": "Tech Lead и Full-Stack разработчик",
-      "description": "Спроектировал и разработал масштабируемую децентрализованную экосистему (3 независимых приложения в продакшене), интегрирующую DAO платформу, блокчейн протоколы, Telegram Mini Apps и мобильное приложение на React Native.\n\nРуководил высокоэффективной командой из 3 специалистов. Ускорил full-stack разработку и кардинально сократил Time-to-Market за счет интеграции оркестрации ИИ (Antigravity/Cursor, кастомные AI процессы) в процесс разработки.",
+      "description": "Спроектировал и разработал линейку продакшен-продуктов: кроссплатформенные мобильные приложения (iOS и Android), SaaS веб-платформы, Telegram Mini Apps и ботов с интеграцией ИИ.\n\nРуковожу высокоэффективной инженерной командой и лично закрываю ключевые задачи разработки. Ускорил полный цикл создания и релиза продуктов за счет проектирования агентных фабрик и индивидуальной настройки AI Harness под задачи каждого проекта.",
       "achievements": [
-        "**AI-First Engineering:** Реализовал 90%+ всей логики системы используя кастомные процессы агентов, достигнув беспрецедентной плотности разработки и согласованности кода.",
-        "**Блокчейн и Backend:** Разработал ядро платформы на Go (Golang) для блокчейн операций и высокопроизводительный бэкенд на NestJS + Prisma + PostgreSQL. Интегрировал Open API и Firebase для гибридной облачной логики.",
-        "**Мультиплатформенная архитектура:** Спроектировал переиспользуемую микрофронтенд систему, которая обеспечивает работу независимых веб-приложений, Telegram Mini Apps (TMA SDK) и мобильных интерфейсов на React Native.",
-        "**Аутентификация и Безопасность:** Внедрил сложный слой идентификации (SSO, Role-based Access, JWT) с бесшовной интеграцией Telegram аккаунтов со стандартными веб-протоколами аутентификации.",
-        "**Мультиоблачный CI/CD:** Выстроил полные пайплайны доставки через GitHub Actions и Docker. Развернул отказоустойчивую инфраструктуру в гибридном облаке (GCP и Oracle Cloud) для обеспечения максимальной доступности."
+        "**Agentic AI:** Спроектировал и собрал под каждый проект индивидуальную конфигурацию AI Harness (правила, скиллы, промпты, хуки, MCP) и цепочки субагентов, которые команда совместно дорабатывает по мере развития продукта. Выстроил процесс Spec-Driven разработки — от спеки и архитектуры до кодогенерации, автотестов и ревью.",
+        "**Мобильная разработка (iOS & Android):** С нуля спроектировал архитектуру и выпустил кроссплатформенные приложения в App Store и Google Play: модульное клиентское ядро, реактивный стейт-менеджмент, сложный кастомный UI и анимации, офлайн-режим с локальной БД и фоновой синхронизацией, а также интеграция подписок и мобильных платежей.",
+        "**SaaS, Telegram Mini Apps и интеграция ИИ:** Спроектировал и реализовал масштабируемую архитектуру для веб-платформ, Telegram Mini Apps и ботов: синхронизация состояния в реальном времени по WebSockets, отказоустойчивые пайплайны интеграции LLM/VLM-моделей и векторного поиска, а также система биллинга, управления подписками и платежных шлюзов.",
+        "**Аутентификация и Безопасность:** Внедрил единый слой идентификации на базе Supabase Auth и Firebase Auth (OAuth 2.0, SSO, JWT, RBAC) с нативной авторизацией на мобильных платформах (Apple / Google Sign-In), бесшовным входом через Telegram и веб-протоколами.",
+        "**Мультиоблачный CI/CD и Релизы:** Выстроил пайплайны доставки через GitHub Actions и Docker: от развертывания отказоустойчивой облачной инфраструктуры (GCP, Oracle Cloud, Cloudflare) до автоматической сборки и публикации релизов в App Store и Google Play."
       ],
-      "stack": "Next.js & React (SSR/SSG), NestJS, React Native, Telegram SDK, Prisma, PostgreSQL, Redis, Firebase, OAuth 2.0, Go, Cloudflare, Docker, GitHub Actions, GCP, Oracle Cloud."
+      "stack": "Agentic Factories, Harness & Context Engineering, Spec-Driven Development, MCP, System Design, DDD & Clean Architecture, TypeScript, Flutter, React & Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL, Prisma, Redis, Supabase, Firebase, WebSockets, Telegram Mini Apps (TMA SDK), OAuth 2.0, Docker, GitHub Actions, GCP, Oracle Cloud, Cloudflare, ASO, SEO."
+    },
+    {
+      "id": "sabbatical",
+      "company": "Career Break / Sabbatical",
+      "title": "Плановый саббатикал и смена фокуса на AI",
+      "dates": "Январь 2025 — Май 2025",
+      "description": "Запланированный перерыв для отдыха и восстановления после 11 лет непрерывной работы в Enterprise-разработке. Смена технологического фокуса в сторону искусственного интеллекта: глубокое погружение в архитектуру автономных ИИ-агентов, LLM-систем, управление контекстом, Harness Engineering и переосмысление процессов разработки ПО."
     },
     {
       "id": "epam",
