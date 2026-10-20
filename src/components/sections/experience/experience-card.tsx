@@ -48,7 +48,7 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
       {/* Timeline dot */}
       <div className="absolute left-0 top-[15px] w-3 h-3 rounded-full bg-card border-2 border-timeline-dot z-10" />
       {/* Timeline line */}
-      {index < 3 && (
+      {(hasSubProjects || (entry.achievements && entry.achievements.length > 0)) && (
         <div className="absolute left-[5px] top-[27px] bottom-0 w-0.5 bg-timeline-line" />
       )}
 
