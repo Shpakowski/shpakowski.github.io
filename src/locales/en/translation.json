@@ -48,17 +48,17 @@
     "education": "Education"
   },
   "projects": {
-    "mcpCoopDao": {
-      "name": "MCP COOP DAO",
-      "description": "A web platform for engineering cooperation on product development using the AIDD approach (AI-Driven Development)."
+    "holdy": {
+      "name": "HOLDY",
+      "description": "Mobile service for turning promo codes, QR codes, and tickets into interactive digital gifts, featuring a themed postcard collection, scheduled delivery, and Apple Wallet & Google Wallet integration."
     },
-    "unbogi": {
-      "name": "UNBOGI",
-      "description": "A mobile application and Telegram Mini App for gift exchange via QR codes or promo codes. It enables fast transfer and usage of digital gifts and bonuses."
+    "beerhandshake": {
+      "name": "BEERHANDSHAKE",
+      "description": "Social mobile app for sports predictions and friendly wagers without real-money gambling, featuring private rooms, live match tracking, and an automated Splitwise-style debt balancing engine."
     },
-    "taskManager": {
-      "name": "TASK MANAGER",
-      "description": "A configurable task manager for small teams and Startups, supporting integration into platforms and operation via Telegram Mini App."
+    "znichka": {
+      "name": "ZNICHKA:\nPUZZLE GAME",
+      "description": "Logic puzzle game combining falling-block and number-merging mechanics: connecting identical numbers triggers chain reactions and cascading board clears."
     }
   },
   "labels": {
