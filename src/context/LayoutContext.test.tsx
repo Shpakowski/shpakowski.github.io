@@ -24,7 +24,7 @@ describe('LayoutContext', () => {
       </LayoutProvider>
     );
 
-    expect(screen.getByTestId('index')).toHaveTextContent('null');
+    expect(screen.getByTestId('index')).toHaveTextContent('0');
     expect(screen.getByTestId('signal')).toHaveTextContent('0');
 
     await user.click(screen.getByText('Open with expand'));

@@ -1,7 +1,7 @@
 {
   "profile": {
     "fullName": "Vitali Shpakowski",
-    "headline": "Principal Software Engineer | Agentic AI Engineer",
+    "headline": "Senior Full-Stack Engineer | Agentic AI Engineer",
     "contact": {
       "phone": "+375298813712",
       "email": "v.shpakowski@gmail.com",
@@ -71,18 +71,18 @@
     {
       "id": "mcp-coop",
       "company": "MCP COOP",
-      "title": "Principal Software Engineer | Team Lead",
+      "title": "Senior Full-Stack & Agentic AI Engineer",
       "dates": "June 2025 — Present",
       "role": "Tech Lead & Full-Stack Developer",
-      "description": "Designed and engineered a suite of production products: cross-platform mobile applications (iOS and Android), SaaS web platforms, and Telegram Mini Apps and bots with AI integration.\n\nLead a high-performing engineering team while personally delivering critical development tasks. Accelerated the end-to-end product build and release cycle by designing Agentic Factories and tailoring custom AI Harness configurations to the needs of each project.",
+      "description": "Build proprietary products and NDA commercial projects across mobile apps, web services, Telegram Mini Apps, and bots. Lead the engineering team, write code on critical paths, and structure development workflows around AI agents.",
       "achievements": [
-        "**Agentic AI:** Designed and assembled project-specific AI Harness configurations (rules, skills, prompts, hooks, MCP) and subagent pipelines iteratively refined by the team alongside the product. Established a Spec-Driven Development workflow spanning specifications, architecture, code generation, automated testing, and code review.",
-        "**Mobile Development (iOS & Android):** Architected from scratch and shipped cross-platform mobile apps to the App Store and Google Play, featuring a modular client core, reactive state management, complex custom UI and animations, local-first offline mode with background database sync, and in-app subscriptions and payments.",
-        "**SaaS, Telegram Mini Apps & AI Integration:** Architected and implemented scalable web platforms, Telegram Mini Apps, and bots featuring real-time state synchronization over WebSockets, resilient LLM/VLM integration and vector search pipelines, as well as billing, subscription management, and payment gateways.",
-        "**Authentication & Security:** Implemented a unified identity layer powered by Supabase Auth and Firebase Auth (OAuth 2.0, SSO, JWT, RBAC) with native mobile authentication (Apple / Google Sign-In), seamless Telegram login, and standard web protocols.",
-        "**Multi-Cloud CI/CD & Releases:** Built end-to-end delivery pipelines with GitHub Actions and Docker, covering resilient multi-cloud infrastructure deployment (GCP, Oracle Cloud, Cloudflare) as well as automated mobile build and release publishing to the App Store and Google Play."
+        "**Agentic AI:** Configured project-specific AI Harness setups (rules, skills, hooks, MCP) and subagent pipelines. Transitioned the team to a Spec-Driven workflow from design to automated tests and review, speeding up feature delivery by 2–3x.",
+        "**Mobile Development:** Architected from scratch and launched 4 apps on the App Store and Google Play — component development following SRP/SOLID principles, native and intuitive UX, custom animations, offline mode and background sync, payment gateways, and in-app purchases.",
+        "**Web Development:** Designed and engineered frontend and backend systems with a focus on performance and code quality — communication via REST or real-time streaming, LLM integration into business workflows, billing, and payment processing.",
+        "**Authentication & Security:** Engineered authentication systems powered by Supabase and Firebase Auth (OAuth 2.0, SSO, JWT, RBAC) with native Apple/Google Sign-In and seamless Telegram login.",
+        "**Multi-Cloud CI/CD & Releases:** Automated build and release pipelines via GitHub Actions, Codemagic, and Docker — covering cloud infrastructure deployment (GCP, Oracle Cloud, Cloudflare) and automated publishing to the App Store and Google Play."
       ],
-      "stack": "Agentic Factories, Harness & Context Engineering, Spec-Driven Development, MCP, System Design, DDD & Clean Architecture, TypeScript, Flutter, React & Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL, Prisma, Redis, Supabase, Firebase, WebSockets, Telegram Mini Apps (TMA SDK), OAuth 2.0, Docker, GitHub Actions, GCP, Oracle Cloud, Cloudflare, ASO, SEO."
+      "stack": "Agentic Factories, Harness & Context Engineering, Spec-Driven Development, MCP, System Design, DDD & Clean Architecture, TypeScript, Flutter, React & Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL, Prisma, Redis, Supabase, Firebase, WebSockets, Telegram Mini Apps (TMA SDK), OAuth 2.0, Docker, GitHub Actions, Codemagic, GCP, Oracle Cloud, Cloudflare, ASO, SEO."
     },
     {
       "id": "sabbatical",

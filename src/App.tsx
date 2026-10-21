@@ -19,14 +19,19 @@ function App() {
       <AppLayout>
         <div className="space-y-12">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-light tracking-tight text-center text-primary mb-6">
-          {t('profile.headline')}
+          {t('profile.headline').split('|').map((part, idx, arr) => (
+            <React.Fragment key={idx}>
+              {part}
+              {idx < arr.length - 1 && <span className="text-foreground">|</span>}
+            </React.Fragment>
+          ))}
         </h1>
         
         <Suspense fallback={<div className="h-32 flex items-center justify-center text-muted">{t('labels.loading')}</div>}>
           <HeroSection />
           <SkillsSection />
-          <ProjectsSection />
           <ExperienceSection />
+          <ProjectsSection />
           <EducationSection />
         </Suspense>
         </div>

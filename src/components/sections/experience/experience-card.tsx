@@ -9,7 +9,7 @@ import { AchievementItem } from '@/components/ui';
 import { SubProjectCard } from './sub-project-card';
 
 export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index: number }) {
-  const { activeExperienceIndex, forceExpandSignal, openExperience } = useLayout();
+  const { activeExperienceIndex, forceExpandSignal, shouldScrollToExperience, openExperience } = useLayout();
   const expanded = activeExperienceIndex === index;
   const { t } = useTranslation();
 
@@ -19,7 +19,7 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
   // 🎓 React Trend: Управляем стейтом (скроллом) через эффекты, подписанные на глобальный стейт Context API,
   // а не через грязное "прослушивание" window событий.
   useEffect(() => {
-    if (expanded) {
+    if (expanded && shouldScrollToExperience) {
       setTimeout(() => {
         const el = document.getElementById(`experience-${index}`);
         if (el) {
@@ -27,7 +27,7 @@ export function ExperienceCard({ entry, index }: { entry: ExperienceEntry; index
         }
       }, 320);
     }
-  }, [expanded, index]);
+  }, [expanded, shouldScrollToExperience, index]);
 
   const handleToggle = () => {
     if (!expanded) {

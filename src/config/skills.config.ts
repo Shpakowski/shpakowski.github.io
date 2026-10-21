@@ -145,7 +145,7 @@ export const SKILLS_CONFIG: SkillCategoryConfig[] = [
     },
     items: [
       'Docker',
-      'CI/CD (GitHub Actions, Jenkins)',
+      'CI/CD (GitHub Actions, Codemagic, Jenkins)',
       'Google Cloud Platform (GCP)',
       'AWS & Oracle Cloud',
       'Cloudflare',

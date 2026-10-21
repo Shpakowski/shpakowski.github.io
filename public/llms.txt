@@ -1,6 +1,6 @@
-# Vitali Shpakowski — Principal Software Engineer | Agentic AI Engineer
+# Vitali Shpakowski — Senior Full-Stack & Agentic AI Engineer
 
-> Personal portfolio and interactive CV of Vitali Shpakowski (Виталий Шпаковский) — Principal Software Engineer, Agentic AI Engineer, and Full-Stack & Mobile Architect with 14+ years of commercial experience across BigTech, Enterprise (FinTech, E-Commerce, Corporate AI), and independent SaaS & Mobile products.
+> Personal portfolio and interactive CV of Vitali Shpakowski (Виталий Шпаковский) — Senior Full-Stack & Agentic AI Engineer and Tech Lead with 14+ years of commercial experience across BigTech, Enterprise (FinTech, E-Commerce, Corporate AI), and proprietary & commercial SaaS & Mobile products.
 
 Extensive experience delivering large-scale BigTech and Enterprise systems across FinTech, E-Commerce, and corporate AI, alongside launching independent tech products. Owns Full-Stack architecture and System Design aligned with business requirements (Monorepo, BFF, Micro-frontends, DDD, Hexagonal, Event-Driven), integrating web applications, cross-platform mobile (Flutter for iOS & Android), and backend services into a unified platform.
 
@@ -12,10 +12,10 @@ Key competencies:
 - **Frontend:** ECMAScript (ES6+), TypeScript, React & Next.js (SSR/SSG), Angular 18+ (Signals), Zustand & React Query, Module Federation, Tailwind CSS, Web Vitals & Performance, Jest / Vitest / Playwright.
 - **Mobile:** Flutter, Dart, iOS & Android, Riverpod, Local-First Architecture, Offline Sync (SQLite), Telegram Mini Apps (TMA SDK), App Store & Google Play Release.
 - **Backend:** Node.js, NestJS & Express.js, PostgreSQL, Supabase & Firebase, Prisma ORM, Redis, MongoDB, REST API & WebSockets, OAuth 2.0 / JWT / SSO, OpenSearch & Coveo AI.
-- **DevOps:** Docker, GitHub Actions, Jenkins, Google Cloud Platform (GCP), AWS, Oracle Cloud, Cloudflare, Firebase, Nginx, Terraform, SonarQube.
+- **DevOps:** Docker, GitHub Actions, Codemagic, Jenkins, Google Cloud Platform (GCP), AWS, Oracle Cloud, Cloudflare, Firebase, Nginx, Terraform, SonarQube.
 
 Career history:
-- **MCP COOP** — Principal Software Engineer | Team Lead (June 2025 — Present): Designed and shipped cross-platform mobile apps (iOS & Android), SaaS web platforms, and AI-powered Telegram Mini Apps & bots; architected project-specific Agentic Factories and AI Harness configurations.
+- **MCP COOP** — Senior Full-Stack & Agentic AI Engineer (June 2025 — Present): Built proprietary products and NDA commercial projects across mobile apps (4 launched on App Store & Google Play), web services, Telegram Mini Apps, and bots; led the engineering team and accelerated feature delivery by 2–3x with project-specific AI Harness setups and Spec-Driven workflows.
 - **Career Break / Sabbatical** — Planned Sabbatical & Strategic Shift to AI (January 2025 — May 2025): Planned recharge after 11 years in Enterprise and rebuilding engineering workflows around AI agents and LLMs.
 - **EPAM Systems** — Senior Software Engineer (December 2013 — December 2024): Delivered enterprise platforms for SAP Coveo AI Search Platform, US Bank Loyalty Program, Carrefour, Refinitiv, and MoneySuperMarket.
 - **Startup Labs** — Middle Frontend Developer (April 2013 — December 2013).

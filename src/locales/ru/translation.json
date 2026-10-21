@@ -1,7 +1,7 @@
 {
   "profile": {
     "fullName": "Виталий Шпаковский",
-    "headline": "Principal Software Engineer | Agentic AI Engineer",
+    "headline": "Senior Full-Stack Engineer | Agentic AI Engineer",
     "contact": {
       "phone": "+375298813712",
       "email": "v.shpakowski@gmail.com",
@@ -71,18 +71,18 @@
     {
       "id": "mcp-coop",
       "company": "MCP COOP",
-      "title": "Principal Software Engineer | Team Lead",
+      "title": "Senior Full-Stack & Agentic AI Engineer",
       "dates": "Июнь 2025 — Наст. время",
       "role": "Tech Lead и Full-Stack разработчик",
-      "description": "Спроектировал и разработал линейку продакшен-продуктов: кроссплатформенные мобильные приложения (iOS и Android), SaaS веб-платформы, Telegram Mini Apps и ботов с интеграцией ИИ.\n\nРуковожу высокоэффективной инженерной командой и лично закрываю ключевые задачи разработки. Ускорил полный цикл создания и релиза продуктов за счет проектирования агентных фабрик и индивидуальной настройки AI Harness под задачи каждого проекта.",
+      "description": "Разрабатываю собственные продукты и коммерческие проекты под NDA: мобильные приложения, веб-сервисы, Telegram Mini Apps и ботов. Руковожу командой разработки, сам пишу код на ключевых участках и выстраиваю процессы вокруг ИИ-агентов.",
       "achievements": [
-        "**Agentic AI:** Спроектировал и собрал под каждый проект индивидуальную конфигурацию AI Harness (правила, скиллы, промпты, хуки, MCP) и цепочки субагентов, которые команда совместно дорабатывает по мере развития продукта. Выстроил процесс Spec-Driven разработки — от спеки и архитектуры до кодогенерации, автотестов и ревью.",
-        "**Мобильная разработка (iOS & Android):** С нуля спроектировал архитектуру и выпустил кроссплатформенные приложения в App Store и Google Play: модульное клиентское ядро, реактивный стейт-менеджмент, сложный кастомный UI и анимации, офлайн-режим с локальной БД и фоновой синхронизацией, а также интеграция подписок и мобильных платежей.",
-        "**SaaS, Telegram Mini Apps и интеграция ИИ:** Спроектировал и реализовал масштабируемую архитектуру для веб-платформ, Telegram Mini Apps и ботов: синхронизация состояния в реальном времени по WebSockets, отказоустойчивые пайплайны интеграции LLM/VLM-моделей и векторного поиска, а также система биллинга, управления подписками и платежных шлюзов.",
-        "**Аутентификация и Безопасность:** Внедрил единый слой идентификации на базе Supabase Auth и Firebase Auth (OAuth 2.0, SSO, JWT, RBAC) с нативной авторизацией на мобильных платформах (Apple / Google Sign-In), бесшовным входом через Telegram и веб-протоколами.",
-        "**Мультиоблачный CI/CD и Релизы:** Выстроил пайплайны доставки через GitHub Actions и Docker: от развертывания отказоустойчивой облачной инфраструктуры (GCP, Oracle Cloud, Cloudflare) до автоматической сборки и публикации релизов в App Store и Google Play."
+        "**Agentic AI:** Настроил под каждый проект свой AI Harness (правила, скиллы, хуки, MCP) и цепочки субагентов. Перевел команду на разработку по спецификациям (Spec-Driven) — от проектирования до автотестов и ревью, что ускорило выпуск фич в 2–3 раза.",
+        "**Мобильная разработка:** С нуля спроектировал и выпустил 4 приложения в App Store и Google Play — разработка компонентов по принципам SRP/SOLID, нативный и понятный UX, кастомные анимации, работа в офлайне и фоновая синхронизация, интеграция платежных систем и встроенных покупок.",
+        "**Веб-разработка:** Спроектировал и разработал фронтенд и бэкенд с фокусом на производительность и качество кода — взаимодействие через REST или стриминг в реальном времени, интеграция LLM-моделей в бизнес-логику, биллинг и платежи.",
+        "**Аутентификация и Безопасность:** Разрабатывал системы авторизации на базе Supabase и Firebase Auth (OAuth 2.0, SSO, JWT, RBAC) с нативным входом через Apple/Google и бесшовной авторизацией в Telegram.",
+        "**Мультиоблачный CI/CD и Релизы:** Автоматизировал сборку и выкатку проектов через GitHub Actions, Codemagic и Docker — от деплоя облачной инфраструктуры (GCP, Oracle Cloud, Cloudflare) до автопубликации релизов в App Store и Google Play."
       ],
-      "stack": "Agentic Factories, Harness & Context Engineering, Spec-Driven Development, MCP, System Design, DDD & Clean Architecture, TypeScript, Flutter, React & Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL, Prisma, Redis, Supabase, Firebase, WebSockets, Telegram Mini Apps (TMA SDK), OAuth 2.0, Docker, GitHub Actions, GCP, Oracle Cloud, Cloudflare, ASO, SEO."
+      "stack": "Agentic Factories, Harness & Context Engineering, Spec-Driven Development, MCP, System Design, DDD & Clean Architecture, TypeScript, Flutter, React & Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL, Prisma, Redis, Supabase, Firebase, WebSockets, Telegram Mini Apps (TMA SDK), OAuth 2.0, Docker, GitHub Actions, Codemagic, GCP, Oracle Cloud, Cloudflare, ASO, SEO."
     },
     {
       "id": "sabbatical",
