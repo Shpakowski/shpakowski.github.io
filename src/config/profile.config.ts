@@ -9,7 +9,7 @@ export const profileConfig = {
     github: "Shpakowski",
     website: "shpakowski.github.io",
     location_city: "Minsk, Belarus, UTC+3",
-    relocation: "Ready to relocate",
+    relocation: "Ready to relocate, remote",
     languages: ["English (B1+)", "Russian", "Belarusian"]
   }
 };

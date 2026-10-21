@@ -33,7 +33,14 @@ export function AnimatedMetric({ value, delay }: { value: string; delay: number 
         animate={visible ? { opacity: 1, y: 0 } : {}}
         transition={{ delay, duration: 0.4 }}
       >
-        {value}
+        {value.startsWith('AI') ? (
+          <>
+            <span className="text-primary">AI</span>
+            {value.slice(2)}
+          </>
+        ) : (
+          value
+        )}
       </motion.span>
     </div>
   );

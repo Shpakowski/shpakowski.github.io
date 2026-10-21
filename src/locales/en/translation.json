@@ -10,10 +10,10 @@
       "github": "Shpakowski",
       "website": "shpakowski.github.io",
       "location_city": "Minsk, Belarus, UTC+3",
-      "relocation": "Ready to relocate",
+      "relocation": "Ready to relocate, remote",
       "languages": "English (B1+), Russian, Belarusian"
     },
-    "summary": "Extensive experience delivering large-scale <strong class=\"font-semibold text-foreground\">BigTech and Enterprise systems</strong> across FinTech, E-Commerce, and corporate AI, alongside launching independent tech products. I own <strong class=\"font-semibold text-foreground\">Full-Stack architecture and System Design</strong> aligned with business requirements (<strong class=\"font-semibold text-foreground\">Monorepo, BFF, Micro-frontends, DDD, Hexagonal, Event-Driven</strong>), integrating web applications, cross-platform mobile, and backend services into a unified platform.\n\nI provide <strong class=\"font-semibold text-foreground\">technical leadership</strong> and business-to-engineering alignment: managing development teams, enforcing engineering standards, and scaling delivery workflows with <strong class=\"font-semibold text-foreground\">AI agents</strong> to accelerate <strong class=\"font-semibold text-foreground\">Time-to-Market</strong> while maintaining strict control over architecture and code security.",
+    "summary": "<p><strong class=\"font-semibold text-foreground\">Full-Stack Architecture &amp; System Design.</strong> I design and deliver high-load systems across FinTech, E-Commerce, and Enterprise AI, alongside launching independent products from scratch — translating business goals into reliable web, mobile, and backend solutions.</p><p><strong class=\"font-semibold text-foreground\">Technical Leadership &amp; Agentic AI.</strong> I lead engineering teams and build end-to-end delivery workflows powered by a Spec-Driven approach and AI agents, enabling businesses to validate hypotheses faster and ship complex products with lean teams without compromising quality.</p>",
     "highlights": [
       {
         "metric": "14+",
@@ -21,19 +21,19 @@
         "description": "High-load system architecture and scalable enterprise platforms."
       },
       {
-        "metric": "AI",
-        "title": "AGENTIC SYSTEMS",
-        "description": "Agentic factories: Harness, Context & Graph Engineering."
-      },
-      {
-        "metric": "E2E",
-        "title": "WEB SAAS & MOBILE",
-        "description": "Commercial SaaS platforms and cross-platform mobile apps from scratch."
+        "metric": "SDLC",
+        "title": "WEB & MOBILE APPS",
+        "description": "Full-cycle engineering from system architecture to production release."
       },
       {
         "metric": "CI/CD",
         "title": "CLOUD & DEVOPS",
         "description": "Automated release pipelines and resilient multi-cloud infrastructure."
+      },
+      {
+        "metric": "AI-DLC",
+        "title": "AGENTIC SYSTEMS",
+        "description": "Spec-Driven Dev, Harness, Context & Graph Engineering."
       }
     ],
     "target": "Looking for projects where I can apply my skills and open to collaboration",
@@ -62,6 +62,7 @@
     }
   },
   "labels": {
+    "loading": "Loading...",
     "present": "Present",
     "projectRole": "Project Role",
     "stack": "Stack"
@@ -124,24 +125,23 @@
         {
           "title": "Carrefour — E-commerce Platform",
           "role": "Key Developer & Technical Coordinator",
-          "description": "Led the development of critical features for a high-traffic e-commerce store (500K+ monthly users) during a strategic platform transition. Combined high-level technical execution with project management responsibilities.",
+          "description": "Led the development of core functionality for a high-traffic e-commerce store (500K+ monthly users), coordinating tasks across a sub-team of 2 developers within an Agile/Scrum framework.",
           "achievements": [
             "**Product Impact:** Engineered high-conversion features, including advanced product filtering and an optimized checkout flow, directly improving user experience and sales metrics.",
-            "**DevOps & Quality:** Established a CI/CD pipeline integrated with Jenkins and SonarQube, significantly reducing code quality issues and automating delivery.",
-            "**Communication with Stakeholder:** Acted as a technical bridge between business analysts and the dev team, managing backlog prioritization, technical grooming, and requirement analysis.",
-            "**Team Coordination:** Coordinated and held full responsibility for a sub-team of 2 developers, ensuring rigorous code standards and consistent delivery within an Agile/Scrum framework."
+            "**DevOps & Quality:** Built a CI/CD pipeline with integrated static analysis and build-time quality checks, preventing low-quality code from being deployed.",
+            "**Communication with Stakeholder:** Acted as a technical bridge between business analysts and the dev team, managing backlog prioritization, technical grooming, and requirement analysis."
           ],
           "stack": "JavaScript (jQuery), SASS, Jenkins, SonarQube, Git, Agile."
         },
         {
           "title": "Refinitiv — Financial Trading Platform",
           "role": "Key Developer",
-          "description": "Delivered two Angular-based web applications, including a major migration of a legacy C# desktop solution to the web. Coordinated technical tasks for a sub-team of 3 developers, focusing on architecture and data integration.",
+          "description": "Owned the development and production release of two Angular-based trading web applications (including the migration of a monolithic C# desktop client), coordinating technical tasks across a sub-team of 3 engineers.",
           "achievements": [
             "**API Transformation:** Engineered a custom transformation layer using Express.js to bridge legacy SOAP services with a modern REST API, enabling seamless data migration from desktop to web.",
             "**Real-time Services:** Designed the frontend architecture to handle high-frequency, real-time data streams via WebSocket connections.",
             "**Performance:** Achieved a 60% reduction in initial load time (from 5s to 2s) by implementing lazy loading and advanced code-splitting strategies.",
-            "**Testing & Quality:** Maintained high engineering standards with 80%+ code coverage using Jasmine and Karma, ensuring enterprise-grade stability."
+            "**Testing & Quality:** Maintained high engineering standards with 80%+ test coverage."
           ],
           "stack": "Angular, TypeScript, Express.js, RxJS, WebSockets, SOAP, REST API, Jasmine, Karma."
         },
@@ -153,7 +153,7 @@
             "**Architecture:** Designed a micro-frontend system and its seamless integration into the Adobe CQ5 (AEM) enterprise platform, reducing deployment time by 40%.",
             "**Performance:** Optimized initial load time from 6.5s to 3.8s (42% improvement) through advanced asset tuning and performance optimization.",
             "**Quality Control:** Developed a library of 50+ reusable components using BEM and established code review standards for the UI team, decreasing production bugs by 60%.",
-            "**Team Supervision:** Facilitated technical grooming and sprint planning for the UI group, maintaining a 95% sprint delivery rate in an Agile/Scrum environment."
+            "**Team Management:** Organized technical task refinement and sprint planning, maintaining a consistent 95% sprint completion rate."
           ],
           "stack": "Angular, AngularJS, TypeScript, RxJS, Redux, NgRx, BEM, SASS, Adobe CQ5, Jenkins."
         }
@@ -164,15 +164,15 @@
       "company": "Startup Labs",
       "title": "Middle Frontend Developer",
       "dates": "April 2013 — December 2013",
-      "description": "Developed high-performance responsive promotional sites for financial services. Implemented complex web forms with robust client-side validation, improving data accuracy. Engineered mobile-first layouts using SASS, ensuring full cross-browser compatibility and optimized performance.",
-      "stack": "JavaScript (jQuery), HTML5/CSS3, SASS, WordPress, Twig, Git."
+      "description": "Built responsive websites (mobile-first) for consumer lending services, designing a flexible system of reusable style mixins and interactive loan application forms with client-side data validation.",
+      "stack": "JavaScript (jQuery), HTML5/CSS3, SASS, BEM, WordPress, Twig, Git."
     },
     {
       "id": "axamit-versa",
       "company": "Axamit Versa",
       "title": "Junior Frontend Developer",
       "dates": "April 2012 — March 2013",
-      "description": "Developed responsive interfaces and interactive UI components using Adobe AEM (CQ5). Built a reusable component library, significantly reducing development time for common UI patterns across client projects.",
+      "description": "Built responsive web interfaces for commercial projects powered by Adobe AEM (CQ5), extracting common interactive elements into a unified reusable UI library.",
       "stack": "JavaScript (jQuery), Adobe AEM, HTML5/CSS3, Git."
     }
   ],
@@ -185,7 +185,8 @@
   "education": [
     {
       "degree": "Systems Engineer",
-      "details": "Belarusian State University of Informatics and Radioelectronics (BSUIR) · 2006–2011 · Minsk, Belarus"
+      "dates": "2006 — 2011",
+      "details": "Belarusian State University of Informatics and Radioelectronics (BSUIR) · Minsk, Belarus"
     }
   ]
 }

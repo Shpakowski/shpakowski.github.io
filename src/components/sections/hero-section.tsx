@@ -13,7 +13,7 @@ export function HeroSection() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
         {highlights.map((h, i) => (
           <motion.div
-            key={h.title}
+            key={h.metric}
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 + i * 0.1, duration: 0.4 }}
@@ -39,11 +39,11 @@ export function HeroSection() {
       </div>
 
       {/* Compact profile summary — below cards */}
-      <motion.p
+      <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-sm leading-relaxed text-muted w-full whitespace-pre-line"
+        className="text-[15px] md:text-base leading-[1.7] text-foreground/85 w-full space-y-3 text-pretty"
         dangerouslySetInnerHTML={{ __html: t('profile.summary') }}
       />
 

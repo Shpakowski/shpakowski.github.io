@@ -79,7 +79,7 @@ export const SKILLS_CONFIG: SkillCategoryConfig[] = [
       'Zustand & React Query',
       'Micro-Frontends (Module Federation)',
       'Tailwind CSS',
-      'HTML5 / CSS3 / SCSS',
+      'HTML5 / CSS3 / SCSS / BEM',
       'Web Vitals & Performance',
       'Testing (Jest, Vitest, Playwright)',
       'Legacy Migration (jQuery)'
