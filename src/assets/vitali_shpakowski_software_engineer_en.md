@@ -51,7 +51,7 @@ I provide **technical leadership** and business-to-engineering alignment: managi
 
 ### Principal Software Engineer | Team Lead
 
-**MCP COOP** · June 2025 — Present  
+**MCP COOP** · January 2026 — Present  
 *Project Role: Tech Lead & Full-Stack Developer*
 
 Designed and engineered a suite of production products: cross-platform mobile applications (iOS and Android), SaaS web platforms, and Telegram Mini Apps and bots with AI integration.
@@ -70,7 +70,7 @@ Lead a high-performing engineering team while personally delivering critical dev
 
 ### Planned Sabbatical & Strategic Shift to AI
 
-**Career Break / Sabbatical** · January 2025 — May 2025
+**Career Break / Sabbatical** · January 2025 — December 2025
 
 Planned career break for recovery and recharge after 11 years of continuous work in Enterprise. Rebuilding engineering workflows and shifting technological focus toward software development with AI agents and LLMs.
 
