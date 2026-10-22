@@ -65,7 +65,8 @@
     "loading": "Загрузка...",
     "present": "По настоящее время",
     "projectRole": "Роль на проекте",
-    "stack": "Стек"
+    "stack": "Стек",
+    "downloadCv": "Скачать резюме"
   },
   "experience": [
     {

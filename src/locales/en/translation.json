@@ -65,7 +65,8 @@
     "loading": "Loading...",
     "present": "Present",
     "projectRole": "Project Role",
-    "stack": "Stack"
+    "stack": "Stack",
+    "downloadCv": "Download CV"
   },
   "experience": [
     {

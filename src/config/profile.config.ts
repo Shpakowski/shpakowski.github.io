@@ -1,6 +1,7 @@
 export const profileConfig = {
   fullName: "Vitali Shpakowski",
   headline: "Principal Software Engineer | Agentic AI Engineer",
+  cvUrl: "/Vitali_Shpakowski_CV.pdf",
   contact: {
     phone: "+375298813712",
     email: "v.shpakowski@gmail.com",

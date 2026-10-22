@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Download } from 'lucide-react';
 import { ContactItem } from '@/components/ui';
 import { profileConfig } from '@/config';
 import { getContactsConfig } from '@/config';
@@ -15,7 +16,7 @@ export function Sidebar() {
     <aside className="flex flex-col gap-4 p-6 md:p-8 lg:sticky lg:top-0 lg:h-screen lg:w-80 xl:w-96 lg:overflow-y-auto">
 
 
-      <div className="flex flex-col items-center text-center gap-2">
+      <div className="flex flex-col items-center text-center gap-2.5">
         <Avatar
           src={avatarImage}
           alt={profileConfig.fullName}
@@ -24,6 +25,24 @@ export function Sidebar() {
         <div>
           <h1 className="text-2xl font-bold tracking-tight">{profileConfig.fullName}</h1>
         </div>
+
+        <a
+          href={profileConfig.cvUrl}
+          download="Vitali_Shpakowski_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group my-2 inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-blue-600 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+        >
+          <Download
+            size={16}
+            strokeWidth={2.25}
+            className="transition-transform duration-200 group-hover:translate-y-0.5"
+          />
+          <span>{t('labels.downloadCv', 'Download CV')}</span>
+          <span className="rounded bg-black/20 px-1.5 py-0.5 text-[11px] font-bold uppercase leading-none tracking-wider text-white">
+            PDF
+          </span>
+        </a>
 
         <div className="flex flex-wrap justify-center gap-2">
           {profileConfig.contact.languages.map((lang) => (
